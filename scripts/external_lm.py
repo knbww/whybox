@@ -318,12 +318,24 @@ def resample_all(s: Sentence, rng: np.random.Generator) -> Sentence:
 class Target:
     """An off-the-shelf causal LM, read as a scalar: logit(" are") - logit(" is")."""
 
-    def __init__(self, name: str = "gpt2", dtype=torch.float32, device: str = "cpu"):
+    def __init__(self, name: str = "gpt2", dtype=torch.float32, device: str = "cpu",
+                 load_in_4bit: bool = False):
         from transformers import AutoModelForCausalLM, AutoTokenizer
         self.name = name
         self.device = torch.device(device)
         self.tk = AutoTokenizer.from_pretrained(name)
-        self.model = AutoModelForCausalLM.from_pretrained(name, dtype=dtype).to(self.device).eval()
+        if load_in_4bit:
+            # for models that do not fit with their gradients: nf4 weights, fp16 compute;
+            # the gradient with respect to the input embedding still flows through them
+            from transformers import BitsAndBytesConfig
+            if self.device.type != "cuda":
+                raise ValueError("4-bit loading needs a CUDA device")
+            q = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                                   bnb_4bit_compute_dtype=torch.float16)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                name, quantization_config=q, device_map={"": self.device.index or 0}).eval()
+        else:
+            self.model = AutoModelForCausalLM.from_pretrained(name, dtype=dtype).to(self.device).eval()
         for p in self.model.parameters():
             p.requires_grad_(False)
         self.a = self.tk.encode(" is", add_special_tokens=False)

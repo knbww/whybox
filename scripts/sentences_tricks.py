@@ -34,7 +34,10 @@ Interpreter. external_gpt2's recipe: the 12 fitted entail targets, the integrate
             with exactly these weights.
 Targets.    gpt2 and Qwen/Qwen2.5-0.5B-Instruct here. Larger models (for example on
             Colab) run through --models under this same protocol, each run in its own
-            result file.
+            result file. AMENDMENT 1, committed before any run that uses it: a model that
+            does not fit in memory with its gradients is loaded with --load-in-4bit
+            (bitsandbytes nf4 weights, fp16 compute); nothing else changes. --steps other
+            than 16 is a diagnostic of the path and never enters a read-out.
 Cells.      ALL; SINGLE_AGREE (plural subject, B rests on SUBJECT_NUMBER); SINGLE_DISAGREE
             (plural subject, B rests on another factor: B departs from the grammar); NONE
             (singular subject: the grammar names no cause); OVER (wide only: a plural and
@@ -165,6 +168,8 @@ def main(argv=None) -> int:
     ap.add_argument("--templates", nargs="+", default=list(TEMPLATES))
     ap.add_argument("--device", default="cpu")
     ap.add_argument("--dtype", default="float32", choices=("float32", "bfloat16", "float16"))
+    ap.add_argument("--load-in-4bit", action="store_true")
+    ap.add_argument("--steps", type=int, default=G.STEPS)
     ap.add_argument("--weights", default=WEIGHTS)
     ap.add_argument("--out", default=OUT)
     ap.add_argument("--smoke", action="store_true")
@@ -193,12 +198,13 @@ def main(argv=None) -> int:
             print("no git checkout: recording this file's sha256 for comparison with the "
                   "committed protocol")
     models, u_max, wprov = interpreters(a.weights, a.smoke)
+    G.STEPS = a.steps          # the targets' path only; the interpreter was trained with 16
     print(f"interpreter ready ({time.time() - t0:.0f}s)", flush=True)
 
     results, pv, keys = {}, [], []
     dtype = getattr(torch, a.dtype)
     for name in a.models:
-        target = E.Target(name, dtype=dtype, device=a.device)
+        target = E.Target(name, dtype=dtype, device=a.device, load_in_4bit=a.load_in_4bit)
         print(f"{name}: {target.n_params / 1e6:.0f}M parameters ({time.time() - t0:.0f}s)",
               flush=True)
         for t in a.templates:
@@ -228,6 +234,8 @@ def main(argv=None) -> int:
         print(f"smoke run done, nothing written ({time.time() - t0:.0f}s)")
         return 0
     out = {"provenance": prov | {"interpreter": wprov, "device": a.device, "dtype": a.dtype,
+                                 "load_in_4bit": a.load_in_4bit,
+                                 "role": "read-out" if a.steps == 16 else "diagnostic (steps != 16)",
                                  "n_focal": n, "n_probe": N_PROBE, "seed": SEED,
                                  "margin": MARGIN, "attract": 0.0, "steps": G.STEPS,
                                  "torch": torch.__version__, "numpy": np.__version__,
