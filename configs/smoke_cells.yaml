@@ -1,0 +1,19 @@
+run_name: smoke_cells
+cells:
+  - {domain: skirmish, family: mlp}
+  - {domain: skirmish, family: tab_transformer}
+  - {domain: agreement, family: lm}
+source_cells: [skirmish/mlp]
+seeds: [0, 1]
+spurious: [0.0, 2.0]
+target_n_train: 2000
+target_epochs: 10
+n_focal: 24
+n_probe: 128
+holdout_models: 2
+feature_ablations: false
+interpreter:
+  epochs: 4
+  d_model: 48
+  n_layers: 2
+  batch_size: 24

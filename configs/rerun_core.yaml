@@ -1,0 +1,43 @@
+# Clean rerun of the localisation core with the corrected instrument.
+# Protocol frozen in docs/PREREG.md before this ran. Do not edit after results.
+run_name: rerun_core
+condition: strict
+cells:
+  - {domain: skirmish,  family: mlp}
+  - {domain: skirmish,  family: tab_transformer}
+  - {domain: clinic,    family: mlp}
+  - {domain: agreement, family: lm}
+source_cells: [skirmish/mlp]
+ceiling_cells: [skirmish/tab_transformer, clinic/mlp, agreement/lm]
+
+seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 8
+feature_ablations: false
+explanation_eval: false
+data_seed: 0
+alpha: 0.05
+
+interpreter_seeds: [0, 1, 2]
+interpreter:
+  epochs: 20
+  lr: 0.001
+  batch_size: 64
+  d_model: 96
+  n_layers: 3
+  n_heads: 4
+  dropout: 0.1
+
+primary_comparisons:
+  - {metric: executed.sufficiency@3, method: A_full, reference: first_order}
+  - {metric: executed.sufficiency@3, method: A_full, reference: grad_x_act}
+  - {metric: executed.sufficiency@3, method: A_full, reference: A_output_only}
+  - {metric: executed.sufficiency@3, method: A_full, reference: random}
+  - {metric: decoy_rejection,        method: A_full, reference: first_order}
+  - {metric: decoy_rejection,        method: A_full, reference: correlation}
+  - {metric: mediation.spearman,     method: A_full, reference: first_order}
+  - {metric: causal.spearman,        method: A_full, reference: first_order}

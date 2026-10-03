@@ -1,0 +1,1695 @@
+{
+ "provenance": {
+  "commit": "8698985369cb848a172bc37e044cd4151f8ba1a9",
+  "dirty": false,
+  "prereg": "docs/PREREG_VOLUME.md",
+  "smoke": false,
+  "domain": "skirmish",
+  "margin": 0.1,
+  "held_out_cache": {
+   "path": "results/cache/skirmish-mlp-6d7fca3aed.pt",
+   "sha256": "1f8d8e7ef6d4edd63c917c580d5045f167be9bde466bc8a964d1a3f49a268090"
+  },
+  "volume_manifest": "results/volume_manifest.json",
+  "volume_files": {
+   "fit_states": {
+    "path": "results/cache/volume/fit_states.pt",
+    "sha256": "05dc970da87cedf3501fa880754da60308def40c36c86c14a05a8df7a009b20e",
+    "n_models": 12,
+    "seeds": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   "new_models": {
+    "path": "results/cache/volume/new_models.pt",
+    "sha256": "e3b59962192afe7b0b878baf25bbde65606234e93a488ce7457f687c24d5a000",
+    "n_models": 84,
+    "seeds": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35
+    ]
+   },
+   "val_models": {
+    "path": "results/cache/volume/val_models.pt",
+    "sha256": "296ace203bc649e2594f055d2777f3172a99af45235829e3d3b2cc5bc0fed732",
+    "n_models": 12,
+    "seeds": [
+     36,
+     37,
+     38,
+     39
+    ]
+   }
+  },
+  "config": {
+   "manifest": "results/volume_manifest.json",
+   "out": "results/volume_study.json",
+   "base_models": 12,
+   "base_states": 160,
+   "rungs": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "max_epochs": 200,
+   "patience": 20,
+   "n_held": 12,
+   "workers": 5,
+   "threads": 4
+  },
+  "optimiser": {
+   "batch": 64,
+   "lr": 0.001,
+   "weight_decay": 0.01
+  },
+  "interpreter_seeds": [
+   0,
+   1,
+   2
+  ],
+  "torch": "2.13.0+cpu"
+ },
+ "rows": [
+  {
+   "axis": "states",
+   "rung": 0,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 1920,
+   "per_model": [
+    {
+     "accuracy": 0.7205128205128204
+    },
+    {
+     "accuracy": 0.6795865633074935
+    },
+    {
+     "accuracy": 0.7952755905511811
+    },
+    {
+     "accuracy": 0.7720797720797721
+    },
+    {
+     "accuracy": 0.7787114845938375
+    },
+    {
+     "accuracy": 0.9008264462809917
+    },
+    {
+     "accuracy": 0.7592592592592592
+    },
+    {
+     "accuracy": 0.8111111111111111
+    },
+    {
+     "accuracy": 0.7154471544715447
+    },
+    {
+     "accuracy": 0.6351706036745407
+    },
+    {
+     "accuracy": 0.6610169491525424
+    },
+    {
+     "accuracy": 0.6894586894586895
+    }
+   ],
+   "accuracy": 0.7432047037044821
+  },
+  {
+   "axis": "states",
+   "rung": 0,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 1920,
+   "per_model": [
+    {
+     "accuracy": 0.7563025210084033
+    },
+    {
+     "accuracy": 0.6845238095238095
+    },
+    {
+     "accuracy": 0.8160919540229885
+    },
+    {
+     "accuracy": 0.7663551401869159
+    },
+    {
+     "accuracy": 0.8095238095238095
+    },
+    {
+     "accuracy": 0.9002849002849003
+    },
+    {
+     "accuracy": 0.7635327635327634
+    },
+    {
+     "accuracy": 0.8866666666666667
+    },
+    {
+     "accuracy": 0.7537537537537536
+    },
+    {
+     "accuracy": 0.6666666666666665
+    },
+    {
+     "accuracy": 0.6666666666666667
+    },
+    {
+     "accuracy": 0.7347670250896057
+    }
+   ],
+   "accuracy": 0.7670946397439126
+  },
+  {
+   "axis": "states",
+   "rung": 0,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 1920,
+   "per_model": [
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.6470588235294118
+    },
+    {
+     "accuracy": 0.5757575757575757
+    },
+    {
+     "accuracy": 0.8333333333333333
+    },
+    {
+     "accuracy": 0.5476190476190476
+    },
+    {
+     "accuracy": 0.9166666666666666
+    },
+    {
+     "accuracy": 0.7037037037037037
+    },
+    {
+     "accuracy": 0.4333333333333334
+    },
+    {
+     "accuracy": 0.3611111111111111
+    },
+    {
+     "accuracy": 0.45614035087719296
+    },
+    {
+     "accuracy": 0.641025641025641
+    },
+    {
+     "accuracy": 0.513888888888889
+    }
+   ],
+   "accuracy": 0.5802476507649366
+  },
+  {
+   "axis": "states",
+   "rung": 1,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 3840,
+   "per_model": [
+    {
+     "accuracy": 0.7076923076923077
+    },
+    {
+     "accuracy": 0.6589147286821705
+    },
+    {
+     "accuracy": 0.7926509186351706
+    },
+    {
+     "accuracy": 0.7236467236467236
+    },
+    {
+     "accuracy": 0.7899159663865546
+    },
+    {
+     "accuracy": 0.8953168044077136
+    },
+    {
+     "accuracy": 0.7566137566137566
+    },
+    {
+     "accuracy": 0.8111111111111111
+    },
+    {
+     "accuracy": 0.7208672086720868
+    },
+    {
+     "accuracy": 0.6456692913385826
+    },
+    {
+     "accuracy": 0.652542372881356
+    },
+    {
+     "accuracy": 0.6837606837606838
+    }
+   ],
+   "accuracy": 0.7365584894856848
+  },
+  {
+   "axis": "states",
+   "rung": 1,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 3840,
+   "per_model": [
+    {
+     "accuracy": 0.742296918767507
+    },
+    {
+     "accuracy": 0.6607142857142857
+    },
+    {
+     "accuracy": 0.8103448275862069
+    },
+    {
+     "accuracy": 0.7258566978193145
+    },
+    {
+     "accuracy": 0.8095238095238095
+    },
+    {
+     "accuracy": 0.8917378917378919
+    },
+    {
+     "accuracy": 0.774928774928775
+    },
+    {
+     "accuracy": 0.8766666666666666
+    },
+    {
+     "accuracy": 0.7477477477477477
+    },
+    {
+     "accuracy": 0.6697530864197531
+    },
+    {
+     "accuracy": 0.6557971014492753
+    },
+    {
+     "accuracy": 0.7240143369175627
+    }
+   ],
+   "accuracy": 0.7574485121065663
+  },
+  {
+   "axis": "states",
+   "rung": 1,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 3840,
+   "per_model": [
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.6470588235294118
+    },
+    {
+     "accuracy": 0.606060606060606
+    },
+    {
+     "accuracy": 0.7
+    },
+    {
+     "accuracy": 0.6428571428571429
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.5185185185185185
+    },
+    {
+     "accuracy": 0.4833333333333333
+    },
+    {
+     "accuracy": 0.47222222222222227
+    },
+    {
+     "accuracy": 0.5087719298245613
+    },
+    {
+     "accuracy": 0.641025641025641
+    },
+    {
+     "accuracy": 0.5277777777777778
+    }
+   ],
+   "accuracy": 0.5900799440402124
+  },
+  {
+   "axis": "states",
+   "rung": 2,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 7680,
+   "per_model": [
+    {
+     "accuracy": 0.7282051282051282
+    },
+    {
+     "accuracy": 0.6770025839793281
+    },
+    {
+     "accuracy": 0.8031496062992126
+    },
+    {
+     "accuracy": 0.7663817663817665
+    },
+    {
+     "accuracy": 0.7899159663865546
+    },
+    {
+     "accuracy": 0.8898071625344351
+    },
+    {
+     "accuracy": 0.7645502645502645
+    },
+    {
+     "accuracy": 0.8194444444444444
+    },
+    {
+     "accuracy": 0.7100271002710027
+    },
+    {
+     "accuracy": 0.6509186351706036
+    },
+    {
+     "accuracy": 0.6412429378531074
+    },
+    {
+     "accuracy": 0.6923076923076923
+    }
+   ],
+   "accuracy": 0.7444127740319616
+  },
+  {
+   "axis": "states",
+   "rung": 2,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 7680,
+   "per_model": [
+    {
+     "accuracy": 0.7535014005602241
+    },
+    {
+     "accuracy": 0.6845238095238094
+    },
+    {
+     "accuracy": 0.8132183908045978
+    },
+    {
+     "accuracy": 0.7601246105919004
+    },
+    {
+     "accuracy": 0.8126984126984128
+    },
+    {
+     "accuracy": 0.886039886039886
+    },
+    {
+     "accuracy": 0.7720797720797721
+    },
+    {
+     "accuracy": 0.88
+    },
+    {
+     "accuracy": 0.7477477477477478
+    },
+    {
+     "accuracy": 0.6790123456790125
+    },
+    {
+     "accuracy": 0.6557971014492753
+    },
+    {
+     "accuracy": 0.7311827956989247
+    }
+   ],
+   "accuracy": 0.7646605227394635
+  },
+  {
+   "axis": "states",
+   "rung": 2,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 7680,
+   "per_model": [
+    {
+     "accuracy": 0.45454545454545453
+    },
+    {
+     "accuracy": 0.6274509803921569
+    },
+    {
+     "accuracy": 0.6969696969696969
+    },
+    {
+     "accuracy": 0.8333333333333333
+    },
+    {
+     "accuracy": 0.6190476190476192
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.5166666666666666
+    },
+    {
+     "accuracy": 0.3611111111111111
+    },
+    {
+     "accuracy": 0.4912280701754385
+    },
+    {
+     "accuracy": 0.5897435897435896
+    },
+    {
+     "accuracy": 0.5416666666666666
+    }
+   ],
+   "accuracy": 0.6165358212765333
+  },
+  {
+   "axis": "states",
+   "rung": 3,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 15360,
+   "per_model": [
+    {
+     "accuracy": 0.7205128205128205
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.8162729658792651
+    },
+    {
+     "accuracy": 0.7692307692307693
+    },
+    {
+     "accuracy": 0.803921568627451
+    },
+    {
+     "accuracy": 0.9035812672176309
+    },
+    {
+     "accuracy": 0.7619047619047619
+    },
+    {
+     "accuracy": 0.8194444444444444
+    },
+    {
+     "accuracy": 0.7127371273712736
+    },
+    {
+     "accuracy": 0.6692913385826772
+    },
+    {
+     "accuracy": 0.6581920903954801
+    },
+    {
+     "accuracy": 0.698005698005698
+    }
+   ],
+   "accuracy": 0.7499801265699114
+  },
+  {
+   "axis": "states",
+   "rung": 3,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 15360,
+   "per_model": [
+    {
+     "accuracy": 0.7507002801120449
+    },
+    {
+     "accuracy": 0.675595238095238
+    },
+    {
+     "accuracy": 0.8247126436781609
+    },
+    {
+     "accuracy": 0.7601246105919004
+    },
+    {
+     "accuracy": 0.8222222222222223
+    },
+    {
+     "accuracy": 0.9002849002849004
+    },
+    {
+     "accuracy": 0.774928774928775
+    },
+    {
+     "accuracy": 0.88
+    },
+    {
+     "accuracy": 0.7417417417417418
+    },
+    {
+     "accuracy": 0.6944444444444444
+    },
+    {
+     "accuracy": 0.6739130434782609
+    },
+    {
+     "accuracy": 0.7383512544802868
+    }
+   ],
+   "accuracy": 0.7697515961714981
+  },
+  {
+   "axis": "states",
+   "rung": 3,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 15360,
+   "per_model": [
+    {
+     "accuracy": 0.3939393939393939
+    },
+    {
+     "accuracy": 0.6078431372549019
+    },
+    {
+     "accuracy": 0.7272727272727273
+    },
+    {
+     "accuracy": 0.8666666666666666
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.5925925925925926
+    },
+    {
+     "accuracy": 0.5166666666666666
+    },
+    {
+     "accuracy": 0.4444444444444444
+    },
+    {
+     "accuracy": 0.5263157894736842
+    },
+    {
+     "accuracy": 0.6025641025641024
+    },
+    {
+     "accuracy": 0.5416666666666666
+    }
+   ],
+   "accuracy": 0.6238865711840428
+  },
+  {
+   "axis": "models",
+   "rung": 0,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 1920,
+   "per_model": [
+    {
+     "accuracy": 0.7205128205128204
+    },
+    {
+     "accuracy": 0.6795865633074935
+    },
+    {
+     "accuracy": 0.7952755905511811
+    },
+    {
+     "accuracy": 0.7720797720797721
+    },
+    {
+     "accuracy": 0.7787114845938375
+    },
+    {
+     "accuracy": 0.9008264462809917
+    },
+    {
+     "accuracy": 0.7592592592592592
+    },
+    {
+     "accuracy": 0.8111111111111111
+    },
+    {
+     "accuracy": 0.7154471544715447
+    },
+    {
+     "accuracy": 0.6351706036745407
+    },
+    {
+     "accuracy": 0.6610169491525424
+    },
+    {
+     "accuracy": 0.6894586894586895
+    }
+   ],
+   "accuracy": 0.7432047037044821
+  },
+  {
+   "axis": "models",
+   "rung": 0,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 1920,
+   "per_model": [
+    {
+     "accuracy": 0.7563025210084033
+    },
+    {
+     "accuracy": 0.6845238095238095
+    },
+    {
+     "accuracy": 0.8160919540229885
+    },
+    {
+     "accuracy": 0.7663551401869159
+    },
+    {
+     "accuracy": 0.8095238095238095
+    },
+    {
+     "accuracy": 0.9002849002849003
+    },
+    {
+     "accuracy": 0.7635327635327634
+    },
+    {
+     "accuracy": 0.8866666666666667
+    },
+    {
+     "accuracy": 0.7537537537537536
+    },
+    {
+     "accuracy": 0.6666666666666665
+    },
+    {
+     "accuracy": 0.6666666666666667
+    },
+    {
+     "accuracy": 0.7347670250896057
+    }
+   ],
+   "accuracy": 0.7670946397439126
+  },
+  {
+   "axis": "models",
+   "rung": 0,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 1920,
+   "per_model": [
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.6470588235294118
+    },
+    {
+     "accuracy": 0.5757575757575757
+    },
+    {
+     "accuracy": 0.8333333333333333
+    },
+    {
+     "accuracy": 0.5476190476190476
+    },
+    {
+     "accuracy": 0.9166666666666666
+    },
+    {
+     "accuracy": 0.7037037037037037
+    },
+    {
+     "accuracy": 0.4333333333333334
+    },
+    {
+     "accuracy": 0.3611111111111111
+    },
+    {
+     "accuracy": 0.45614035087719296
+    },
+    {
+     "accuracy": 0.641025641025641
+    },
+    {
+     "accuracy": 0.513888888888889
+    }
+   ],
+   "accuracy": 0.5802476507649366
+  },
+  {
+   "axis": "models",
+   "rung": 1,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 3840,
+   "per_model": [
+    {
+     "accuracy": 0.7205128205128205
+    },
+    {
+     "accuracy": 0.6847545219638244
+    },
+    {
+     "accuracy": 0.8110236220472441
+    },
+    {
+     "accuracy": 0.7777777777777778
+    },
+    {
+     "accuracy": 0.792717086834734
+    },
+    {
+     "accuracy": 0.9008264462809917
+    },
+    {
+     "accuracy": 0.7645502645502645
+    },
+    {
+     "accuracy": 0.825
+    },
+    {
+     "accuracy": 0.7018970189701896
+    },
+    {
+     "accuracy": 0.6299212598425197
+    },
+    {
+     "accuracy": 0.632768361581921
+    },
+    {
+     "accuracy": 0.6923076923076923
+    }
+   ],
+   "accuracy": 0.744504739389165
+  },
+  {
+   "axis": "models",
+   "rung": 1,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 3840,
+   "per_model": [
+    {
+     "accuracy": 0.7563025210084032
+    },
+    {
+     "accuracy": 0.6845238095238094
+    },
+    {
+     "accuracy": 0.8275862068965517
+    },
+    {
+     "accuracy": 0.7725856697819315
+    },
+    {
+     "accuracy": 0.8126984126984128
+    },
+    {
+     "accuracy": 0.9002849002849004
+    },
+    {
+     "accuracy": 0.7806267806267807
+    },
+    {
+     "accuracy": 0.8833333333333333
+    },
+    {
+     "accuracy": 0.7357357357357357
+    },
+    {
+     "accuracy": 0.6574074074074074
+    },
+    {
+     "accuracy": 0.6376811594202898
+    },
+    {
+     "accuracy": 0.7275985663082438
+    }
+   ],
+   "accuracy": 0.7646970419188165
+  },
+  {
+   "axis": "models",
+   "rung": 1,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 3840,
+   "per_model": [
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.6862745098039216
+    },
+    {
+     "accuracy": 0.6363636363636362
+    },
+    {
+     "accuracy": 0.8333333333333333
+    },
+    {
+     "accuracy": 0.6428571428571429
+    },
+    {
+     "accuracy": 0.9166666666666666
+    },
+    {
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "accuracy": 0.5333333333333333
+    },
+    {
+     "accuracy": 0.3888888888888889
+    },
+    {
+     "accuracy": 0.47368421052631576
+    },
+    {
+     "accuracy": 0.6153846153846153
+    },
+    {
+     "accuracy": 0.5555555555555555
+    }
+   ],
+   "accuracy": 0.5976025651335249
+  },
+  {
+   "axis": "models",
+   "rung": 2,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 7680,
+   "per_model": [
+    {
+     "accuracy": 0.7282051282051282
+    },
+    {
+     "accuracy": 0.6770025839793281
+    },
+    {
+     "accuracy": 0.8162729658792651
+    },
+    {
+     "accuracy": 0.7606837606837605
+    },
+    {
+     "accuracy": 0.7843137254901962
+    },
+    {
+     "accuracy": 0.8870523415977962
+    },
+    {
+     "accuracy": 0.746031746031746
+    },
+    {
+     "accuracy": 0.8222222222222223
+    },
+    {
+     "accuracy": 0.7181571815718156
+    },
+    {
+     "accuracy": 0.6456692913385825
+    },
+    {
+     "accuracy": 0.6694915254237288
+    },
+    {
+     "accuracy": 0.6780626780626781
+    }
+   ],
+   "accuracy": 0.7444304292071874
+  },
+  {
+   "axis": "models",
+   "rung": 2,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 7680,
+   "per_model": [
+    {
+     "accuracy": 0.7647058823529411
+    },
+    {
+     "accuracy": 0.681547619047619
+    },
+    {
+     "accuracy": 0.8304597701149427
+    },
+    {
+     "accuracy": 0.7663551401869159
+    },
+    {
+     "accuracy": 0.8095238095238095
+    },
+    {
+     "accuracy": 0.8831908831908831
+    },
+    {
+     "accuracy": 0.7606837606837606
+    },
+    {
+     "accuracy": 0.8833333333333334
+    },
+    {
+     "accuracy": 0.7537537537537536
+    },
+    {
+     "accuracy": 0.6790123456790123
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.7096774193548387
+    }
+   ],
+   "accuracy": 0.7657425319907062
+  },
+  {
+   "axis": "models",
+   "rung": 2,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 7680,
+   "per_model": [
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.6470588235294118
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.7
+    },
+    {
+     "accuracy": 0.5952380952380952
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "accuracy": 0.5166666666666666
+    },
+    {
+     "accuracy": 0.3888888888888889
+    },
+    {
+     "accuracy": 0.45614035087719296
+    },
+    {
+     "accuracy": 0.6794871794871795
+    },
+    {
+     "accuracy": 0.5555555555555555
+    }
+   ],
+   "accuracy": 0.5912159263165456
+  },
+  {
+   "axis": "models",
+   "rung": 3,
+   "cell": "ALL",
+   "n_models": 12,
+   "total_states": 15360,
+   "per_model": [
+    {
+     "accuracy": 0.7153846153846154
+    },
+    {
+     "accuracy": 0.6821705426356589
+    },
+    {
+     "accuracy": 0.8346456692913385
+    },
+    {
+     "accuracy": 0.7692307692307694
+    },
+    {
+     "accuracy": 0.8095238095238096
+    },
+    {
+     "accuracy": 0.90633608815427
+    },
+    {
+     "accuracy": 0.753968253968254
+    },
+    {
+     "accuracy": 0.8138888888888889
+    },
+    {
+     "accuracy": 0.7344173441734418
+    },
+    {
+     "accuracy": 0.6535433070866141
+    },
+    {
+     "accuracy": 0.6440677966101694
+    },
+    {
+     "accuracy": 0.6837606837606838
+    }
+   ],
+   "accuracy": 0.750078147392376
+  },
+  {
+   "axis": "models",
+   "rung": 3,
+   "cell": "AGREE",
+   "n_models": 12,
+   "total_states": 15360,
+   "per_model": [
+    {
+     "accuracy": 0.753501400560224
+    },
+    {
+     "accuracy": 0.681547619047619
+    },
+    {
+     "accuracy": 0.8390804597701149
+    },
+    {
+     "accuracy": 0.7694704049844237
+    },
+    {
+     "accuracy": 0.8285714285714286
+    },
+    {
+     "accuracy": 0.9031339031339032
+    },
+    {
+     "accuracy": 0.7663817663817665
+    },
+    {
+     "accuracy": 0.87
+    },
+    {
+     "accuracy": 0.7657657657657657
+    },
+    {
+     "accuracy": 0.6913580246913581
+    },
+    {
+     "accuracy": 0.6630434782608695
+    },
+    {
+     "accuracy": 0.7275985663082438
+    }
+   ],
+   "accuracy": 0.7716210681229764
+  },
+  {
+   "axis": "models",
+   "rung": 3,
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "total_states": 15360,
+   "per_model": [
+    {
+     "accuracy": 0.303030303030303
+    },
+    {
+     "accuracy": 0.6862745098039216
+    },
+    {
+     "accuracy": 0.787878787878788
+    },
+    {
+     "accuracy": 0.7666666666666666
+    },
+    {
+     "accuracy": 0.6666666666666667
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.5925925925925926
+    },
+    {
+     "accuracy": 0.5333333333333333
+    },
+    {
+     "accuracy": 0.4444444444444444
+    },
+    {
+     "accuracy": 0.4385964912280701
+    },
+    {
+     "accuracy": 0.5769230769230769
+    },
+    {
+     "accuracy": 0.513888888888889
+    }
+   ],
+   "accuracy": 0.6091913134547294
+  }
+ ],
+ "comparisons": [
+  {
+   "role": "primary",
+   "axis": "states",
+   "cell": "ALL",
+   "comparison": "rung 3 vs rung 0",
+   "n_models": 12,
+   "delta": 0.006775422865429555,
+   "a": 0.7499801265699114,
+   "b": 0.7432047037044821,
+   "p": 0.1240234375,
+   "p_adj": 0.3720703125,
+   "reject": false,
+   "reading": "no detectable change"
+  },
+  {
+   "role": "primary",
+   "axis": "states",
+   "cell": "DISAGREE",
+   "comparison": "rung 3 vs rung 0",
+   "n_models": 12,
+   "delta": 0.04363892041910614,
+   "a": 0.6238865711840428,
+   "b": 0.5802476507649366,
+   "p": 0.07080078125,
+   "p_adj": 0.283203125,
+   "reject": false,
+   "reading": "no detectable change"
+  },
+  {
+   "role": "primary",
+   "axis": "models",
+   "cell": "ALL",
+   "comparison": "rung 3 vs rung 0",
+   "n_models": 12,
+   "delta": 0.006873443687894165,
+   "a": 0.750078147392376,
+   "b": 0.7432047037044821,
+   "p": 0.1953125,
+   "p_adj": 0.390625,
+   "reject": false,
+   "reading": "no detectable change"
+  },
+  {
+   "role": "primary",
+   "axis": "models",
+   "cell": "DISAGREE",
+   "comparison": "rung 3 vs rung 0",
+   "n_models": 12,
+   "delta": 0.02894366268979273,
+   "a": 0.6091913134547294,
+   "b": 0.5802476507649366,
+   "p": 0.3115234375,
+   "p_adj": 0.390625,
+   "reject": false,
+   "reading": "no detectable change"
+  }
+ ],
+ "secondary": [
+  {
+   "role": "secondary",
+   "axis": "states",
+   "cell": "ALL",
+   "statistic": "slope per doubling of volume, per held-out model",
+   "per_model": [
+    0.00205128205128215,
+    -0.002067183462532298,
+    0.007349081364829486,
+    0.003418803418803451,
+    0.007563025210083998,
+    0.0002754820936638685,
+    0.001587301587301624,
+    0.003333333333333373,
+    -0.0018970189701896637,
+    0.010761154855643097,
+    -0.0019774011299434134,
+    0.0034188034188034483
+   ],
+   "mean": 0.0028180553142565933,
+   "p_unadjusted": 0.03955078125
+  },
+  {
+   "role": "secondary",
+   "axis": "states",
+   "cell": "DISAGREE",
+   "statistic": "slope per doubling of volume, per held-out model",
+   "per_model": [
+    0.0303030303030303,
+    -0.013725490196078468,
+    0.05454545454545451,
+    0.023333333333333286,
+    0.03333333333333338,
+    0.025000000000000057,
+    -0.018518518518518524,
+    0.02833333333333333,
+    0.01388888888888886,
+    0.019298245614035064,
+    -0.01666666666666667,
+    0.009722222222222169
+   ],
+   "mean": 0.01573726384936394,
+   "p_unadjusted": 0.03515625
+  },
+  {
+   "role": "secondary",
+   "axis": "models",
+   "cell": "ALL",
+   "statistic": "slope per doubling of volume, per held-out model",
+   "per_model": [
+    -0.0007692307692306864,
+    -7.698427028982477e-18,
+    0.012335958005249344,
+    -0.002564102564102544,
+    0.008403361344537928,
+    0.0002754820936640371,
+    -0.0034391534391533226,
+    0.0005555555555557234,
+    0.00731707317073177,
+    0.007086614173228311,
+    -0.0014124293785310925,
+    -0.0031339031339030665
+   ],
+   "mean": 0.002054602088170533,
+   "p_unadjusted": 0.203125
+  },
+  {
+   "role": "secondary",
+   "axis": "models",
+   "cell": "DISAGREE",
+   "statistic": "slope per doubling of volume, per held-out model",
+   "per_model": [
+    -0.009090909090909028,
+    0.007843137254902039,
+    0.06666666666666667,
+    -0.03333333333333333,
+    0.030952380952381026,
+    0.033333333333333416,
+    -0.033333333333333326,
+    0.028333333333333356,
+    0.024999999999999967,
+    -0.007017543859649126,
+    -0.012820512820512801,
+    -3.825728941277871e-17
+   ],
+   "mean": 0.008044434925239902,
+   "p_unadjusted": 0.37109375
+  }
+ ],
+ "diagnostic": [
+  {
+   "role": "diagnostic",
+   "comparison": "models axis vs states axis at rung 3",
+   "cell": "ALL",
+   "delta": 9.80208224646099e-05,
+   "p_unadjusted": 0.984375
+  },
+  {
+   "role": "diagnostic",
+   "comparison": "models axis vs states axis at rung 3",
+   "cell": "DISAGREE",
+   "delta": -0.014695257729313424,
+   "p_unadjusted": 0.3828125
+  }
+ ],
+ "training": [
+  {
+   "best_epoch": 60,
+   "epochs_run": 80,
+   "s_per_epoch": 5.598560008406639,
+   "val_accuracy": 0.7297297297297297,
+   "train_accuracy": 0.7928047968021319,
+   "axis": "base",
+   "rung": 0,
+   "seed": 0,
+   "n_models": 12,
+   "n_states": 1920,
+   "n_train_states": 1501,
+   "wall_seconds": 449.9917275905609,
+   "peak_rss_mb": 1048.6484375
+  },
+  {
+   "best_epoch": 53,
+   "epochs_run": 73,
+   "s_per_epoch": 5.696698828919293,
+   "val_accuracy": 0.7290540540540541,
+   "train_accuracy": 0.7868087941372418,
+   "axis": "base",
+   "rung": 0,
+   "seed": 1,
+   "n_models": 12,
+   "n_states": 1920,
+   "n_train_states": 1501,
+   "wall_seconds": 418.2244622707367,
+   "peak_rss_mb": 1049.03125
+  },
+  {
+   "best_epoch": 36,
+   "epochs_run": 56,
+   "s_per_epoch": 5.940866934401648,
+   "val_accuracy": 0.7324324324324324,
+   "train_accuracy": 0.7881412391738841,
+   "axis": "base",
+   "rung": 0,
+   "seed": 2,
+   "n_models": 12,
+   "n_states": 1920,
+   "n_train_states": 1501,
+   "wall_seconds": 335.2055218219757,
+   "peak_rss_mb": 1048.1953125
+  },
+  {
+   "best_epoch": 19,
+   "epochs_run": 39,
+   "s_per_epoch": 9.993413399427364,
+   "val_accuracy": 0.7222972972972973,
+   "train_accuracy": 0.757271815446339,
+   "axis": "states",
+   "rung": 1,
+   "seed": 0,
+   "n_models": 12,
+   "n_states": 3840,
+   "n_train_states": 2991,
+   "wall_seconds": 393.5205309391022,
+   "peak_rss_mb": 1064.890625
+  },
+  {
+   "best_epoch": 13,
+   "epochs_run": 33,
+   "s_per_epoch": 10.064516544342041,
+   "val_accuracy": 0.7216216216216216,
+   "train_accuracy": 0.759612169842862,
+   "axis": "states",
+   "rung": 1,
+   "seed": 1,
+   "n_models": 12,
+   "n_states": 3840,
+   "n_train_states": 2991,
+   "wall_seconds": 336.95645236968994,
+   "peak_rss_mb": 1070.0859375
+  },
+  {
+   "best_epoch": 33,
+   "epochs_run": 53,
+   "s_per_epoch": 11.159196097895784,
+   "val_accuracy": 0.7263513513513513,
+   "train_accuracy": 0.7662988966900702,
+   "axis": "states",
+   "rung": 1,
+   "seed": 2,
+   "n_models": 12,
+   "n_states": 3840,
+   "n_train_states": 2991,
+   "wall_seconds": 594.0737438201904,
+   "peak_rss_mb": 1083.3984375
+  },
+  {
+   "best_epoch": 38,
+   "epochs_run": 58,
+   "s_per_epoch": 10.536846321204614,
+   "val_accuracy": 0.7304054054054054,
+   "train_accuracy": 0.7766172506738545,
+   "axis": "models",
+   "rung": 1,
+   "seed": 0,
+   "n_models": 24,
+   "n_states": 3840,
+   "n_train_states": 2968,
+   "wall_seconds": 614.3859572410583,
+   "peak_rss_mb": 1070.0859375
+  },
+  {
+   "best_epoch": 40,
+   "epochs_run": 60,
+   "s_per_epoch": 10.091041580835979,
+   "val_accuracy": 0.7337837837837838,
+   "train_accuracy": 0.7783018867924528,
+   "axis": "models",
+   "rung": 1,
+   "seed": 1,
+   "n_models": 24,
+   "n_states": 3840,
+   "n_train_states": 2968,
+   "wall_seconds": 608.3700091838837,
+   "peak_rss_mb": 1064.890625
+  },
+  {
+   "best_epoch": 59,
+   "epochs_run": 79,
+   "s_per_epoch": 10.485954544212245,
+   "val_accuracy": 0.7317567567567568,
+   "train_accuracy": 0.7911051212938005,
+   "axis": "models",
+   "rung": 1,
+   "seed": 2,
+   "n_models": 24,
+   "n_states": 3840,
+   "n_train_states": 2968,
+   "wall_seconds": 831.4140298366547,
+   "peak_rss_mb": 1049.03125
+  },
+  {
+   "best_epoch": 24,
+   "epochs_run": 44,
+   "s_per_epoch": 20.535205700180747,
+   "val_accuracy": 0.7317567567567568,
+   "train_accuracy": 0.762090615985067,
+   "axis": "states",
+   "rung": 2,
+   "seed": 0,
+   "n_models": 12,
+   "n_states": 7680,
+   "n_train_states": 5893,
+   "wall_seconds": 908.35773396492,
+   "peak_rss_mb": 1065.40625
+  },
+  {
+   "best_epoch": 14,
+   "epochs_run": 34,
+   "s_per_epoch": 19.917531525387485,
+   "val_accuracy": 0.7189189189189189,
+   "train_accuracy": 0.756999830307144,
+   "axis": "states",
+   "rung": 2,
+   "seed": 1,
+   "n_models": 12,
+   "n_states": 7680,
+   "n_train_states": 5893,
+   "wall_seconds": 682.6852164268494,
+   "peak_rss_mb": 1083.3984375
+  },
+  {
+   "best_epoch": 44,
+   "epochs_run": 64,
+   "s_per_epoch": 19.91203821823001,
+   "val_accuracy": 0.7398648648648649,
+   "train_accuracy": 0.7712540302053283,
+   "axis": "states",
+   "rung": 2,
+   "seed": 2,
+   "n_models": 12,
+   "n_states": 7680,
+   "n_train_states": 5893,
+   "wall_seconds": 1278.8019502162933,
+   "peak_rss_mb": 1070.0859375
+  },
+  {
+   "best_epoch": 30,
+   "epochs_run": 50,
+   "s_per_epoch": 18.392534065246583,
+   "val_accuracy": 0.7398648648648649,
+   "train_accuracy": 0.7677971793149765,
+   "axis": "models",
+   "rung": 2,
+   "seed": 0,
+   "n_models": 48,
+   "n_states": 7680,
+   "n_train_states": 5956,
+   "wall_seconds": 923.7888920307159,
+   "peak_rss_mb": 1064.890625
+  },
+  {
+   "best_epoch": 16,
+   "epochs_run": 36,
+   "s_per_epoch": 19.356578714317745,
+   "val_accuracy": 0.7331081081081081,
+   "train_accuracy": 0.7630960376091337,
+   "axis": "models",
+   "rung": 2,
+   "seed": 1,
+   "n_models": 48,
+   "n_states": 7680,
+   "n_train_states": 5956,
+   "wall_seconds": 701.7518763542175,
+   "peak_rss_mb": 1052.46875
+  },
+  {
+   "best_epoch": 54,
+   "epochs_run": 74,
+   "s_per_epoch": 24.58374953914333,
+   "val_accuracy": 0.7425675675675676,
+   "train_accuracy": 0.7790463398253862,
+   "axis": "models",
+   "rung": 2,
+   "seed": 2,
+   "n_models": 48,
+   "n_states": 7680,
+   "n_train_states": 5956,
+   "wall_seconds": 1826.0704519748688,
+   "peak_rss_mb": 1065.54296875
+  },
+  {
+   "best_epoch": 47,
+   "epochs_run": 67,
+   "s_per_epoch": 42.57737918042425,
+   "val_accuracy": 0.7418918918918919,
+   "train_accuracy": 0.7740218034310825,
+   "axis": "states",
+   "rung": 3,
+   "seed": 0,
+   "n_models": 12,
+   "n_states": 15360,
+   "n_train_states": 11833,
+   "wall_seconds": 2860.5237720012665,
+   "peak_rss_mb": 1109.6875
+  },
+  {
+   "best_epoch": 5,
+   "epochs_run": 25,
+   "s_per_epoch": 37.86164694786072,
+   "val_accuracy": 0.7344594594594595,
+   "train_accuracy": 0.7595706921321728,
+   "axis": "states",
+   "rung": 3,
+   "seed": 1,
+   "n_models": 12,
+   "n_states": 15360,
+   "n_train_states": 11833,
+   "wall_seconds": 955.4894037246704,
+   "peak_rss_mb": 1098.31640625
+  },
+  {
+   "best_epoch": 24,
+   "epochs_run": 44,
+   "s_per_epoch": 43.3789998401295,
+   "val_accuracy": 0.7398648648648649,
+   "train_accuracy": 0.7699653511366518,
+   "axis": "states",
+   "rung": 3,
+   "seed": 2,
+   "n_models": 12,
+   "n_states": 15360,
+   "n_train_states": 11833,
+   "wall_seconds": 1916.7510449886322,
+   "peak_rss_mb": 1097.24609375
+  },
+  {
+   "best_epoch": 32,
+   "epochs_run": 52,
+   "s_per_epoch": 32.61065856768535,
+   "val_accuracy": 0.7439189189189189,
+   "train_accuracy": 0.766551404233786,
+   "axis": "models",
+   "rung": 3,
+   "seed": 0,
+   "n_models": 96,
+   "n_states": 15360,
+   "n_train_states": 11857,
+   "wall_seconds": 1702.912769317627,
+   "peak_rss_mb": 1070.0859375
+  },
+  {
+   "best_epoch": 42,
+   "epochs_run": 62,
+   "s_per_epoch": 26.358828583071308,
+   "val_accuracy": 0.7418918918918919,
+   "train_accuracy": 0.7698406004891625,
+   "axis": "models",
+   "rung": 3,
+   "seed": 1,
+   "n_models": 96,
+   "n_states": 15360,
+   "n_train_states": 11857,
+   "wall_seconds": 1640.1333706378937,
+   "peak_rss_mb": 1098.31640625
+  },
+  {
+   "best_epoch": 29,
+   "epochs_run": 49,
+   "s_per_epoch": 28.857402791782302,
+   "val_accuracy": 0.7445945945945946,
+   "train_accuracy": 0.7673104495234883,
+   "axis": "models",
+   "rung": 3,
+   "seed": 2,
+   "n_models": 96,
+   "n_states": 15360,
+   "n_train_states": 11857,
+   "wall_seconds": 1416.9869630336761,
+   "peak_rss_mb": 1093.87109375
+  }
+ ],
+ "wall_seconds": 4607.37594461441
+}

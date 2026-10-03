@@ -1,0 +1,19 @@
+# Direction control: if the pilot's transfer is real and not an artefact of the
+# source domain, swapping source and target should give a comparable picture.
+run_name: reverse
+source_domains: [clinic]
+target_domains: [skirmish, seqworld]
+seeds: [0, 1, 2, 3]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 4
+feature_ablations: false
+data_seed: 0
+interpreter:
+  epochs: 40
+  d_model: 96
+  n_layers: 3
+  batch_size: 64

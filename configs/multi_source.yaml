@@ -1,0 +1,19 @@
+# Does a second source domain buy generality, or just more data?  Train on both
+# tabular domains and transfer to the transformer domain.
+run_name: multi_source
+source_domains: [skirmish, clinic]
+target_domains: [seqworld]
+seeds: [0, 1, 2, 3]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 4
+feature_ablations: false
+data_seed: 0
+interpreter:
+  epochs: 40
+  d_model: 96
+  n_layers: 3
+  batch_size: 64

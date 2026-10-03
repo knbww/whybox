@@ -1,0 +1,1409 @@
+{
+  "source": "Wikidata Query Service",
+  "endpoint": "https://query.wikidata.org/sparql",
+  "query": "SELECT ?entity (MIN(?isoL) AS ?iso) (MIN(?callL) AS ?calling_code)\n       (MIN(?sideL) AS ?driving_side) (MIN(?tldL) AS ?tld) WHERE {\n  ?c wdt:P31 wd:Q6256 ; wdt:P297 ?isoL ; wdt:P474 ?callL ; wdt:P1622 ?side ; wdt:P78 ?tld .\n  ?c rdfs:label ?entity   FILTER(lang(?entity)=\"en\")\n  ?side rdfs:label ?sideL FILTER(lang(?sideL)=\"en\")\n  ?tld rdfs:label ?tldL   FILTER(lang(?tldL)=\"en\")\n} GROUP BY ?entity ORDER BY ?entity LIMIT 200",
+  "fetched_utc": "2026-08-24T17:18:02Z",
+  "n_rows": 200,
+  "rows": [
+    {
+      "entity": "Afghanistan",
+      "iso": "AF",
+      "calling_code": "+93",
+      "driving_side": "right",
+      "tld": ".af"
+    },
+    {
+      "entity": "Albania",
+      "iso": "AL",
+      "calling_code": "+355",
+      "driving_side": "right",
+      "tld": ".al"
+    },
+    {
+      "entity": "Algeria",
+      "iso": "DZ",
+      "calling_code": "+213",
+      "driving_side": "right",
+      "tld": ".dz"
+    },
+    {
+      "entity": "Andorra",
+      "iso": "AD",
+      "calling_code": "+376",
+      "driving_side": "right",
+      "tld": ".ad"
+    },
+    {
+      "entity": "Angola",
+      "iso": "AO",
+      "calling_code": "+244",
+      "driving_side": "right",
+      "tld": ".ao"
+    },
+    {
+      "entity": "Antigua and Barbuda",
+      "iso": "AG",
+      "calling_code": "+1268",
+      "driving_side": "left",
+      "tld": ".ag"
+    },
+    {
+      "entity": "Argentina",
+      "iso": "AR",
+      "calling_code": "+54",
+      "driving_side": "left",
+      "tld": ".ar"
+    },
+    {
+      "entity": "Armenia",
+      "iso": "AM",
+      "calling_code": "+374",
+      "driving_side": "right",
+      "tld": ".am"
+    },
+    {
+      "entity": "Aruba",
+      "iso": "AW",
+      "calling_code": "+297",
+      "driving_side": "right",
+      "tld": ".aw"
+    },
+    {
+      "entity": "Australia",
+      "iso": "AU",
+      "calling_code": "+61",
+      "driving_side": "left",
+      "tld": ".au"
+    },
+    {
+      "entity": "Austria",
+      "iso": "AT",
+      "calling_code": "+43",
+      "driving_side": "right",
+      "tld": ".at"
+    },
+    {
+      "entity": "Azerbaijan",
+      "iso": "AZ",
+      "calling_code": "+994",
+      "driving_side": "right",
+      "tld": ".az"
+    },
+    {
+      "entity": "Bahrain",
+      "iso": "BH",
+      "calling_code": "+973",
+      "driving_side": "right",
+      "tld": ".bh"
+    },
+    {
+      "entity": "Bangladesh",
+      "iso": "BD",
+      "calling_code": "+880",
+      "driving_side": "left",
+      "tld": ".bd"
+    },
+    {
+      "entity": "Barbados",
+      "iso": "BB",
+      "calling_code": "+1246",
+      "driving_side": "left",
+      "tld": ".bb"
+    },
+    {
+      "entity": "Belarus",
+      "iso": "BY",
+      "calling_code": "+375",
+      "driving_side": "right",
+      "tld": ".by"
+    },
+    {
+      "entity": "Belgium",
+      "iso": "BE",
+      "calling_code": "+32",
+      "driving_side": "right",
+      "tld": ".be"
+    },
+    {
+      "entity": "Belize",
+      "iso": "BZ",
+      "calling_code": "+501",
+      "driving_side": "right",
+      "tld": ".bz"
+    },
+    {
+      "entity": "Benin",
+      "iso": "BJ",
+      "calling_code": "+229",
+      "driving_side": "right",
+      "tld": ".bj"
+    },
+    {
+      "entity": "Bhutan",
+      "iso": "BT",
+      "calling_code": "+975",
+      "driving_side": "left",
+      "tld": ".bt"
+    },
+    {
+      "entity": "Bolivia",
+      "iso": "BO",
+      "calling_code": "+591",
+      "driving_side": "right",
+      "tld": ".bo"
+    },
+    {
+      "entity": "Bosnia and Herzegovina",
+      "iso": "BA",
+      "calling_code": "+387",
+      "driving_side": "right",
+      "tld": ".ba"
+    },
+    {
+      "entity": "Botswana",
+      "iso": "BW",
+      "calling_code": "+267",
+      "driving_side": "left",
+      "tld": ".bw"
+    },
+    {
+      "entity": "Brazil",
+      "iso": "BR",
+      "calling_code": "+55",
+      "driving_side": "right",
+      "tld": ".br"
+    },
+    {
+      "entity": "Brunei",
+      "iso": "BN",
+      "calling_code": "+673",
+      "driving_side": "left",
+      "tld": ".bn"
+    },
+    {
+      "entity": "Bulgaria",
+      "iso": "BG",
+      "calling_code": "+359",
+      "driving_side": "right",
+      "tld": ".bg"
+    },
+    {
+      "entity": "Burkina Faso",
+      "iso": "BF",
+      "calling_code": "+226",
+      "driving_side": "right",
+      "tld": ".bf"
+    },
+    {
+      "entity": "Burundi",
+      "iso": "BI",
+      "calling_code": "+257",
+      "driving_side": "right",
+      "tld": ".bi"
+    },
+    {
+      "entity": "Cambodia",
+      "iso": "KH",
+      "calling_code": "+855",
+      "driving_side": "right",
+      "tld": ".kh"
+    },
+    {
+      "entity": "Cameroon",
+      "iso": "CM",
+      "calling_code": "+237",
+      "driving_side": "right",
+      "tld": ".cm"
+    },
+    {
+      "entity": "Canada",
+      "iso": "CA",
+      "calling_code": "+1",
+      "driving_side": "right",
+      "tld": ".ca"
+    },
+    {
+      "entity": "Cape Verde",
+      "iso": "CV",
+      "calling_code": "+238",
+      "driving_side": "right",
+      "tld": ".cv"
+    },
+    {
+      "entity": "Central African Republic",
+      "iso": "CF",
+      "calling_code": "+236",
+      "driving_side": "right",
+      "tld": ".cf"
+    },
+    {
+      "entity": "Chad",
+      "iso": "TD",
+      "calling_code": "+235",
+      "driving_side": "right",
+      "tld": ".td"
+    },
+    {
+      "entity": "Chile",
+      "iso": "CL",
+      "calling_code": "+56",
+      "driving_side": "right",
+      "tld": ".cl"
+    },
+    {
+      "entity": "Colombia",
+      "iso": "CO",
+      "calling_code": "+57",
+      "driving_side": "right",
+      "tld": ".co"
+    },
+    {
+      "entity": "Comoros",
+      "iso": "KM",
+      "calling_code": "+269",
+      "driving_side": "right",
+      "tld": ".km"
+    },
+    {
+      "entity": "Cook Islands",
+      "iso": "CK",
+      "calling_code": "+682",
+      "driving_side": "left",
+      "tld": ".ck"
+    },
+    {
+      "entity": "Costa Rica",
+      "iso": "CR",
+      "calling_code": "+506",
+      "driving_side": "right",
+      "tld": ".cr"
+    },
+    {
+      "entity": "Croatia",
+      "iso": "HR",
+      "calling_code": "+385",
+      "driving_side": "right",
+      "tld": ".hr"
+    },
+    {
+      "entity": "Cuba",
+      "iso": "CU",
+      "calling_code": "+53",
+      "driving_side": "right",
+      "tld": ".cu"
+    },
+    {
+      "entity": "Curaçao",
+      "iso": "CW",
+      "calling_code": "+5999",
+      "driving_side": "right",
+      "tld": ".cw"
+    },
+    {
+      "entity": "Cyprus",
+      "iso": "CY",
+      "calling_code": "+357",
+      "driving_side": "left",
+      "tld": ".cy"
+    },
+    {
+      "entity": "Czech Republic",
+      "iso": "CZ",
+      "calling_code": "+420",
+      "driving_side": "right",
+      "tld": ".cz"
+    },
+    {
+      "entity": "Democratic Republic of the Congo",
+      "iso": "CD",
+      "calling_code": "+243",
+      "driving_side": "right",
+      "tld": ".cd"
+    },
+    {
+      "entity": "Denmark",
+      "iso": "DK",
+      "calling_code": "+45",
+      "driving_side": "right",
+      "tld": ".dk"
+    },
+    {
+      "entity": "Djibouti",
+      "iso": "DJ",
+      "calling_code": "+253",
+      "driving_side": "right",
+      "tld": ".dj"
+    },
+    {
+      "entity": "Dominica",
+      "iso": "DM",
+      "calling_code": "+1767",
+      "driving_side": "left",
+      "tld": ".dm"
+    },
+    {
+      "entity": "Dominican Republic",
+      "iso": "DO",
+      "calling_code": "+1809",
+      "driving_side": "right",
+      "tld": ".do"
+    },
+    {
+      "entity": "Ecuador",
+      "iso": "EC",
+      "calling_code": "+593",
+      "driving_side": "right",
+      "tld": ".ec"
+    },
+    {
+      "entity": "Egypt",
+      "iso": "EG",
+      "calling_code": "+20",
+      "driving_side": "right",
+      "tld": ".eg"
+    },
+    {
+      "entity": "El Salvador",
+      "iso": "SV",
+      "calling_code": "+503",
+      "driving_side": "right",
+      "tld": ".sv"
+    },
+    {
+      "entity": "Equatorial Guinea",
+      "iso": "GQ",
+      "calling_code": "+240",
+      "driving_side": "right",
+      "tld": ".gq"
+    },
+    {
+      "entity": "Eritrea",
+      "iso": "ER",
+      "calling_code": "+291",
+      "driving_side": "right",
+      "tld": ".er"
+    },
+    {
+      "entity": "Estonia",
+      "iso": "EE",
+      "calling_code": "+372",
+      "driving_side": "right",
+      "tld": ".ee"
+    },
+    {
+      "entity": "Eswatini",
+      "iso": "SZ",
+      "calling_code": "+268",
+      "driving_side": "left",
+      "tld": ".sz"
+    },
+    {
+      "entity": "Ethiopia",
+      "iso": "ET",
+      "calling_code": "+251",
+      "driving_side": "right",
+      "tld": ".et"
+    },
+    {
+      "entity": "Federated States of Micronesia",
+      "iso": "FM",
+      "calling_code": "+691",
+      "driving_side": "right",
+      "tld": ".fm"
+    },
+    {
+      "entity": "Fiji",
+      "iso": "FJ",
+      "calling_code": "+679",
+      "driving_side": "left",
+      "tld": ".fj"
+    },
+    {
+      "entity": "Finland",
+      "iso": "FI",
+      "calling_code": "+358",
+      "driving_side": "right",
+      "tld": ".fi"
+    },
+    {
+      "entity": "France",
+      "iso": "FR",
+      "calling_code": "+33",
+      "driving_side": "right",
+      "tld": ".fr"
+    },
+    {
+      "entity": "Gabon",
+      "iso": "GA",
+      "calling_code": "+241",
+      "driving_side": "right",
+      "tld": ".ga"
+    },
+    {
+      "entity": "Georgia",
+      "iso": "GE",
+      "calling_code": "+995",
+      "driving_side": "right",
+      "tld": ".ge"
+    },
+    {
+      "entity": "Germany",
+      "iso": "DE",
+      "calling_code": "+49",
+      "driving_side": "right",
+      "tld": ".de"
+    },
+    {
+      "entity": "Ghana",
+      "iso": "GH",
+      "calling_code": "+233",
+      "driving_side": "right",
+      "tld": ".gh"
+    },
+    {
+      "entity": "Greece",
+      "iso": "GR",
+      "calling_code": "+30",
+      "driving_side": "right",
+      "tld": ".gr"
+    },
+    {
+      "entity": "Greenland",
+      "iso": "GL",
+      "calling_code": "+299",
+      "driving_side": "right",
+      "tld": ".gl"
+    },
+    {
+      "entity": "Grenada",
+      "iso": "GD",
+      "calling_code": "+1473",
+      "driving_side": "left",
+      "tld": ".gd"
+    },
+    {
+      "entity": "Guatemala",
+      "iso": "GT",
+      "calling_code": "+502",
+      "driving_side": "right",
+      "tld": ".gt"
+    },
+    {
+      "entity": "Guinea",
+      "iso": "GN",
+      "calling_code": "+224",
+      "driving_side": "right",
+      "tld": ".gn"
+    },
+    {
+      "entity": "Guinea-Bissau",
+      "iso": "GW",
+      "calling_code": "+245",
+      "driving_side": "right",
+      "tld": ".gw"
+    },
+    {
+      "entity": "Guyana",
+      "iso": "GY",
+      "calling_code": "+592",
+      "driving_side": "left",
+      "tld": ".gy"
+    },
+    {
+      "entity": "Haiti",
+      "iso": "HT",
+      "calling_code": "+509",
+      "driving_side": "right",
+      "tld": ".ht"
+    },
+    {
+      "entity": "Honduras",
+      "iso": "HN",
+      "calling_code": "+504",
+      "driving_side": "right",
+      "tld": ".hn"
+    },
+    {
+      "entity": "Hungary",
+      "iso": "HU",
+      "calling_code": "+36",
+      "driving_side": "right",
+      "tld": ".hu"
+    },
+    {
+      "entity": "Iceland",
+      "iso": "IS",
+      "calling_code": "+354",
+      "driving_side": "right",
+      "tld": ".is"
+    },
+    {
+      "entity": "India",
+      "iso": "IN",
+      "calling_code": "+91",
+      "driving_side": "left",
+      "tld": ".in"
+    },
+    {
+      "entity": "Indonesia",
+      "iso": "ID",
+      "calling_code": "+62",
+      "driving_side": "left",
+      "tld": ".id"
+    },
+    {
+      "entity": "Iran",
+      "iso": "IR",
+      "calling_code": "+98",
+      "driving_side": "right",
+      "tld": ".ir"
+    },
+    {
+      "entity": "Iraq",
+      "iso": "IQ",
+      "calling_code": "+964",
+      "driving_side": "right",
+      "tld": ".iq"
+    },
+    {
+      "entity": "Ireland",
+      "iso": "IE",
+      "calling_code": "+353",
+      "driving_side": "left",
+      "tld": ".ie"
+    },
+    {
+      "entity": "Israel",
+      "iso": "IL",
+      "calling_code": "+972",
+      "driving_side": "right",
+      "tld": ".il"
+    },
+    {
+      "entity": "Italy",
+      "iso": "IT",
+      "calling_code": "+39",
+      "driving_side": "right",
+      "tld": ".it"
+    },
+    {
+      "entity": "Ivory Coast",
+      "iso": "CI",
+      "calling_code": "+225",
+      "driving_side": "right",
+      "tld": ".ci"
+    },
+    {
+      "entity": "Jamaica",
+      "iso": "JM",
+      "calling_code": "+1876",
+      "driving_side": "left",
+      "tld": ".jm"
+    },
+    {
+      "entity": "Japan",
+      "iso": "JP",
+      "calling_code": "+81",
+      "driving_side": "left",
+      "tld": ".jp"
+    },
+    {
+      "entity": "Jordan",
+      "iso": "JO",
+      "calling_code": "+962",
+      "driving_side": "right",
+      "tld": ".jo"
+    },
+    {
+      "entity": "Kazakhstan",
+      "iso": "KZ",
+      "calling_code": "+7",
+      "driving_side": "right",
+      "tld": ".kz"
+    },
+    {
+      "entity": "Kenya",
+      "iso": "KE",
+      "calling_code": "+254",
+      "driving_side": "left",
+      "tld": ".ke"
+    },
+    {
+      "entity": "Kingdom of the Netherlands",
+      "iso": "NL",
+      "calling_code": "+31",
+      "driving_side": "right",
+      "tld": ".nl"
+    },
+    {
+      "entity": "Kiribati",
+      "iso": "KI",
+      "calling_code": "+686",
+      "driving_side": "left",
+      "tld": ".ki"
+    },
+    {
+      "entity": "Kuwait",
+      "iso": "KW",
+      "calling_code": "+965",
+      "driving_side": "right",
+      "tld": ".kw"
+    },
+    {
+      "entity": "Kyrgyzstan",
+      "iso": "KG",
+      "calling_code": "+996",
+      "driving_side": "right",
+      "tld": ".kg"
+    },
+    {
+      "entity": "Laos",
+      "iso": "LA",
+      "calling_code": "+856",
+      "driving_side": "right",
+      "tld": ".la"
+    },
+    {
+      "entity": "Latvia",
+      "iso": "LV",
+      "calling_code": "+371",
+      "driving_side": "right",
+      "tld": ".lv"
+    },
+    {
+      "entity": "Lebanon",
+      "iso": "LB",
+      "calling_code": "+961",
+      "driving_side": "right",
+      "tld": ".lb"
+    },
+    {
+      "entity": "Lesotho",
+      "iso": "LS",
+      "calling_code": "+266",
+      "driving_side": "left",
+      "tld": ".ls"
+    },
+    {
+      "entity": "Liberia",
+      "iso": "LR",
+      "calling_code": "+231",
+      "driving_side": "right",
+      "tld": ".lr"
+    },
+    {
+      "entity": "Libya",
+      "iso": "LY",
+      "calling_code": "+218",
+      "driving_side": "right",
+      "tld": ".ly"
+    },
+    {
+      "entity": "Liechtenstein",
+      "iso": "LI",
+      "calling_code": "+423",
+      "driving_side": "right",
+      "tld": ".li"
+    },
+    {
+      "entity": "Lithuania",
+      "iso": "LT",
+      "calling_code": "+370",
+      "driving_side": "right",
+      "tld": ".lt"
+    },
+    {
+      "entity": "Luxembourg",
+      "iso": "LU",
+      "calling_code": "+352",
+      "driving_side": "right",
+      "tld": ".lu"
+    },
+    {
+      "entity": "Madagascar",
+      "iso": "MG",
+      "calling_code": "+261",
+      "driving_side": "right",
+      "tld": ".mg"
+    },
+    {
+      "entity": "Malawi",
+      "iso": "MW",
+      "calling_code": "+265",
+      "driving_side": "left",
+      "tld": ".mw"
+    },
+    {
+      "entity": "Malaysia",
+      "iso": "MY",
+      "calling_code": "+60",
+      "driving_side": "left",
+      "tld": ".my"
+    },
+    {
+      "entity": "Maldives",
+      "iso": "MV",
+      "calling_code": "+960",
+      "driving_side": "left",
+      "tld": ".mv"
+    },
+    {
+      "entity": "Mali",
+      "iso": "ML",
+      "calling_code": "+223",
+      "driving_side": "right",
+      "tld": ".ml"
+    },
+    {
+      "entity": "Malta",
+      "iso": "MT",
+      "calling_code": "+356",
+      "driving_side": "left",
+      "tld": ".mt"
+    },
+    {
+      "entity": "Marshall Islands",
+      "iso": "MH",
+      "calling_code": "+692",
+      "driving_side": "right",
+      "tld": ".mh"
+    },
+    {
+      "entity": "Mauritania",
+      "iso": "MR",
+      "calling_code": "+222",
+      "driving_side": "right",
+      "tld": ".mr"
+    },
+    {
+      "entity": "Mauritius",
+      "iso": "MU",
+      "calling_code": "+230",
+      "driving_side": "left",
+      "tld": ".mu"
+    },
+    {
+      "entity": "Mexico",
+      "iso": "MX",
+      "calling_code": "+52",
+      "driving_side": "right",
+      "tld": ".mx"
+    },
+    {
+      "entity": "Moldova",
+      "iso": "MD",
+      "calling_code": "+373",
+      "driving_side": "right",
+      "tld": ".md"
+    },
+    {
+      "entity": "Monaco",
+      "iso": "MC",
+      "calling_code": "+377",
+      "driving_side": "right",
+      "tld": ".mc"
+    },
+    {
+      "entity": "Mongolia",
+      "iso": "MN",
+      "calling_code": "+976",
+      "driving_side": "right",
+      "tld": ".mn"
+    },
+    {
+      "entity": "Montenegro",
+      "iso": "ME",
+      "calling_code": "+382",
+      "driving_side": "right",
+      "tld": ".me"
+    },
+    {
+      "entity": "Morocco",
+      "iso": "MA",
+      "calling_code": "+212",
+      "driving_side": "right",
+      "tld": ".ma"
+    },
+    {
+      "entity": "Mozambique",
+      "iso": "MZ",
+      "calling_code": "+258",
+      "driving_side": "left",
+      "tld": ".mz"
+    },
+    {
+      "entity": "Myanmar",
+      "iso": "MM",
+      "calling_code": "+95",
+      "driving_side": "right",
+      "tld": ".mm"
+    },
+    {
+      "entity": "Namibia",
+      "iso": "NA",
+      "calling_code": "+264",
+      "driving_side": "left",
+      "tld": ".na"
+    },
+    {
+      "entity": "Nauru",
+      "iso": "NR",
+      "calling_code": "+674",
+      "driving_side": "left",
+      "tld": ".nr"
+    },
+    {
+      "entity": "Nepal",
+      "iso": "NP",
+      "calling_code": "+977",
+      "driving_side": "left",
+      "tld": ".np"
+    },
+    {
+      "entity": "New Zealand",
+      "iso": "NZ",
+      "calling_code": "+64",
+      "driving_side": "left",
+      "tld": ".nz"
+    },
+    {
+      "entity": "Nicaragua",
+      "iso": "NI",
+      "calling_code": "+505",
+      "driving_side": "right",
+      "tld": ".ni"
+    },
+    {
+      "entity": "Niger",
+      "iso": "NE",
+      "calling_code": "+227",
+      "driving_side": "right",
+      "tld": ".ne"
+    },
+    {
+      "entity": "Nigeria",
+      "iso": "NG",
+      "calling_code": "+234",
+      "driving_side": "right",
+      "tld": ".ng"
+    },
+    {
+      "entity": "Niue",
+      "iso": "NU",
+      "calling_code": "+683",
+      "driving_side": "left",
+      "tld": ".nu"
+    },
+    {
+      "entity": "North Korea",
+      "iso": "KP",
+      "calling_code": "+850",
+      "driving_side": "right",
+      "tld": ".kp"
+    },
+    {
+      "entity": "North Macedonia",
+      "iso": "MK",
+      "calling_code": "+389",
+      "driving_side": "right",
+      "tld": ".mk"
+    },
+    {
+      "entity": "Norway",
+      "iso": "NO",
+      "calling_code": "+47",
+      "driving_side": "right",
+      "tld": ".no"
+    },
+    {
+      "entity": "Oman",
+      "iso": "OM",
+      "calling_code": "+968",
+      "driving_side": "right",
+      "tld": ".om"
+    },
+    {
+      "entity": "Pakistan",
+      "iso": "PK",
+      "calling_code": "+92",
+      "driving_side": "left",
+      "tld": ".pk"
+    },
+    {
+      "entity": "Palau",
+      "iso": "PW",
+      "calling_code": "+680",
+      "driving_side": "right",
+      "tld": ".pw"
+    },
+    {
+      "entity": "Palestine",
+      "iso": "PS",
+      "calling_code": "+970",
+      "driving_side": "right",
+      "tld": ".ps"
+    },
+    {
+      "entity": "Panama",
+      "iso": "PA",
+      "calling_code": "+507",
+      "driving_side": "right",
+      "tld": ".pa"
+    },
+    {
+      "entity": "Papua New Guinea",
+      "iso": "PG",
+      "calling_code": "+675",
+      "driving_side": "left",
+      "tld": ".pg"
+    },
+    {
+      "entity": "Paraguay",
+      "iso": "PY",
+      "calling_code": "+595",
+      "driving_side": "right",
+      "tld": ".py"
+    },
+    {
+      "entity": "People's Republic of China",
+      "iso": "CN",
+      "calling_code": "+86",
+      "driving_side": "right",
+      "tld": ".cn"
+    },
+    {
+      "entity": "Peru",
+      "iso": "PE",
+      "calling_code": "+51",
+      "driving_side": "right",
+      "tld": ".pe"
+    },
+    {
+      "entity": "Philippines",
+      "iso": "PH",
+      "calling_code": "+63",
+      "driving_side": "right",
+      "tld": ".ph"
+    },
+    {
+      "entity": "Poland",
+      "iso": "PL",
+      "calling_code": "+48",
+      "driving_side": "right",
+      "tld": ".pl"
+    },
+    {
+      "entity": "Portugal",
+      "iso": "PT",
+      "calling_code": "+351",
+      "driving_side": "right",
+      "tld": ".pt"
+    },
+    {
+      "entity": "Qatar",
+      "iso": "QA",
+      "calling_code": "+974",
+      "driving_side": "right",
+      "tld": ".qa"
+    },
+    {
+      "entity": "Republic of the Congo",
+      "iso": "CG",
+      "calling_code": "+242",
+      "driving_side": "right",
+      "tld": ".cg"
+    },
+    {
+      "entity": "Romania",
+      "iso": "RO",
+      "calling_code": "+40",
+      "driving_side": "right",
+      "tld": ".ro"
+    },
+    {
+      "entity": "Russia",
+      "iso": "RU",
+      "calling_code": "+7",
+      "driving_side": "right",
+      "tld": ".ru"
+    },
+    {
+      "entity": "Rwanda",
+      "iso": "RW",
+      "calling_code": "+250",
+      "driving_side": "right",
+      "tld": ".rw"
+    },
+    {
+      "entity": "Saint Kitts and Nevis",
+      "iso": "KN",
+      "calling_code": "+1869",
+      "driving_side": "left",
+      "tld": ".kn"
+    },
+    {
+      "entity": "Saint Lucia",
+      "iso": "LC",
+      "calling_code": "+1758",
+      "driving_side": "left",
+      "tld": ".lc"
+    },
+    {
+      "entity": "Saint Vincent and the Grenadines",
+      "iso": "VC",
+      "calling_code": "+1784",
+      "driving_side": "left",
+      "tld": ".vc"
+    },
+    {
+      "entity": "Samoa",
+      "iso": "WS",
+      "calling_code": "+685",
+      "driving_side": "left",
+      "tld": ".ws"
+    },
+    {
+      "entity": "San Marino",
+      "iso": "SM",
+      "calling_code": "+378",
+      "driving_side": "right",
+      "tld": ".sm"
+    },
+    {
+      "entity": "Saudi Arabia",
+      "iso": "SA",
+      "calling_code": "+966",
+      "driving_side": "right",
+      "tld": ".sa"
+    },
+    {
+      "entity": "Senegal",
+      "iso": "SN",
+      "calling_code": "+221",
+      "driving_side": "right",
+      "tld": ".sn"
+    },
+    {
+      "entity": "Serbia",
+      "iso": "RS",
+      "calling_code": "+381",
+      "driving_side": "right",
+      "tld": ".rs"
+    },
+    {
+      "entity": "Seychelles",
+      "iso": "SC",
+      "calling_code": "+248",
+      "driving_side": "left",
+      "tld": ".sc"
+    },
+    {
+      "entity": "Sierra Leone",
+      "iso": "SL",
+      "calling_code": "+232",
+      "driving_side": "right",
+      "tld": ".sl"
+    },
+    {
+      "entity": "Singapore",
+      "iso": "SG",
+      "calling_code": "+65",
+      "driving_side": "left",
+      "tld": ".sg"
+    },
+    {
+      "entity": "Sint Maarten",
+      "iso": "SX",
+      "calling_code": "+1721",
+      "driving_side": "right",
+      "tld": ".sx"
+    },
+    {
+      "entity": "Slovakia",
+      "iso": "SK",
+      "calling_code": "+421",
+      "driving_side": "right",
+      "tld": ".sk"
+    },
+    {
+      "entity": "Slovenia",
+      "iso": "SI",
+      "calling_code": "+386",
+      "driving_side": "right",
+      "tld": ".si"
+    },
+    {
+      "entity": "Solomon Islands",
+      "iso": "SB",
+      "calling_code": "+677",
+      "driving_side": "left",
+      "tld": ".sb"
+    },
+    {
+      "entity": "Somalia",
+      "iso": "SO",
+      "calling_code": "+252",
+      "driving_side": "right",
+      "tld": ".so"
+    },
+    {
+      "entity": "South Africa",
+      "iso": "ZA",
+      "calling_code": "+27",
+      "driving_side": "left",
+      "tld": ".za"
+    },
+    {
+      "entity": "South Korea",
+      "iso": "KR",
+      "calling_code": "+82",
+      "driving_side": "right",
+      "tld": ".kr"
+    },
+    {
+      "entity": "South Sudan",
+      "iso": "SS",
+      "calling_code": "+211",
+      "driving_side": "right",
+      "tld": ".ss"
+    },
+    {
+      "entity": "Spain",
+      "iso": "ES",
+      "calling_code": "+34",
+      "driving_side": "right",
+      "tld": ".es"
+    },
+    {
+      "entity": "Sri Lanka",
+      "iso": "LK",
+      "calling_code": "+94",
+      "driving_side": "left",
+      "tld": ".lk"
+    },
+    {
+      "entity": "Sudan",
+      "iso": "SD",
+      "calling_code": "+249",
+      "driving_side": "right",
+      "tld": ".sd"
+    },
+    {
+      "entity": "Suriname",
+      "iso": "SR",
+      "calling_code": "+597",
+      "driving_side": "left",
+      "tld": ".sr"
+    },
+    {
+      "entity": "Sweden",
+      "iso": "SE",
+      "calling_code": "+46",
+      "driving_side": "right",
+      "tld": ".se"
+    },
+    {
+      "entity": "Switzerland",
+      "iso": "CH",
+      "calling_code": "+41",
+      "driving_side": "right",
+      "tld": ".ch"
+    },
+    {
+      "entity": "Syria",
+      "iso": "SY",
+      "calling_code": "+963",
+      "driving_side": "right",
+      "tld": ".sy"
+    },
+    {
+      "entity": "São Tomé and Príncipe",
+      "iso": "ST",
+      "calling_code": "+239",
+      "driving_side": "right",
+      "tld": ".st"
+    },
+    {
+      "entity": "Tajikistan",
+      "iso": "TJ",
+      "calling_code": "+992",
+      "driving_side": "right",
+      "tld": ".tj"
+    },
+    {
+      "entity": "Tanzania",
+      "iso": "TZ",
+      "calling_code": "+255",
+      "driving_side": "left",
+      "tld": ".tz"
+    },
+    {
+      "entity": "Thailand",
+      "iso": "TH",
+      "calling_code": "+66",
+      "driving_side": "left",
+      "tld": ".th"
+    },
+    {
+      "entity": "The Bahamas",
+      "iso": "BS",
+      "calling_code": "+1242",
+      "driving_side": "left",
+      "tld": ".bs"
+    },
+    {
+      "entity": "The Gambia",
+      "iso": "GM",
+      "calling_code": "+220",
+      "driving_side": "right",
+      "tld": ".gm"
+    },
+    {
+      "entity": "Timor-Leste",
+      "iso": "TL",
+      "calling_code": "+670",
+      "driving_side": "left",
+      "tld": ".tl"
+    },
+    {
+      "entity": "Togo",
+      "iso": "TG",
+      "calling_code": "+228",
+      "driving_side": "right",
+      "tld": ".tg"
+    },
+    {
+      "entity": "Tonga",
+      "iso": "TO",
+      "calling_code": "+676",
+      "driving_side": "left",
+      "tld": ".to"
+    },
+    {
+      "entity": "Trinidad and Tobago",
+      "iso": "TT",
+      "calling_code": "+1868",
+      "driving_side": "left",
+      "tld": ".tt"
+    },
+    {
+      "entity": "Tunisia",
+      "iso": "TN",
+      "calling_code": "+216",
+      "driving_side": "right",
+      "tld": ".tn"
+    },
+    {
+      "entity": "Turkey",
+      "iso": "TR",
+      "calling_code": "+36",
+      "driving_side": "right",
+      "tld": ".tr"
+    },
+    {
+      "entity": "Turkmenistan",
+      "iso": "TM",
+      "calling_code": "+993",
+      "driving_side": "right",
+      "tld": ".tm"
+    },
+    {
+      "entity": "Tuvalu",
+      "iso": "TV",
+      "calling_code": "+688",
+      "driving_side": "left",
+      "tld": ".tv"
+    },
+    {
+      "entity": "Uganda",
+      "iso": "UG",
+      "calling_code": "+256",
+      "driving_side": "left",
+      "tld": ".ug"
+    },
+    {
+      "entity": "Ukraine",
+      "iso": "UA",
+      "calling_code": "+380",
+      "driving_side": "right",
+      "tld": ".ua"
+    },
+    {
+      "entity": "United Arab Emirates",
+      "iso": "AE",
+      "calling_code": "+971",
+      "driving_side": "right",
+      "tld": ".ae"
+    },
+    {
+      "entity": "United Kingdom",
+      "iso": "GB",
+      "calling_code": "+44",
+      "driving_side": "left",
+      "tld": ".uk"
+    },
+    {
+      "entity": "United States",
+      "iso": "US",
+      "calling_code": "+1",
+      "driving_side": "right",
+      "tld": ".us"
+    },
+    {
+      "entity": "Uruguay",
+      "iso": "UY",
+      "calling_code": "+598",
+      "driving_side": "right",
+      "tld": ".uy"
+    },
+    {
+      "entity": "Uzbekistan",
+      "iso": "UZ",
+      "calling_code": "+998",
+      "driving_side": "right",
+      "tld": ".uz"
+    },
+    {
+      "entity": "Vanuatu",
+      "iso": "VU",
+      "calling_code": "+678",
+      "driving_side": "right",
+      "tld": ".vu"
+    },
+    {
+      "entity": "Vatican City",
+      "iso": "VA",
+      "calling_code": "+379",
+      "driving_side": "right",
+      "tld": ".va"
+    },
+    {
+      "entity": "Venezuela",
+      "iso": "VE",
+      "calling_code": "+58",
+      "driving_side": "right",
+      "tld": ".ve"
+    },
+    {
+      "entity": "Vietnam",
+      "iso": "VN",
+      "calling_code": "+84",
+      "driving_side": "right",
+      "tld": ".vn"
+    },
+    {
+      "entity": "Yemen",
+      "iso": "YE",
+      "calling_code": "+967",
+      "driving_side": "right",
+      "tld": ".ye"
+    },
+    {
+      "entity": "Zambia",
+      "iso": "ZM",
+      "calling_code": "+260",
+      "driving_side": "left",
+      "tld": ".zm"
+    }
+  ]
+}

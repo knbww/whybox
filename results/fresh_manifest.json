@@ -1,0 +1,325 @@
+{
+ "domain": "skirmish",
+ "stream": 404,
+ "seeds": [
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51
+ ],
+ "strengths": [
+  0.0,
+  1.0,
+  2.0
+ ],
+ "recipe": {
+  "n_focal": 160,
+  "n_probe": 512,
+  "n_train": 6000,
+  "epochs": 60
+ },
+ "file": {
+  "path": "results/cache/fresh/held.pt",
+  "sha256": "6b4cf2e39aef4cf5f965a0f27f70cd48fe08340ca213056e508301ae2ee4a3e5",
+  "n_models": 36
+ },
+ "targets": [
+  {
+   "initialisation": 40,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 40,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 40,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 41,
+   "strength": 0.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 41,
+   "strength": 1.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 41,
+   "strength": 2.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 42,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 42,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 42,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 43,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 43,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 43,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 44,
+   "strength": 0.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 44,
+   "strength": 1.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 44,
+   "strength": 2.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 45,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 45,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 45,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 46,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 46,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 46,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 47,
+   "strength": 0.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 47,
+   "strength": 1.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 47,
+   "strength": 2.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 48,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 48,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 48,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 49,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 49,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 49,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ]
+  },
+  {
+   "initialisation": 50,
+   "strength": 0.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 50,
+   "strength": 1.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 50,
+   "strength": 2.0,
+   "widths": [
+    48
+   ]
+  },
+  {
+   "initialisation": 51,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 51,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ]
+  },
+  {
+   "initialisation": 51,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ]
+  }
+ ],
+ "scored_before_confirmatory_run": false
+}

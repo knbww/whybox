@@ -1,0 +1,850 @@
+{
+ "provenance": {
+  "commit": "6dc87bb72ed3deca663325c691753f2956e8dd26",
+  "dirty": true,
+  "role": "diagnostic, no protocol frozen before the run",
+  "source": "entail",
+  "external_model": "gpt2",
+  "template": "single",
+  "neutral": "fixed",
+  "external_params": 124439808,
+  "n_focal": 160,
+  "n_probe": 256,
+  "data_seed": 0,
+  "steps": 16,
+  "margin": 0.1,
+  "interpreter_seeds": [
+   0,
+   1,
+   2
+  ],
+  "streams": "unit and global zeroed in both arms",
+  "external_cells": [
+   "ALL",
+   "SINGLE_AGREE",
+   "SINGLE_DISAGREE",
+   "NONE",
+   "OVER"
+  ],
+  "grammar_label": "defined only where exactly one grammatical cause is present (external_lm.grammar_group)",
+  "held_out_note": "entail models 12-23 are 4 independent initialisations x 3 decoy strengths",
+  "torch": "2.13.0+cpu"
+ },
+ "rows": [
+  {
+   "arm": "snapshot",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "ALL",
+   "n_models": 12,
+   "accuracy": 0.7125498375407185,
+   "per_model": [
+    {
+     "accuracy": 0.7037037037037037
+    },
+    {
+     "accuracy": 0.7823691460055096
+    },
+    {
+     "accuracy": 0.7724358974358974
+    },
+    {
+     "accuracy": 0.7559055118110236
+    },
+    {
+     "accuracy": 0.6721311475409836
+    },
+    {
+     "accuracy": 0.7017543859649122
+    },
+    {
+     "accuracy": 0.6692913385826772
+    },
+    {
+     "accuracy": 0.6491228070175439
+    },
+    {
+     "accuracy": 0.6936936936936937
+    },
+    {
+     "accuracy": 0.7876344086021505
+    },
+    {
+     "accuracy": 0.6384180790960452
+    },
+    {
+     "accuracy": 0.7241379310344828
+    }
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "AGREE",
+   "n_models": 12,
+   "accuracy": 0.7452850498941895,
+   "per_model": [
+    {
+     "accuracy": 0.7137681159420289
+    },
+    {
+     "accuracy": 0.780952380952381
+    },
+    {
+     "accuracy": 0.7989417989417988
+    },
+    {
+     "accuracy": 0.7777777777777778
+    },
+    {
+     "accuracy": 0.6847826086956522
+    },
+    {
+     "accuracy": 0.7294685990338163
+    },
+    {
+     "accuracy": 0.7325581395348837
+    },
+    {
+     "accuracy": 0.76
+    },
+    {
+     "accuracy": 0.7047619047619047
+    },
+    {
+     "accuracy": 0.8045977011494253
+    },
+    {
+     "accuracy": 0.6272401433691756
+    },
+    {
+     "accuracy": 0.8285714285714286
+    }
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "accuracy": 0.6540350142425094,
+   "per_model": [
+    {
+     "accuracy": 0.6821705426356589
+    },
+    {
+     "accuracy": 0.7843137254901961
+    },
+    {
+     "accuracy": 0.7317073170731707
+    },
+    {
+     "accuracy": 0.717391304347826
+    },
+    {
+     "accuracy": 0.6333333333333333
+    },
+    {
+     "accuracy": 0.6592592592592592
+    },
+    {
+     "accuracy": 0.5365853658536586
+    },
+    {
+     "accuracy": 0.4358974358974359
+    },
+    {
+     "accuracy": 0.6747967479674796
+    },
+    {
+     "accuracy": 0.7477477477477477
+    },
+    {
+     "accuracy": 0.68
+    },
+    {
+     "accuracy": 0.5652173913043478
+    }
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 1,
+   "n_states": 140,
+   "accuracy": 0.4238095238095238,
+   "per_seed": [
+    0.42142857142857143,
+    0.42857142857142855,
+    0.42142857142857143
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 1,
+   "n_states": 71,
+   "accuracy": 0.5211267605633803,
+   "per_seed": [
+    0.5211267605633803,
+    0.5211267605633803,
+    0.5211267605633803
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 1,
+   "n_states": 0,
+   "accuracy": NaN,
+   "per_seed": [
+    NaN,
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 1,
+   "n_states": 19,
+   "accuracy": 0.6842105263157895,
+   "per_seed": [
+    0.6842105263157895,
+    0.6842105263157895,
+    0.6842105263157895
+   ]
+  },
+  {
+   "arm": "snapshot",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 1,
+   "n_states": 50,
+   "accuracy": 0.18666666666666668,
+   "per_seed": [
+    0.18,
+    0.2,
+    0.18
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "ALL",
+   "n_models": 12,
+   "accuracy": 0.8110026025380871,
+   "per_model": [
+    {
+     "accuracy": 0.8493827160493826
+    },
+    {
+     "accuracy": 0.837465564738292
+    },
+    {
+     "accuracy": 0.7916666666666667
+    },
+    {
+     "accuracy": 0.8057742782152231
+    },
+    {
+     "accuracy": 0.8142076502732241
+    },
+    {
+     "accuracy": 0.7660818713450293
+    },
+    {
+     "accuracy": 0.7349081364829397
+    },
+    {
+     "accuracy": 0.7865497076023391
+    },
+    {
+     "accuracy": 0.8048048048048049
+    },
+    {
+     "accuracy": 0.8709677419354839
+    },
+    {
+     "accuracy": 0.7937853107344632
+    },
+    {
+     "accuracy": 0.8764367816091954
+    }
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "AGREE",
+   "n_models": 12,
+   "accuracy": 0.8161334446729286,
+   "per_model": [
+    {
+     "accuracy": 0.8695652173913043
+    },
+    {
+     "accuracy": 0.8333333333333334
+    },
+    {
+     "accuracy": 0.7407407407407407
+    },
+    {
+     "accuracy": 0.794238683127572
+    },
+    {
+     "accuracy": 0.8478260869565217
+    },
+    {
+     "accuracy": 0.8164251207729469
+    },
+    {
+     "accuracy": 0.748062015503876
+    },
+    {
+     "accuracy": 0.8266666666666667
+    },
+    {
+     "accuracy": 0.7523809523809524
+    },
+    {
+     "accuracy": 0.888888888888889
+    },
+    {
+     "accuracy": 0.7992831541218639
+    },
+    {
+     "accuracy": 0.8761904761904761
+    }
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "accuracy": 0.7946121619187685,
+   "per_model": [
+    {
+     "accuracy": 0.8062015503875969
+    },
+    {
+     "accuracy": 0.8431372549019608
+    },
+    {
+     "accuracy": 0.8699186991869919
+    },
+    {
+     "accuracy": 0.826086956521739
+    },
+    {
+     "accuracy": 0.711111111111111
+    },
+    {
+     "accuracy": 0.6888888888888889
+    },
+    {
+     "accuracy": 0.7073170731707317
+    },
+    {
+     "accuracy": 0.7094017094017094
+    },
+    {
+     "accuracy": 0.8943089430894309
+    },
+    {
+     "accuracy": 0.8288288288288288
+    },
+    {
+     "accuracy": 0.7733333333333333
+    },
+    {
+     "accuracy": 0.8768115942028986
+    }
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 1,
+   "n_states": 140,
+   "accuracy": 0.6857142857142856,
+   "per_seed": [
+    0.6857142857142857,
+    0.6857142857142857,
+    0.6857142857142857
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 1,
+   "n_states": 71,
+   "accuracy": 1.0,
+   "per_seed": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 1,
+   "n_states": 0,
+   "accuracy": NaN,
+   "per_seed": [
+    NaN,
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 1,
+   "n_states": 19,
+   "accuracy": 1.0,
+   "per_seed": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "arm": "ig",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 1,
+   "n_states": 50,
+   "accuracy": 0.12,
+   "per_seed": [
+    0.12,
+    0.12,
+    0.12
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "ALL",
+   "n_models": 12,
+   "accuracy": 0.8026627463901939,
+   "per_model": [
+    {
+     "accuracy": 0.8518518518518519
+    },
+    {
+     "accuracy": 0.8044077134986227
+    },
+    {
+     "accuracy": 0.7884615384615384
+    },
+    {
+     "accuracy": 0.8110236220472441
+    },
+    {
+     "accuracy": 0.8005464480874317
+    },
+    {
+     "accuracy": 0.7309941520467838
+    },
+    {
+     "accuracy": 0.7480314960629921
+    },
+    {
+     "accuracy": 0.7660818713450294
+    },
+    {
+     "accuracy": 0.8228228228228228
+    },
+    {
+     "accuracy": 0.8575268817204301
+    },
+    {
+     "accuracy": 0.788135593220339
+    },
+    {
+     "accuracy": 0.8620689655172413
+    }
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "AGREE",
+   "n_models": 12,
+   "accuracy": 0.8167554786045236,
+   "per_model": [
+    {
+     "accuracy": 0.8840579710144929
+    },
+    {
+     "accuracy": 0.8142857142857143
+    },
+    {
+     "accuracy": 0.7354497354497354
+    },
+    {
+     "accuracy": 0.8230452674897119
+    },
+    {
+     "accuracy": 0.8514492753623187
+    },
+    {
+     "accuracy": 0.8019323671497584
+    },
+    {
+     "accuracy": 0.7519379844961239
+    },
+    {
+     "accuracy": 0.8222222222222222
+    },
+    {
+     "accuracy": 0.7904761904761904
+    },
+    {
+     "accuracy": 0.8697318007662834
+    },
+    {
+     "accuracy": 0.8136200716845878
+    },
+    {
+     "accuracy": 0.8428571428571429
+    }
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "entail (12 \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445)",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "accuracy": 0.7658090162436538,
+   "per_model": [
+    {
+     "accuracy": 0.7829457364341085
+    },
+    {
+     "accuracy": 0.7908496732026142
+    },
+    {
+     "accuracy": 0.8699186991869918
+    },
+    {
+     "accuracy": 0.789855072463768
+    },
+    {
+     "accuracy": 0.6444444444444444
+    },
+    {
+     "accuracy": 0.6222222222222221
+    },
+    {
+     "accuracy": 0.7398373983739837
+    },
+    {
+     "accuracy": 0.6581196581196581
+    },
+    {
+     "accuracy": 0.8780487804878049
+    },
+    {
+     "accuracy": 0.8288288288288289
+    },
+    {
+     "accuracy": 0.6933333333333332
+    },
+    {
+     "accuracy": 0.8913043478260871
+    }
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 1,
+   "n_states": 140,
+   "accuracy": 0.6976190476190477,
+   "per_seed": [
+    0.6928571428571428,
+    0.6928571428571428,
+    0.7071428571428572
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 1,
+   "n_states": 71,
+   "accuracy": 1.0,
+   "per_seed": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 1,
+   "n_states": 0,
+   "accuracy": NaN,
+   "per_seed": [
+    NaN,
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 1,
+   "n_states": 19,
+   "accuracy": 1.0,
+   "per_seed": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "arm": "multi",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 1,
+   "n_states": 50,
+   "accuracy": 0.15333333333333335,
+   "per_seed": [
+    0.14,
+    0.14,
+    0.18
+   ]
+  },
+  {
+   "arm": "random",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 0,
+   "n_states": 140,
+   "accuracy": 0.25
+  },
+  {
+   "arm": "random",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 0,
+   "n_states": 71,
+   "accuracy": 0.25
+  },
+  {
+   "arm": "random",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 0,
+   "n_states": 0,
+   "accuracy": 0.25
+  },
+  {
+   "arm": "random",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 0,
+   "n_states": 19,
+   "accuracy": 0.25
+  },
+  {
+   "arm": "random",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 0,
+   "n_states": 50,
+   "accuracy": 0.25
+  },
+  {
+   "arm": "live_random",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 0,
+   "n_states": 140,
+   "accuracy": 0.4482142857142858
+  },
+  {
+   "arm": "live_random",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 0,
+   "n_states": 71,
+   "accuracy": 0.45539906103286376
+  },
+  {
+   "arm": "live_random",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 0,
+   "n_states": 0,
+   "accuracy": NaN
+  },
+  {
+   "arm": "live_random",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 0,
+   "n_states": 19,
+   "accuracy": 0.8421052631578947
+  },
+  {
+   "arm": "live_random",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 0,
+   "n_states": 50,
+   "accuracy": 0.28833333333333333
+  },
+  {
+   "arm": "ig_pointer",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 0,
+   "n_states": 140,
+   "accuracy": 0.6857142857142857
+  },
+  {
+   "arm": "ig_pointer",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 0,
+   "n_states": 71,
+   "accuracy": 1.0
+  },
+  {
+   "arm": "ig_pointer",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 0,
+   "n_states": 0,
+   "accuracy": NaN
+  },
+  {
+   "arm": "ig_pointer",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 0,
+   "n_states": 19,
+   "accuracy": 1.0
+  },
+  {
+   "arm": "ig_pointer",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 0,
+   "n_states": 50,
+   "accuracy": 0.12
+  },
+  {
+   "arm": "grammar_oracle",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 0,
+   "n_states": 140,
+   "accuracy": NaN
+  },
+  {
+   "arm": "grammar_oracle",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 0,
+   "n_states": 71,
+   "accuracy": 1.0
+  },
+  {
+   "arm": "grammar_oracle",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 0,
+   "n_states": 0,
+   "accuracy": NaN
+  },
+  {
+   "arm": "grammar_oracle",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 0,
+   "n_states": 19,
+   "accuracy": NaN
+  },
+  {
+   "arm": "grammar_oracle",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 0,
+   "n_states": 50,
+   "accuracy": NaN
+  },
+  {
+   "arm": "best_constant_envelope",
+   "target": "gpt2",
+   "cell": "ALL",
+   "n_models": 0,
+   "n_states": 140,
+   "accuracy": 0.3357142857142857
+  },
+  {
+   "arm": "best_constant_envelope",
+   "target": "gpt2",
+   "cell": "SINGLE_AGREE",
+   "n_models": 0,
+   "n_states": 71,
+   "accuracy": 0.5352112676056338
+  },
+  {
+   "arm": "best_constant_envelope",
+   "target": "gpt2",
+   "cell": "SINGLE_DISAGREE",
+   "n_models": 0,
+   "n_states": 0,
+   "accuracy": NaN
+  },
+  {
+   "arm": "best_constant_envelope",
+   "target": "gpt2",
+   "cell": "NONE",
+   "n_models": 0,
+   "n_states": 19,
+   "accuracy": 0.5263157894736842
+  },
+  {
+   "arm": "best_constant_envelope",
+   "target": "gpt2",
+   "cell": "OVER",
+   "n_models": 0,
+   "n_states": 50,
+   "accuracy": 0.74
+  }
+ ],
+ "comparisons": [
+  {
+   "metric": "accuracy",
+   "method": "ig",
+   "reference": "snapshot",
+   "cell": "ALL",
+   "target": "entail",
+   "n_models": 12,
+   "delta": 0.0984527649973684,
+   "a": 0.8110026025380871,
+   "b": 0.7125498375407185,
+   "p": 0.00048828125
+  }
+ ],
+ "wall_seconds": 241.5321283340454
+}

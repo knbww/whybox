@@ -1,0 +1,43 @@
+# The explanation experiment.
+#
+# Reuses the cached target populations from configs/llm_transfer.yaml, so no
+# target model is retrained; only interpreters are fitted.  The question is no
+# longer "which units matter" but "which named cause is in play, carried by
+# which units, worth how much" -- with the named counterfactual executed on B
+# and scored against what actually moved it.
+run_name: explanation
+cells:
+  - {domain: skirmish,  family: mlp}
+  - {domain: skirmish,  family: tab_transformer}
+  - {domain: clinic,    family: mlp}
+  - {domain: clinic,    family: tab_transformer}
+  - {domain: seqworld,  family: transformer}
+  - {domain: agreement, family: lm}
+source_cells: [skirmish/mlp]
+extra_source_arms:
+  - {name: A_multiarch, cells: [skirmish/mlp, skirmish/tab_transformer]}
+  - {name: A_no_locus,  cells: [skirmish/mlp, skirmish/tab_transformer],
+     overrides: {drop_locus: true}}
+ceiling_cells: [agreement/lm, seqworld/transformer, clinic/mlp]
+
+seeds: [0, 1, 2, 3]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 4
+feature_ablations: false
+explanation_eval: true
+data_seed: 0
+
+interpreter:
+  epochs: 25
+  lr: 0.001
+  batch_size: 64
+  d_model: 96
+  n_layers: 3
+  n_heads: 4
+  dropout: 0.1
+  name_balance_power: 0.5
+  seed: 0

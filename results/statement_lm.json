@@ -1,0 +1,1905 @@
+{
+ "provenance": {
+  "commit": "c66d2312f86f37bc445b77ff8f7197a0ee774c5d",
+  "dirty": false,
+  "prereg": "docs/PREREG_STATEMENT.md",
+  "domain": "entail/lm",
+  "cache": "results/cache/entail-lm-b75d8fee9e.pt",
+  "margin": 0.1,
+  "cuts": [
+   0.75,
+   1.75
+  ],
+  "n_models": 24,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "torch": "2.13.0+cpu"
+ },
+ "rows": [
+  {
+   "method": "constant",
+   "metric": "cause",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.32592592592592595
+    },
+    {
+     "accuracy": 0.33884297520661155
+    },
+    {
+     "accuracy": 0.38461538461538464
+    },
+    {
+     "accuracy": 0.2755905511811024
+    },
+    {
+     "accuracy": 0.27049180327868855
+    },
+    {
+     "accuracy": 0.38596491228070173
+    },
+    {
+     "accuracy": 0.2204724409448819
+    },
+    {
+     "accuracy": 0.2894736842105263
+    },
+    {
+     "accuracy": 0.3783783783783784
+    },
+    {
+     "accuracy": 0.24193548387096775
+    },
+    {
+     "accuracy": 0.3474576271186441
+    },
+    {
+     "accuracy": 0.33620689655172414
+    }
+   ],
+   "accuracy": 0.3162796719636281
+  },
+  {
+   "method": "constant",
+   "metric": "cause",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.4883720930232558
+    },
+    {
+     "accuracy": 0.6274509803921569
+    },
+    {
+     "accuracy": 0.43902439024390244
+    },
+    {
+     "accuracy": 0.34782608695652173
+    },
+    {
+     "accuracy": 0.4666666666666667
+    },
+    {
+     "accuracy": 0.4222222222222222
+    },
+    {
+     "accuracy": 0.4634146341463415
+    },
+    {
+     "accuracy": 0.46153846153846156
+    },
+    {
+     "accuracy": 0.4634146341463415
+    },
+    {
+     "accuracy": 0.43243243243243246
+    },
+    {
+     "accuracy": 0.56
+    },
+    {
+     "accuracy": 0.2608695652173913
+    }
+   ],
+   "accuracy": 0.45276934724880785
+  },
+  {
+   "method": "constant",
+   "metric": "direction",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.34814814814814815
+    },
+    {
+     "accuracy": 0.33884297520661155
+    },
+    {
+     "accuracy": 0.3557692307692308
+    },
+    {
+     "accuracy": 0.2677165354330709
+    },
+    {
+     "accuracy": 0.21311475409836064
+    },
+    {
+     "accuracy": 0.30701754385964913
+    },
+    {
+     "accuracy": 0.18110236220472442
+    },
+    {
+     "accuracy": 0.24561403508771928
+    },
+    {
+     "accuracy": 0.27927927927927926
+    },
+    {
+     "accuracy": 0.20967741935483872
+    },
+    {
+     "accuracy": 0.3135593220338983
+    },
+    {
+     "accuracy": 0.2672413793103448
+    }
+   ],
+   "accuracy": 0.27725691539882297
+  },
+  {
+   "method": "constant",
+   "metric": "direction",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.4186046511627907
+    },
+    {
+     "accuracy": 0.5882352941176471
+    },
+    {
+     "accuracy": 0.2682926829268293
+    },
+    {
+     "accuracy": 0.32608695652173914
+    },
+    {
+     "accuracy": 0.26666666666666666
+    },
+    {
+     "accuracy": 0.26666666666666666
+    },
+    {
+     "accuracy": 0.34146341463414637
+    },
+    {
+     "accuracy": 0.23076923076923078
+    },
+    {
+     "accuracy": 0.24390243902439024
+    },
+    {
+     "accuracy": 0.2972972972972973
+    },
+    {
+     "accuracy": 0.48
+    },
+    {
+     "accuracy": 0.21739130434782608
+    }
+   ],
+   "accuracy": 0.3287813836779359
+  },
+  {
+   "method": "constant",
+   "metric": "magnitude",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7777777777777778
+    },
+    {
+     "accuracy": 0.9173553719008265
+    },
+    {
+     "accuracy": 0.9711538461538461
+    },
+    {
+     "accuracy": 0.8346456692913385
+    },
+    {
+     "accuracy": 0.8360655737704918
+    },
+    {
+     "accuracy": 0.8859649122807017
+    },
+    {
+     "accuracy": 0.8661417322834646
+    },
+    {
+     "accuracy": 0.8596491228070176
+    },
+    {
+     "accuracy": 0.8648648648648649
+    },
+    {
+     "accuracy": 0.8629032258064516
+    },
+    {
+     "accuracy": 0.8559322033898306
+    },
+    {
+     "accuracy": 0.9482758620689655
+    }
+   ],
+   "accuracy": 0.8733941801996316
+  },
+  {
+   "method": "constant",
+   "metric": "magnitude",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7906976744186046
+    },
+    {
+     "accuracy": 0.9019607843137255
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.9347826086956522
+    },
+    {
+     "accuracy": 0.8666666666666667
+    },
+    {
+     "accuracy": 0.9555555555555556
+    },
+    {
+     "accuracy": 0.7804878048780488
+    },
+    {
+     "accuracy": 0.9230769230769231
+    },
+    {
+     "accuracy": 0.9512195121951219
+    },
+    {
+     "accuracy": 0.8648648648648649
+    },
+    {
+     "accuracy": 0.84
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 0.9007760328887636
+  },
+  {
+   "method": "constant",
+   "metric": "whole",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.06666666666666667
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.047244094488188976
+    },
+    {
+     "accuracy": 0.04918032786885246
+    },
+    {
+     "accuracy": 0.15789473684210525
+    },
+    {
+     "accuracy": 0.07874015748031496
+    },
+    {
+     "accuracy": 0.05263157894736842
+    },
+    {
+     "accuracy": 0.13513513513513514
+    },
+    {
+     "accuracy": 0.04838709677419355
+    },
+    {
+     "accuracy": 0.17796610169491525
+    },
+    {
+     "accuracy": 0.25
+    }
+   ],
+   "accuracy": 0.12463867314299354
+  },
+  {
+   "method": "constant",
+   "metric": "whole",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.16279069767441862
+    },
+    {
+     "accuracy": 0.37254901960784315
+    },
+    {
+     "accuracy": 0.17073170731707318
+    },
+    {
+     "accuracy": 0.10869565217391304
+    },
+    {
+     "accuracy": 0.13333333333333333
+    },
+    {
+     "accuracy": 0.13333333333333333
+    },
+    {
+     "accuracy": 0.17073170731707318
+    },
+    {
+     "accuracy": 0.10256410256410256
+    },
+    {
+     "accuracy": 0.12195121951219512
+    },
+    {
+     "accuracy": 0.13513513513513514
+    },
+    {
+     "accuracy": 0.28
+    },
+    {
+     "accuracy": 0.17391304347826086
+    }
+   ],
+   "accuracy": 0.17214407928722344
+  },
+  {
+   "method": "random",
+   "metric": "cause",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2074074074074074
+    },
+    {
+     "accuracy": 0.3140495867768595
+    },
+    {
+     "accuracy": 0.20192307692307693
+    },
+    {
+     "accuracy": 0.29133858267716534
+    },
+    {
+     "accuracy": 0.20491803278688525
+    },
+    {
+     "accuracy": 0.21929824561403508
+    },
+    {
+     "accuracy": 0.28346456692913385
+    },
+    {
+     "accuracy": 0.2982456140350877
+    },
+    {
+     "accuracy": 0.22522522522522523
+    },
+    {
+     "accuracy": 0.16129032258064516
+    },
+    {
+     "accuracy": 0.19491525423728814
+    },
+    {
+     "accuracy": 0.29310344827586204
+    }
+   ],
+   "accuracy": 0.24126494695572265
+  },
+  {
+   "method": "random",
+   "metric": "cause",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.23255813953488372
+    },
+    {
+     "accuracy": 0.3137254901960784
+    },
+    {
+     "accuracy": 0.2682926829268293
+    },
+    {
+     "accuracy": 0.32608695652173914
+    },
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.2222222222222222
+    },
+    {
+     "accuracy": 0.3170731707317073
+    },
+    {
+     "accuracy": 0.2564102564102564
+    },
+    {
+     "accuracy": 0.14634146341463414
+    },
+    {
+     "accuracy": 0.24324324324324326
+    },
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.30434782608695654
+    }
+   ],
+   "accuracy": 0.2525251209407126
+  },
+  {
+   "method": "random",
+   "metric": "direction",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5333333333333333
+    },
+    {
+     "accuracy": 0.4793388429752066
+    },
+    {
+     "accuracy": 0.4519230769230769
+    },
+    {
+     "accuracy": 0.44881889763779526
+    },
+    {
+     "accuracy": 0.5409836065573771
+    },
+    {
+     "accuracy": 0.5526315789473685
+    },
+    {
+     "accuracy": 0.4409448818897638
+    },
+    {
+     "accuracy": 0.49122807017543857
+    },
+    {
+     "accuracy": 0.5315315315315315
+    },
+    {
+     "accuracy": 0.4274193548387097
+    },
+    {
+     "accuracy": 0.6016949152542372
+    },
+    {
+     "accuracy": 0.5689655172413793
+    }
+   ],
+   "accuracy": 0.5057344672754348
+  },
+  {
+   "method": "random",
+   "metric": "direction",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5581395348837209
+    },
+    {
+     "accuracy": 0.43137254901960786
+    },
+    {
+     "accuracy": 0.4878048780487805
+    },
+    {
+     "accuracy": 0.4782608695652174
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.5777777777777777
+    },
+    {
+     "accuracy": 0.4878048780487805
+    },
+    {
+     "accuracy": 0.46153846153846156
+    },
+    {
+     "accuracy": 0.5121951219512195
+    },
+    {
+     "accuracy": 0.2972972972972973
+    },
+    {
+     "accuracy": 0.52
+    },
+    {
+     "accuracy": 0.5869565217391305
+    }
+   ],
+   "accuracy": 0.4999289908224996
+  },
+  {
+   "method": "random",
+   "metric": "magnitude",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.31851851851851853
+    },
+    {
+     "accuracy": 0.35537190082644626
+    },
+    {
+     "accuracy": 0.33653846153846156
+    },
+    {
+     "accuracy": 0.30708661417322836
+    },
+    {
+     "accuracy": 0.21311475409836064
+    },
+    {
+     "accuracy": 0.32456140350877194
+    },
+    {
+     "accuracy": 0.31496062992125984
+    },
+    {
+     "accuracy": 0.2894736842105263
+    },
+    {
+     "accuracy": 0.24324324324324326
+    },
+    {
+     "accuracy": 0.3064516129032258
+    },
+    {
+     "accuracy": 0.3305084745762712
+    },
+    {
+     "accuracy": 0.35344827586206895
+    }
+   ],
+   "accuracy": 0.3077731311150319
+  },
+  {
+   "method": "random",
+   "metric": "magnitude",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.32558139534883723
+    },
+    {
+     "accuracy": 0.37254901960784315
+    },
+    {
+     "accuracy": 0.34146341463414637
+    },
+    {
+     "accuracy": 0.2826086956521739
+    },
+    {
+     "accuracy": 0.3
+    },
+    {
+     "accuracy": 0.35555555555555557
+    },
+    {
+     "accuracy": 0.1951219512195122
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.14634146341463414
+    },
+    {
+     "accuracy": 0.24324324324324326
+    },
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.3695652173913043
+    }
+   ],
+   "accuracy": 0.2887802741167153
+  },
+  {
+   "method": "random",
+   "metric": "whole",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.037037037037037035
+    },
+    {
+     "accuracy": 0.024793388429752067
+    },
+    {
+     "accuracy": 0.019230769230769232
+    },
+    {
+     "accuracy": 0.05511811023622047
+    },
+    {
+     "accuracy": 0.03278688524590164
+    },
+    {
+     "accuracy": 0.02631578947368421
+    },
+    {
+     "accuracy": 0.015748031496062992
+    },
+    {
+     "accuracy": 0.03508771929824561
+    },
+    {
+     "accuracy": 0.02702702702702703
+    },
+    {
+     "accuracy": 0.016129032258064516
+    },
+    {
+     "accuracy": 0.0423728813559322
+    },
+    {
+     "accuracy": 0.05172413793103448
+    }
+   ],
+   "accuracy": 0.03194756741831096
+  },
+  {
+   "method": "random",
+   "metric": "whole",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.046511627906976744
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.043478260869565216
+    },
+    {
+     "accuracy": 0.1
+    },
+    {
+     "accuracy": 0.044444444444444446
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.02564102564102564
+    },
+    {
+     "accuracy": 0.024390243902439025
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.04
+    },
+    {
+     "accuracy": 0.021739130434782608
+    }
+   ],
+   "accuracy": 0.028850394433269474
+  },
+  {
+   "method": "analytic",
+   "metric": "cause",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6222222222222222
+    },
+    {
+     "accuracy": 0.7933884297520661
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.7795275590551181
+    },
+    {
+     "accuracy": 0.680327868852459
+    },
+    {
+     "accuracy": 0.6578947368421053
+    },
+    {
+     "accuracy": 0.7007874015748031
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.6610169491525424
+    },
+    {
+     "accuracy": 0.75
+    }
+   ],
+   "accuracy": 0.7050400402305526
+  },
+  {
+   "method": "analytic",
+   "metric": "cause",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5116279069767442
+    },
+    {
+     "accuracy": 0.7647058823529411
+    },
+    {
+     "accuracy": 0.7073170731707317
+    },
+    {
+     "accuracy": 0.8043478260869565
+    },
+    {
+     "accuracy": 0.5666666666666667
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.5365853658536586
+    },
+    {
+     "accuracy": 0.48717948717948717
+    },
+    {
+     "accuracy": 0.6585365853658537
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.68
+    },
+    {
+     "accuracy": 0.6086956521739131
+    }
+   ],
+   "accuracy": 0.6367481467618556
+  },
+  {
+   "method": "analytic",
+   "metric": "direction",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7851851851851852
+    },
+    {
+     "accuracy": 0.71900826446281
+    },
+    {
+     "accuracy": 0.8076923076923077
+    },
+    {
+     "accuracy": 0.6456692913385826
+    },
+    {
+     "accuracy": 0.5327868852459017
+    },
+    {
+     "accuracy": 0.5877192982456141
+    },
+    {
+     "accuracy": 0.5039370078740157
+    },
+    {
+     "accuracy": 0.631578947368421
+    },
+    {
+     "accuracy": 0.36036036036036034
+    },
+    {
+     "accuracy": 0.782258064516129
+    },
+    {
+     "accuracy": 0.5423728813559322
+    },
+    {
+     "accuracy": 0.6379310344827587
+    }
+   ],
+   "accuracy": 0.6280416273440016
+  },
+  {
+   "method": "analytic",
+   "metric": "direction",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7674418604651163
+    },
+    {
+     "accuracy": 0.7254901960784313
+    },
+    {
+     "accuracy": 0.6829268292682927
+    },
+    {
+     "accuracy": 0.6304347826086957
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6222222222222222
+    },
+    {
+     "accuracy": 0.4634146341463415
+    },
+    {
+     "accuracy": 0.6410256410256411
+    },
+    {
+     "accuracy": 0.5121951219512195
+    },
+    {
+     "accuracy": 0.7837837837837838
+    },
+    {
+     "accuracy": 0.44
+    },
+    {
+     "accuracy": 0.6304347826086957
+    }
+   ],
+   "accuracy": 0.6305030434020923
+  },
+  {
+   "method": "analytic",
+   "metric": "magnitude",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.48148148148148145
+    },
+    {
+     "accuracy": 0.38016528925619836
+    },
+    {
+     "accuracy": 0.6923076923076923
+    },
+    {
+     "accuracy": 0.4645669291338583
+    },
+    {
+     "accuracy": 0.5409836065573771
+    },
+    {
+     "accuracy": 0.6754385964912281
+    },
+    {
+     "accuracy": 0.5433070866141733
+    },
+    {
+     "accuracy": 0.6491228070175439
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.5806451612903226
+    },
+    {
+     "accuracy": 0.6610169491525424
+    },
+    {
+     "accuracy": 0.8189655172413793
+    }
+   ],
+   "accuracy": 0.5947208137660372
+  },
+  {
+   "method": "analytic",
+   "metric": "magnitude",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5581395348837209
+    },
+    {
+     "accuracy": 0.3137254901960784
+    },
+    {
+     "accuracy": 0.6585365853658537
+    },
+    {
+     "accuracy": 0.5434782608695652
+    },
+    {
+     "accuracy": 0.5666666666666667
+    },
+    {
+     "accuracy": 0.7333333333333333
+    },
+    {
+     "accuracy": 0.6341463414634146
+    },
+    {
+     "accuracy": 0.7692307692307693
+    },
+    {
+     "accuracy": 0.6341463414634146
+    },
+    {
+     "accuracy": 0.7027027027027027
+    },
+    {
+     "accuracy": 0.64
+    },
+    {
+     "accuracy": 0.8260869565217391
+    }
+   ],
+   "accuracy": 0.6316827485581048
+  },
+  {
+   "method": "analytic",
+   "metric": "whole",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2074074074074074
+    },
+    {
+     "accuracy": 0.2231404958677686
+    },
+    {
+     "accuracy": 0.4423076923076923
+    },
+    {
+     "accuracy": 0.1889763779527559
+    },
+    {
+     "accuracy": 0.14754098360655737
+    },
+    {
+     "accuracy": 0.21052631578947367
+    },
+    {
+     "accuracy": 0.1889763779527559
+    },
+    {
+     "accuracy": 0.24561403508771928
+    },
+    {
+     "accuracy": 0.15315315315315314
+    },
+    {
+     "accuracy": 0.27419354838709675
+    },
+    {
+     "accuracy": 0.22033898305084745
+    },
+    {
+     "accuracy": 0.4396551724137931
+    }
+   ],
+   "accuracy": 0.24515254524808508
+  },
+  {
+   "method": "analytic",
+   "metric": "whole",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.27906976744186046
+    },
+    {
+     "accuracy": 0.11764705882352941
+    },
+    {
+     "accuracy": 0.2682926829268293
+    },
+    {
+     "accuracy": 0.2608695652173913
+    },
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.2222222222222222
+    },
+    {
+     "accuracy": 0.17073170731707318
+    },
+    {
+     "accuracy": 0.1794871794871795
+    },
+    {
+     "accuracy": 0.3170731707317073
+    },
+    {
+     "accuracy": 0.2972972972972973
+    },
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.34782608695652173
+    }
+   ],
+   "accuracy": 0.23837639486846762
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "cause",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6222222222222222
+    },
+    {
+     "accuracy": 0.7933884297520661
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.7795275590551181
+    },
+    {
+     "accuracy": 0.680327868852459
+    },
+    {
+     "accuracy": 0.6578947368421053
+    },
+    {
+     "accuracy": 0.7007874015748031
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.6610169491525424
+    },
+    {
+     "accuracy": 0.75
+    }
+   ],
+   "accuracy": 0.7050400402305526
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "cause",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5116279069767442
+    },
+    {
+     "accuracy": 0.7647058823529411
+    },
+    {
+     "accuracy": 0.7073170731707317
+    },
+    {
+     "accuracy": 0.8043478260869565
+    },
+    {
+     "accuracy": 0.5666666666666667
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.5365853658536586
+    },
+    {
+     "accuracy": 0.48717948717948717
+    },
+    {
+     "accuracy": 0.6585365853658537
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.68
+    },
+    {
+     "accuracy": 0.6086956521739131
+    }
+   ],
+   "accuracy": 0.6367481467618556
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "direction",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "direction",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "magnitude",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "magnitude",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "whole",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6222222222222222
+    },
+    {
+     "accuracy": 0.7933884297520661
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.7795275590551181
+    },
+    {
+     "accuracy": 0.680327868852459
+    },
+    {
+     "accuracy": 0.6578947368421053
+    },
+    {
+     "accuracy": 0.7007874015748031
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.6610169491525424
+    },
+    {
+     "accuracy": 0.75
+    }
+   ],
+   "accuracy": 0.7050400402305526
+  },
+  {
+   "method": "analytic_executed",
+   "metric": "whole",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5116279069767442
+    },
+    {
+     "accuracy": 0.7647058823529411
+    },
+    {
+     "accuracy": 0.7073170731707317
+    },
+    {
+     "accuracy": 0.8043478260869565
+    },
+    {
+     "accuracy": 0.5666666666666667
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.5365853658536586
+    },
+    {
+     "accuracy": 0.48717948717948717
+    },
+    {
+     "accuracy": 0.6585365853658537
+    },
+    {
+     "accuracy": 0.6486486486486487
+    },
+    {
+     "accuracy": 0.68
+    },
+    {
+     "accuracy": 0.6086956521739131
+    }
+   ],
+   "accuracy": 0.6367481467618556
+  },
+  {
+   "method": "interpreter",
+   "metric": "cause",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7061728395061729
+    },
+    {
+     "accuracy": 0.8071625344352618
+    },
+    {
+     "accuracy": 0.7692307692307693
+    },
+    {
+     "accuracy": 0.7375328083989502
+    },
+    {
+     "accuracy": 0.6857923497267758
+    },
+    {
+     "accuracy": 0.652046783625731
+    },
+    {
+     "accuracy": 0.6666666666666667
+    },
+    {
+     "accuracy": 0.6374269005847952
+    },
+    {
+     "accuracy": 0.7207207207207206
+    },
+    {
+     "accuracy": 0.782258064516129
+    },
+    {
+     "accuracy": 0.6384180790960452
+    },
+    {
+     "accuracy": 0.7614942528735633
+    }
+   ],
+   "accuracy": 0.7137435641151318
+  },
+  {
+   "method": "interpreter",
+   "metric": "cause",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6821705426356589
+    },
+    {
+     "accuracy": 0.7843137254901961
+    },
+    {
+     "accuracy": 0.7073170731707317
+    },
+    {
+     "accuracy": 0.7173913043478259
+    },
+    {
+     "accuracy": 0.6444444444444444
+    },
+    {
+     "accuracy": 0.5999999999999999
+    },
+    {
+     "accuracy": 0.5284552845528455
+    },
+    {
+     "accuracy": 0.4700854700854701
+    },
+    {
+     "accuracy": 0.7154471544715447
+    },
+    {
+     "accuracy": 0.7207207207207207
+    },
+    {
+     "accuracy": 0.64
+    },
+    {
+     "accuracy": 0.6521739130434783
+    }
+   ],
+   "accuracy": 0.6552099694135763
+  },
+  {
+   "method": "interpreter",
+   "metric": "direction",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7851851851851852
+    },
+    {
+     "accuracy": 0.837465564738292
+    },
+    {
+     "accuracy": 0.891025641025641
+    },
+    {
+     "accuracy": 0.7690288713910761
+    },
+    {
+     "accuracy": 0.808743169398907
+    },
+    {
+     "accuracy": 0.8333333333333334
+    },
+    {
+     "accuracy": 0.732283464566929
+    },
+    {
+     "accuracy": 0.8187134502923976
+    },
+    {
+     "accuracy": 0.8498498498498498
+    },
+    {
+     "accuracy": 0.8064516129032258
+    },
+    {
+     "accuracy": 0.8135593220338984
+    },
+    {
+     "accuracy": 0.8505747126436782
+    }
+   ],
+   "accuracy": 0.8163511814468677
+  },
+  {
+   "method": "interpreter",
+   "metric": "direction",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7286821705426356
+    },
+    {
+     "accuracy": 0.8104575163398692
+    },
+    {
+     "accuracy": 0.8292682926829268
+    },
+    {
+     "accuracy": 0.7028985507246377
+    },
+    {
+     "accuracy": 0.7333333333333332
+    },
+    {
+     "accuracy": 0.8074074074074074
+    },
+    {
+     "accuracy": 0.5203252032520325
+    },
+    {
+     "accuracy": 0.7777777777777778
+    },
+    {
+     "accuracy": 0.7317073170731707
+    },
+    {
+     "accuracy": 0.6846846846846847
+    },
+    {
+     "accuracy": 0.6933333333333332
+    },
+    {
+     "accuracy": 0.7246376811594202
+    }
+   ],
+   "accuracy": 0.7287094390259355
+  },
+  {
+   "method": "interpreter",
+   "metric": "magnitude",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.48395061728395056
+    },
+    {
+     "accuracy": 0.628099173553719
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.6640419947506561
+    },
+    {
+     "accuracy": 0.6065573770491803
+    },
+    {
+     "accuracy": 0.675438596491228
+    },
+    {
+     "accuracy": 0.5564304461942257
+    },
+    {
+     "accuracy": 0.5935672514619885
+    },
+    {
+     "accuracy": 0.6936936936936937
+    },
+    {
+     "accuracy": 0.5833333333333334
+    },
+    {
+     "accuracy": 0.6949152542372883
+    },
+    {
+     "accuracy": 0.6695402298850573
+    }
+   ],
+   "accuracy": 0.6332973306611934
+  },
+  {
+   "method": "interpreter",
+   "metric": "magnitude",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.47286821705426363
+    },
+    {
+     "accuracy": 0.7516339869281045
+    },
+    {
+     "accuracy": 0.7560975609756097
+    },
+    {
+     "accuracy": 0.6956521739130435
+    },
+    {
+     "accuracy": 0.6333333333333333
+    },
+    {
+     "accuracy": 0.6962962962962963
+    },
+    {
+     "accuracy": 0.6178861788617885
+    },
+    {
+     "accuracy": 0.6752136752136753
+    },
+    {
+     "accuracy": 0.7723577235772358
+    },
+    {
+     "accuracy": 0.6846846846846847
+    },
+    {
+     "accuracy": 0.72
+    },
+    {
+     "accuracy": 0.6014492753623187
+    }
+   ],
+   "accuracy": 0.6731227588500294
+  },
+  {
+   "method": "interpreter",
+   "metric": "whole",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.3061728395061728
+    },
+    {
+     "accuracy": 0.4490358126721763
+    },
+    {
+     "accuracy": 0.5865384615384616
+    },
+    {
+     "accuracy": 0.40682414698162733
+    },
+    {
+     "accuracy": 0.36612021857923494
+    },
+    {
+     "accuracy": 0.40058479532163743
+    },
+    {
+     "accuracy": 0.3832020997375328
+    },
+    {
+     "accuracy": 0.34502923976608185
+    },
+    {
+     "accuracy": 0.46546546546546547
+    },
+    {
+     "accuracy": 0.3440860215053763
+    },
+    {
+     "accuracy": 0.3983050847457627
+    },
+    {
+     "accuracy": 0.5229885057471264
+    }
+   ],
+   "accuracy": 0.414529390963888
+  },
+  {
+   "method": "interpreter",
+   "metric": "whole",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2713178294573643
+    },
+    {
+     "accuracy": 0.4836601307189542
+    },
+    {
+     "accuracy": 0.5040650406504066
+    },
+    {
+     "accuracy": 0.3405797101449275
+    },
+    {
+     "accuracy": 0.3
+    },
+    {
+     "accuracy": 0.37777777777777777
+    },
+    {
+     "accuracy": 0.2845528455284552
+    },
+    {
+     "accuracy": 0.282051282051282
+    },
+    {
+     "accuracy": 0.3902439024390244
+    },
+    {
+     "accuracy": 0.27927927927927926
+    },
+    {
+     "accuracy": 0.3466666666666666
+    },
+    {
+     "accuracy": 0.3768115942028985
+    }
+   ],
+   "accuracy": 0.3530838382430863
+  }
+ ],
+ "comparisons": [
+  {
+   "metric": "whole",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": 0.28989071782089443,
+   "a": 0.414529390963888,
+   "b": 0.12463867314299354,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "whole",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": 0.38258182354557707,
+   "a": 0.414529390963888,
+   "b": 0.03194756741831096,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "cause",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": 0.3974638921515037,
+   "a": 0.7137435641151318,
+   "b": 0.3162796719636281,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "direction",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": 0.5390942660480448,
+   "a": 0.8163511814468677,
+   "b": 0.27725691539882297,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "magnitude",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": -0.24009684953843805,
+   "a": 0.6332973306611934,
+   "b": 0.8733941801996316,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "whole",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.1809397589558629,
+   "a": 0.3530838382430863,
+   "b": 0.17214407928722344,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  }
+ ],
+ "gate": "CONFIRMED",
+ "wall_seconds": 1534.638253211975
+}

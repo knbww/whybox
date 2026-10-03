@@ -1,0 +1,47 @@
+# The central experiment.
+#
+# Cells form a 2x2 over the two axes the pilot confounded, plus two far cells:
+#
+#                      MLP                  transformer
+#   skirmish   source cell           architecture axis only
+#   clinic     ontology axis only    both axes
+#
+#   seqworld/transformer   synthetic token domain (pilot continuity)
+#   agreement/lm           a real small language model, read as a next-token
+#                          contrast -- the target this whole scaffold is for
+#
+# A_multiarch is fitted on both skirmish cells (subsampled to the same number of
+# problems as the primary arm) to ask whether architectural diversity in the
+# source is what unlocks transfer to the LM.
+run_name: llm_transfer
+cells:
+  - {domain: skirmish,  family: mlp}
+  - {domain: skirmish,  family: tab_transformer}
+  - {domain: clinic,    family: mlp}
+  - {domain: clinic,    family: tab_transformer}
+  - {domain: seqworld,  family: transformer}
+  - {domain: agreement, family: lm}
+source_cells: [skirmish/mlp]
+extra_source_arms:
+  - {name: A_multiarch, cells: [skirmish/mlp, skirmish/tab_transformer]}
+
+seeds: [0, 1, 2, 3]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 4
+feature_ablations: true
+data_seed: 0
+
+interpreter:
+  epochs: 40
+  lr: 0.001
+  batch_size: 64
+  d_model: 96
+  n_layers: 3
+  n_heads: 4
+  dropout: 0.1
+  lambda_vocab: 0.3
+  seed: 0

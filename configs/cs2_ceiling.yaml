@@ -1,0 +1,41 @@
+# FEASIBILITY MEASUREMENT, exploratory by design. No gate, no confirmatory claim.
+#
+# The question is the one the CS2 branch depends on: can the decisive causal
+# factor be read out of a CS2 win-probability model's internals at all?  The
+# target in the plan is ~0.80 balanced accuracy on held-out models.  Measured
+# evidence so far: 0.486 on a comparable tabular MLP (clinic) against 0.899 on a
+# language model.  If CS2 sits near the tabular figure, it cannot serve as the
+# human-verifiable semantic source and the source has to be a model whose
+# factors are legible.
+#
+# Reuses the target populations already built for rerun_core2 (data_seed 1).
+run_name: cs2_ceiling
+condition: strict
+cells:
+  - {domain: skirmish, family: mlp}
+  - {domain: skirmish, family: tab_transformer}
+source_cells: [skirmish/mlp]
+ceiling_cells: [skirmish/tab_transformer]
+
+seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 12
+feature_ablations: false
+explanation_eval: true
+data_seed: 1
+alpha: 0.05
+
+interpreter_seeds: [0, 1]
+interpreter:
+  epochs: 20
+  lr: 0.001
+  batch_size: 64
+  d_model: 96
+  n_layers: 3
+  n_heads: 4
+  dropout: 0.1
+  name_balance_power: 0.5

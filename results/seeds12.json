@@ -1,0 +1,969 @@
+{
+ "provenance": {
+  "commit": "6dc87bb72ed3deca663325c691753f2956e8dd26",
+  "dirty": true,
+  "protocol": "declared in scripts/seeds12.py docstring",
+  "protocol_sha256": "cfd5513ddf62cd93",
+  "domain": "skirmish",
+  "population": "results/cache/volume/new_models.pt",
+  "population_sha256": "e3b59962192afe7b0b878baf25bbde65606234e93a488ce7457f687c24d5a000",
+  "fit_initialisations": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "held_initialisations": [
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35
+  ],
+  "fit_index": [
+   0,
+   4,
+   8,
+   9,
+   13,
+   17,
+   18,
+   22,
+   26,
+   27,
+   31,
+   35
+  ],
+  "held_index": [
+   48,
+   52,
+   56,
+   57,
+   61,
+   65,
+   66,
+   70,
+   74,
+   75,
+   79,
+   83
+  ],
+  "margin": 0.1,
+  "interpreter_seeds": [
+   0,
+   1,
+   2
+  ],
+  "note": "the population was the volume study's training pool; no interpreter fitted here saw the held-out twelve",
+  "torch": "2.13.0+cpu"
+ },
+ "rows": [
+  {
+   "method": "constant",
+   "cell": "AGREE",
+   "n_models": 12,
+   "n_states": 1288,
+   "per_model": [
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.6637168141592921
+    },
+    {
+     "accuracy": 0.7083333333333334
+    },
+    {
+     "accuracy": 0.6019417475728155
+    },
+    {
+     "accuracy": 0.6989247311827957
+    },
+    {
+     "accuracy": 0.6388888888888888
+    },
+    {
+     "accuracy": 0.6862745098039216
+    },
+    {
+     "accuracy": 0.7403846153846154
+    },
+    {
+     "accuracy": 0.6101694915254238
+    },
+    {
+     "accuracy": 0.6822429906542056
+    },
+    {
+     "accuracy": 0.7169811320754716
+    },
+    {
+     "accuracy": 0.6153846153846154
+    }
+   ],
+   "accuracy": 0.6636035724971149
+  },
+  {
+   "method": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "n_states": 1478,
+   "per_model": [
+    {
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "accuracy": 0.6062992125984252
+    },
+    {
+     "accuracy": 0.68
+    },
+    {
+     "accuracy": 0.5289256198347108
+    },
+    {
+     "accuracy": 0.6097560975609756
+    },
+    {
+     "accuracy": 0.5867768595041323
+    },
+    {
+     "accuracy": 0.6347826086956522
+    },
+    {
+     "accuracy": 0.6363636363636364
+    },
+    {
+     "accuracy": 0.5983606557377049
+    },
+    {
+     "accuracy": 0.6147540983606558
+    },
+    {
+     "accuracy": 0.6171875
+    },
+    {
+     "accuracy": 0.5603448275862069
+    }
+   ],
+   "accuracy": 0.602425555983138
+  },
+  {
+   "method": "constant",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "n_states": 190,
+   "per_model": [
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.14285714285714285
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.1111111111111111
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.15384615384615385
+    },
+    {
+     "accuracy": 0.23076923076923078
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.13333333333333333
+    },
+    {
+     "accuracy": 0.13636363636363635
+    },
+    {
+     "accuracy": 0.08333333333333333
+    }
+   ],
+   "accuracy": 0.17291227291227293
+  },
+  {
+   "method": "first_order_meanabs",
+   "cell": "AGREE",
+   "n_models": 12,
+   "n_states": 1288,
+   "per_model": [
+    {
+     "accuracy": 0.6636363636363637
+    },
+    {
+     "accuracy": 0.6283185840707964
+    },
+    {
+     "accuracy": 0.65
+    },
+    {
+     "accuracy": 0.5533980582524272
+    },
+    {
+     "accuracy": 0.5591397849462365
+    },
+    {
+     "accuracy": 0.7129629629629629
+    },
+    {
+     "accuracy": 0.6764705882352942
+    },
+    {
+     "accuracy": 0.6346153846153846
+    },
+    {
+     "accuracy": 0.6949152542372882
+    },
+    {
+     "accuracy": 0.616822429906542
+    },
+    {
+     "accuracy": 0.5943396226415094
+    },
+    {
+     "accuracy": 0.6826923076923077
+    }
+   ],
+   "accuracy": 0.6389426117664261
+  },
+  {
+   "method": "first_order_meanabs",
+   "cell": "ALL",
+   "n_models": 12,
+   "n_states": 1478,
+   "per_model": [
+    {
+     "accuracy": 0.6587301587301587
+    },
+    {
+     "accuracy": 0.5905511811023622
+    },
+    {
+     "accuracy": 0.648
+    },
+    {
+     "accuracy": 0.5289256198347108
+    },
+    {
+     "accuracy": 0.5528455284552846
+    },
+    {
+     "accuracy": 0.71900826446281
+    },
+    {
+     "accuracy": 0.6695652173913044
+    },
+    {
+     "accuracy": 0.6212121212121212
+    },
+    {
+     "accuracy": 0.6721311475409836
+    },
+    {
+     "accuracy": 0.6311475409836066
+    },
+    {
+     "accuracy": 0.5859375
+    },
+    {
+     "accuracy": 0.6724137931034483
+    }
+   ],
+   "accuracy": 0.6292056727347325
+  },
+  {
+   "method": "first_order_meanabs",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "n_states": 190,
+   "per_model": [
+    {
+     "accuracy": 0.625
+    },
+    {
+     "accuracy": 0.2857142857142857
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.3888888888888889
+    },
+    {
+     "accuracy": 0.5333333333333333
+    },
+    {
+     "accuracy": 0.7692307692307693
+    },
+    {
+     "accuracy": 0.6153846153846154
+    },
+    {
+     "accuracy": 0.5714285714285714
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.7333333333333333
+    },
+    {
+     "accuracy": 0.5454545454545454
+    },
+    {
+     "accuracy": 0.5833333333333334
+    }
+   ],
+   "accuracy": 0.5209251396751396
+  },
+  {
+   "method": "first_order_signed",
+   "cell": "AGREE",
+   "n_models": 12,
+   "n_states": 1288,
+   "per_model": [
+    {
+     "accuracy": 0.9090909090909091
+    },
+    {
+     "accuracy": 0.8761061946902655
+    },
+    {
+     "accuracy": 0.9416666666666667
+    },
+    {
+     "accuracy": 0.8446601941747572
+    },
+    {
+     "accuracy": 0.8817204301075269
+    },
+    {
+     "accuracy": 0.9814814814814815
+    },
+    {
+     "accuracy": 0.9607843137254902
+    },
+    {
+     "accuracy": 0.8653846153846154
+    },
+    {
+     "accuracy": 0.9745762711864406
+    },
+    {
+     "accuracy": 0.9158878504672897
+    },
+    {
+     "accuracy": 0.8584905660377359
+    },
+    {
+     "accuracy": 0.9519230769230769
+    }
+   ],
+   "accuracy": 0.9134810474946878
+  },
+  {
+   "method": "first_order_signed",
+   "cell": "ALL",
+   "n_models": 12,
+   "n_states": 1478,
+   "per_model": [
+    {
+     "accuracy": 0.8809523809523809
+    },
+    {
+     "accuracy": 0.8267716535433071
+    },
+    {
+     "accuracy": 0.936
+    },
+    {
+     "accuracy": 0.8099173553719008
+    },
+    {
+     "accuracy": 0.8048780487804879
+    },
+    {
+     "accuracy": 0.9669421487603306
+    },
+    {
+     "accuracy": 0.9217391304347826
+    },
+    {
+     "accuracy": 0.7803030303030303
+    },
+    {
+     "accuracy": 0.9590163934426229
+    },
+    {
+     "accuracy": 0.9098360655737705
+    },
+    {
+     "accuracy": 0.765625
+    },
+    {
+     "accuracy": 0.9310344827586207
+    }
+   ],
+   "accuracy": 0.8744179741601029
+  },
+  {
+   "method": "first_order_signed",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "n_states": 190,
+   "per_model": [
+    {
+     "accuracy": 0.6875
+    },
+    {
+     "accuracy": 0.42857142857142855
+    },
+    {
+     "accuracy": 0.8
+    },
+    {
+     "accuracy": 0.6111111111111112
+    },
+    {
+     "accuracy": 0.5666666666666667
+    },
+    {
+     "accuracy": 0.8461538461538461
+    },
+    {
+     "accuracy": 0.6153846153846154
+    },
+    {
+     "accuracy": 0.4642857142857143
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.8666666666666667
+    },
+    {
+     "accuracy": 0.3181818181818182
+    },
+    {
+     "accuracy": 0.75
+    }
+   ],
+   "accuracy": 0.6212101555851556
+  },
+  {
+   "method": "interpreter",
+   "cell": "AGREE",
+   "n_models": 12,
+   "n_states": 1288,
+   "per_model": [
+    {
+     "accuracy": 0.7787878787878787
+    },
+    {
+     "accuracy": 0.7050147492625369
+    },
+    {
+     "accuracy": 0.8027777777777777
+    },
+    {
+     "accuracy": 0.6504854368932037
+    },
+    {
+     "accuracy": 0.7168458781362008
+    },
+    {
+     "accuracy": 0.8179012345679012
+    },
+    {
+     "accuracy": 0.7712418300653594
+    },
+    {
+     "accuracy": 0.6570512820512822
+    },
+    {
+     "accuracy": 0.7372881355932204
+    },
+    {
+     "accuracy": 0.7320872274143302
+    },
+    {
+     "accuracy": 0.6289308176100628
+    },
+    {
+     "accuracy": 0.7692307692307693
+    }
+   ],
+   "accuracy": 0.730636918115877
+  },
+  {
+   "method": "interpreter",
+   "cell": "ALL",
+   "n_models": 12,
+   "n_states": 1478,
+   "per_model": [
+    {
+     "accuracy": 0.7592592592592592
+    },
+    {
+     "accuracy": 0.700787401574803
+    },
+    {
+     "accuracy": 0.8
+    },
+    {
+     "accuracy": 0.6336088154269972
+    },
+    {
+     "accuracy": 0.6829268292682927
+    },
+    {
+     "accuracy": 0.7906336088154269
+    },
+    {
+     "accuracy": 0.7449275362318841
+    },
+    {
+     "accuracy": 0.6186868686868686
+    },
+    {
+     "accuracy": 0.7213114754098361
+    },
+    {
+     "accuracy": 0.7486338797814207
+    },
+    {
+     "accuracy": 0.6067708333333333
+    },
+    {
+     "accuracy": 0.7586206896551725
+    }
+   ],
+   "accuracy": 0.7138472664536079
+  },
+  {
+   "method": "interpreter",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "n_states": 190,
+   "per_model": [
+    {
+     "accuracy": 0.625
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.7333333333333333
+    },
+    {
+     "accuracy": 0.537037037037037
+    },
+    {
+     "accuracy": 0.5777777777777777
+    },
+    {
+     "accuracy": 0.5641025641025641
+    },
+    {
+     "accuracy": 0.5384615384615384
+    },
+    {
+     "accuracy": 0.47619047619047616
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.8666666666666667
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.6666666666666666
+    }
+   ],
+   "accuracy": 0.5834918939085606
+  },
+  {
+   "method": "random",
+   "cell": "AGREE",
+   "n_models": 12,
+   "n_states": 1288,
+   "per_model": [
+    {
+     "accuracy": 0.12727272727272726
+    },
+    {
+     "accuracy": 0.17699115044247787
+    },
+    {
+     "accuracy": 0.15
+    },
+    {
+     "accuracy": 0.0970873786407767
+    },
+    {
+     "accuracy": 0.1827956989247312
+    },
+    {
+     "accuracy": 0.12962962962962962
+    },
+    {
+     "accuracy": 0.09803921568627451
+    },
+    {
+     "accuracy": 0.14423076923076922
+    },
+    {
+     "accuracy": 0.11016949152542373
+    },
+    {
+     "accuracy": 0.17757009345794392
+    },
+    {
+     "accuracy": 0.1792452830188679
+    },
+    {
+     "accuracy": 0.10576923076923077
+    }
+   ],
+   "accuracy": 0.13990005571657105
+  },
+  {
+   "method": "random",
+   "cell": "ALL",
+   "n_models": 12,
+   "n_states": 1478,
+   "per_model": [
+    {
+     "accuracy": 0.1111111111111111
+    },
+    {
+     "accuracy": 0.18110236220472442
+    },
+    {
+     "accuracy": 0.144
+    },
+    {
+     "accuracy": 0.08264462809917356
+    },
+    {
+     "accuracy": 0.16260162601626016
+    },
+    {
+     "accuracy": 0.1322314049586777
+    },
+    {
+     "accuracy": 0.10434782608695652
+    },
+    {
+     "accuracy": 0.13636363636363635
+    },
+    {
+     "accuracy": 0.11475409836065574
+    },
+    {
+     "accuracy": 0.1721311475409836
+    },
+    {
+     "accuracy": 0.1796875
+    },
+    {
+     "accuracy": 0.10344827586206896
+    }
+   ],
+   "accuracy": 0.13536863471702068
+  },
+  {
+   "method": "random",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "n_states": 190,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.21428571428571427
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.1
+    },
+    {
+     "accuracy": 0.15384615384615385
+    },
+    {
+     "accuracy": 0.15384615384615385
+    },
+    {
+     "accuracy": 0.10714285714285714
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.13333333333333333
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.08333333333333333
+    }
+   ],
+   "accuracy": 0.11480047730047731
+  },
+  {
+   "method": "world_oracle",
+   "cell": "AGREE",
+   "n_models": 12,
+   "n_states": 1288,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "ALL",
+   "n_models": 12,
+   "n_states": 1478,
+   "per_model": [
+    {
+     "accuracy": 0.873015873015873
+    },
+    {
+     "accuracy": 0.889763779527559
+    },
+    {
+     "accuracy": 0.96
+    },
+    {
+     "accuracy": 0.8512396694214877
+    },
+    {
+     "accuracy": 0.7560975609756098
+    },
+    {
+     "accuracy": 0.8925619834710744
+    },
+    {
+     "accuracy": 0.8869565217391304
+    },
+    {
+     "accuracy": 0.7878787878787878
+    },
+    {
+     "accuracy": 0.9672131147540983
+    },
+    {
+     "accuracy": 0.8770491803278688
+    },
+    {
+     "accuracy": 0.828125
+    },
+    {
+     "accuracy": 0.896551724137931
+    }
+   ],
+   "accuracy": 0.8722044329374516
+  },
+  {
+   "method": "world_oracle",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "n_states": 190,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  }
+ ],
+ "comparisons": [
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.4105796209962876,
+   "a": 0.5834918939085606,
+   "b": 0.17291227291227293,
+   "p": 0.0009765625,
+   "p_adj": 0.00390625,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "world_oracle",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.5834918939085606,
+   "a": 0.5834918939085606,
+   "b": 0.0,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.4686914166080833,
+   "a": 0.5834918939085606,
+   "b": 0.11480047730047731,
+   "p": 0.0009765625,
+   "p_adj": 0.00390625,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "AGREE",
+   "n_models": 12,
+   "delta": 0.06703334561876202,
+   "a": 0.730636918115877,
+   "b": 0.6636035724971149,
+   "p": 0.0263671875,
+   "p_adj": 0.0263671875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "AGREE",
+   "n_models": 12,
+   "delta": 0.5907368623993058,
+   "a": 0.730636918115877,
+   "b": 0.13990005571657105,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": 0.11142171047046989,
+   "a": 0.7138472664536079,
+   "b": 0.602425555983138,
+   "p": 0.001953125,
+   "p_adj": 0.00390625,
+   "reject": true
+  }
+ ],
+ "gate": "CONFIRMED",
+ "wall_seconds": 227.5816307067871
+}

@@ -1,0 +1,37 @@
+{
+ "provenance": {
+  "commit": "6f54390652e7c205253da48fd4c0a2c8d1d4fcc5",
+  "dirty": true,
+  "cache": "results/cache/skirmish-mlp-6d7fca3aed.pt",
+  "cache_sha256": "1f8d8e7ef6d4edd63c917c580d5045f167be9bde466bc8a964d1a3f49a268090",
+  "models": "fitted 0-11 only",
+  "margin": 0.1,
+  "interpreter_seed": 0,
+  "torch": "2.13.0+cpu"
+ },
+ "confirmed_recipe_train_accuracy": 0.7602649006622516,
+ "n_train_states": 1510,
+ "unregularised_9_of_12": [
+  {
+   "epoch": 40,
+   "train_accuracy": 0.7403760071620412,
+   "unseen_fitted_accuracy": 0.7302798982188295
+  },
+  {
+   "epoch": 100,
+   "train_accuracy": 0.8880931065353626,
+   "unseen_fitted_accuracy": 0.6615776081424937
+  },
+  {
+   "epoch": 200,
+   "train_accuracy": 0.999104744852283,
+   "unseen_fitted_accuracy": 0.6361323155216285
+  },
+  {
+   "epoch": 400,
+   "train_accuracy": 0.9928379588182632,
+   "unseen_fitted_accuracy": 0.6437659033078881
+  }
+ ],
+ "wall_seconds": 277.14645767211914
+}

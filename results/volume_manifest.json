@@ -1,0 +1,119 @@
+{
+ "domain": "skirmish",
+ "smoke": false,
+ "streams": {
+  "fit_states": 101,
+  "new_models": 202,
+  "val_models": 303
+ },
+ "config": {
+  "out": "results/cache/volume",
+  "manifest": "results/volume_manifest.json",
+  "n_fit": 12,
+  "n_states": 1280,
+  "n_probe": 512,
+  "new_seeds": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35
+  ],
+  "val_seeds": [
+   36,
+   37,
+   38,
+   39
+  ],
+  "spurious": [
+   0.0,
+   1.0,
+   2.0
+  ],
+  "n_focal": 160,
+  "n_train": 6000,
+  "epochs": 60
+ },
+ "files": {
+  "fit_states": {
+   "path": "results/cache/volume/fit_states.pt",
+   "sha256": "05dc970da87cedf3501fa880754da60308def40c36c86c14a05a8df7a009b20e",
+   "n_models": 12,
+   "seeds": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  "new_models": {
+   "path": "results/cache/volume/new_models.pt",
+   "sha256": "e3b59962192afe7b0b878baf25bbde65606234e93a488ce7457f687c24d5a000",
+   "n_models": 84,
+   "seeds": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  "val_models": {
+   "path": "results/cache/volume/val_models.pt",
+   "sha256": "296ace203bc649e2594f055d2777f3172a99af45235829e3d3b2cc5bc0fed732",
+   "n_models": 12,
+   "seeds": [
+    36,
+    37,
+    38,
+    39
+   ]
+  }
+ }
+}

@@ -1,0 +1,31 @@
+# Pilot: train on the CS2-like tactical domain, transfer to a clinical-risk
+# domain (different ontology, same architecture family) and to a token-sequence
+# domain (different ontology *and* a transformer instead of an MLP).
+run_name: pilot
+source_domains: [skirmish]
+target_domains: [clinic, seqworld]
+
+# Target-model population: 4 seeds x 3 leak strengths = 12 models per domain.
+seeds: [0, 1, 2, 3]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 4        # models the interpreter never reads
+feature_ablations: true
+data_seed: 0
+
+interpreter:
+  epochs: 40
+  lr: 0.001
+  batch_size: 64
+  d_model: 96
+  n_layers: 3
+  n_heads: 4
+  dropout: 0.1
+  lambda_causal: 1.0
+  lambda_mediation: 1.0
+  lambda_decoy: 0.3
+  lambda_vocab: 0.3
+  seed: 0

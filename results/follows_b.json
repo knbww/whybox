@@ -1,0 +1,2083 @@
+{
+ "sensitivity": [
+  {
+   "method": "interpreter",
+   "cell": "ALL [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6887052341597796
+    },
+    {
+     "accuracy": 0.6549707602339181
+    },
+    {
+     "accuracy": 0.8463768115942029
+    },
+    {
+     "accuracy": 0.7670250896057349
+    },
+    {
+     "accuracy": 0.7508090614886731
+    },
+    {
+     "accuracy": 0.8950617283950616
+    },
+    {
+     "accuracy": 0.7420289855072464
+    },
+    {
+     "accuracy": 0.8169934640522877
+    },
+    {
+     "accuracy": 0.7321428571428571
+    },
+    {
+     "accuracy": 0.6339285714285714
+    },
+    {
+     "accuracy": 0.6972789115646258
+    },
+    {
+     "accuracy": 0.7010309278350515
+    }
+   ],
+   "accuracy": 0.7438627002506674
+  },
+  {
+   "method": "interpreter",
+   "cell": "AGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.71976401179941
+    },
+    {
+     "accuracy": 0.6763754045307444
+    },
+    {
+     "accuracy": 0.8535825545171339
+    },
+    {
+     "accuracy": 0.768939393939394
+    },
+    {
+     "accuracy": 0.7588652482269503
+    },
+    {
+     "accuracy": 0.8930817610062893
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.8498168498168498
+    },
+    {
+     "accuracy": 0.7435897435897437
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6708333333333333
+    },
+    {
+     "accuracy": 0.7257383966244725
+    }
+   ],
+   "accuracy": 0.7564377803375822
+  },
+  {
+   "method": "interpreter",
+   "cell": "DISAGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.45454545454545453
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.7333333333333333
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.619047619047619
+    },
+    {
+     "accuracy": 0.5454545454545454
+    },
+    {
+     "accuracy": 0.5833333333333333
+    },
+    {
+     "accuracy": 0.38461538461538464
+    },
+    {
+     "accuracy": 0.8148148148148148
+    },
+    {
+     "accuracy": 0.5925925925925926
+    }
+   ],
+   "accuracy": 0.6162003120336453
+  },
+  {
+   "method": "world_oracle",
+   "cell": "ALL [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.9338842975206612
+    },
+    {
+     "accuracy": 0.9035087719298246
+    },
+    {
+     "accuracy": 0.9304347826086956
+    },
+    {
+     "accuracy": 0.946236559139785
+    },
+    {
+     "accuracy": 0.912621359223301
+    },
+    {
+     "accuracy": 0.9814814814814815
+    },
+    {
+     "accuracy": 0.9391304347826087
+    },
+    {
+     "accuracy": 0.8921568627450981
+    },
+    {
+     "accuracy": 0.9285714285714286
+    },
+    {
+     "accuracy": 0.8839285714285714
+    },
+    {
+     "accuracy": 0.8163265306122449
+    },
+    {
+     "accuracy": 0.8144329896907216
+    }
+   ],
+   "accuracy": 0.9068928391445352
+  },
+  {
+   "method": "world_oracle",
+   "cell": "AGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "DISAGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "ALL [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5867768595041323
+    },
+    {
+     "accuracy": 0.6228070175438597
+    },
+    {
+     "accuracy": 0.6956521739130435
+    },
+    {
+     "accuracy": 0.5483870967741935
+    },
+    {
+     "accuracy": 0.6601941747572816
+    },
+    {
+     "accuracy": 0.7962962962962963
+    },
+    {
+     "accuracy": 0.6260869565217392
+    },
+    {
+     "accuracy": 0.7352941176470589
+    },
+    {
+     "accuracy": 0.6071428571428571
+    },
+    {
+     "accuracy": 0.6071428571428571
+    },
+    {
+     "accuracy": 0.6530612244897959
+    },
+    {
+     "accuracy": 0.6804123711340206
+    }
+   ],
+   "accuracy": 0.6516045002389279
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "AGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6017699115044248
+    },
+    {
+     "accuracy": 0.6310679611650486
+    },
+    {
+     "accuracy": 0.6822429906542056
+    },
+    {
+     "accuracy": 0.5454545454545454
+    },
+    {
+     "accuracy": 0.6595744680851063
+    },
+    {
+     "accuracy": 0.8018867924528302
+    },
+    {
+     "accuracy": 0.6296296296296297
+    },
+    {
+     "accuracy": 0.7362637362637363
+    },
+    {
+     "accuracy": 0.625
+    },
+    {
+     "accuracy": 0.6060606060606061
+    },
+    {
+     "accuracy": 0.65
+    },
+    {
+     "accuracy": 0.7088607594936709
+    }
+   ],
+   "accuracy": 0.6564842833969837
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "DISAGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.375
+    },
+    {
+     "accuracy": 0.5454545454545454
+    },
+    {
+     "accuracy": 0.875
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.5714285714285714
+    },
+    {
+     "accuracy": 0.7272727272727273
+    },
+    {
+     "accuracy": 0.375
+    },
+    {
+     "accuracy": 0.6153846153846154
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.5555555555555556
+    }
+   ],
+   "accuracy": 0.5894524457024456
+  },
+  {
+   "method": "constant",
+   "cell": "ALL [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6859504132231405
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.7204301075268817
+    },
+    {
+     "accuracy": 0.6796116504854369
+    },
+    {
+     "accuracy": 0.6759259259259259
+    },
+    {
+     "accuracy": 0.6782608695652174
+    },
+    {
+     "accuracy": 0.6568627450980392
+    },
+    {
+     "accuracy": 0.5714285714285714
+    },
+    {
+     "accuracy": 0.6339285714285714
+    },
+    {
+     "accuracy": 0.5612244897959183
+    },
+    {
+     "accuracy": 0.5670103092783505
+    }
+   ],
+   "accuracy": 0.6414416933685599
+  },
+  {
+   "method": "constant",
+   "cell": "AGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7079646017699115
+    },
+    {
+     "accuracy": 0.7281553398058253
+    },
+    {
+     "accuracy": 0.6355140186915887
+    },
+    {
+     "accuracy": 0.7272727272727273
+    },
+    {
+     "accuracy": 0.7127659574468085
+    },
+    {
+     "accuracy": 0.6792452830188679
+    },
+    {
+     "accuracy": 0.7037037037037037
+    },
+    {
+     "accuracy": 0.7142857142857143
+    },
+    {
+     "accuracy": 0.5961538461538461
+    },
+    {
+     "accuracy": 0.6565656565656566
+    },
+    {
+     "accuracy": 0.6625
+    },
+    {
+     "accuracy": 0.6582278481012658
+    }
+   ],
+   "accuracy": 0.6818628914013263
+  },
+  {
+   "method": "constant",
+   "cell": "DISAGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.375
+    },
+    {
+     "accuracy": 0.09090909090909091
+    },
+    {
+     "accuracy": 0.125
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.2857142857142857
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.46153846153846156
+    },
+    {
+     "accuracy": 0.1111111111111111
+    },
+    {
+     "accuracy": 0.16666666666666666
+    }
+   ],
+   "accuracy": 0.2900909275909276
+  },
+  {
+   "method": "random",
+   "cell": "ALL [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.14325068870523416
+    },
+    {
+     "accuracy": 0.13450292397660818
+    },
+    {
+     "accuracy": 0.1391304347826087
+    },
+    {
+     "accuracy": 0.12544802867383514
+    },
+    {
+     "accuracy": 0.1553398058252427
+    },
+    {
+     "accuracy": 0.11419753086419752
+    },
+    {
+     "accuracy": 0.1565217391304348
+    },
+    {
+     "accuracy": 0.14379084967320263
+    },
+    {
+     "accuracy": 0.14285714285714285
+    },
+    {
+     "accuracy": 0.14285714285714285
+    },
+    {
+     "accuracy": 0.13605442176870747
+    },
+    {
+     "accuracy": 0.13402061855670103
+    }
+   ],
+   "accuracy": 0.1389976106392548
+  },
+  {
+   "method": "random",
+   "cell": "AGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.1415929203539823
+    },
+    {
+     "accuracy": 0.14563106796116504
+    },
+    {
+     "accuracy": 0.14330218068535827
+    },
+    {
+     "accuracy": 0.13257575757575754
+    },
+    {
+     "accuracy": 0.14539007092198583
+    },
+    {
+     "accuracy": 0.10691823899371068
+    },
+    {
+     "accuracy": 0.16049382716049382
+    },
+    {
+     "accuracy": 0.1391941391941392
+    },
+    {
+     "accuracy": 0.15064102564102563
+    },
+    {
+     "accuracy": 0.15151515151515152
+    },
+    {
+     "accuracy": 0.14166666666666666
+    },
+    {
+     "accuracy": 0.13502109704641352
+    }
+   ],
+   "accuracy": 0.14116184530965414
+  },
+  {
+   "method": "random",
+   "cell": "DISAGREE [sens 0.15]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "accuracy": 0.0303030303030303
+    },
+    {
+     "accuracy": 0.08333333333333333
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.2592592592592593
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.09523809523809523
+    },
+    {
+     "accuracy": 0.1818181818181818
+    },
+    {
+     "accuracy": 0.041666666666666664
+    },
+    {
+     "accuracy": 0.07692307692307693
+    },
+    {
+     "accuracy": 0.1111111111111111
+    },
+    {
+     "accuracy": 0.12962962962962962
+    }
+   ],
+   "accuracy": 0.1396624209124209
+  },
+  {
+   "method": "interpreter",
+   "cell": "ALL [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7569444444444443
+    },
+    {
+     "accuracy": 0.7378277153558052
+    },
+    {
+     "accuracy": 0.8368794326241134
+    },
+    {
+     "accuracy": 0.8309178743961352
+    },
+    {
+     "accuracy": 0.8266666666666667
+    },
+    {
+     "accuracy": 0.9233716475095787
+    },
+    {
+     "accuracy": 0.7545787545787547
+    },
+    {
+     "accuracy": 0.8488372093023255
+    },
+    {
+     "accuracy": 0.7025089605734767
+    },
+    {
+     "accuracy": 0.6549019607843137
+    },
+    {
+     "accuracy": 0.7066666666666667
+    },
+    {
+     "accuracy": 0.7207207207207207
+    }
+   ],
+   "accuracy": 0.7750685044685834
+  },
+  {
+   "method": "interpreter",
+   "cell": "AGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.769230769230769
+    },
+    {
+     "accuracy": 0.746031746031746
+    },
+    {
+     "accuracy": 0.8484848484848484
+    },
+    {
+     "accuracy": 0.8333333333333333
+    },
+    {
+     "accuracy": 0.8333333333333334
+    },
+    {
+     "accuracy": 0.9224806201550388
+    },
+    {
+     "accuracy": 0.7518518518518519
+    },
+    {
+     "accuracy": 0.8744588744588744
+    },
+    {
+     "accuracy": 0.7083333333333333
+    },
+    {
+     "accuracy": 0.6752136752136751
+    },
+    {
+     "accuracy": 0.6875
+    },
+    {
+     "accuracy": 0.7395833333333334
+    }
+   ],
+   "accuracy": 0.7824863098966781
+  },
+  {
+   "method": "interpreter",
+   "cell": "DISAGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5333333333333333
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.6296296296296295
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.42857142857142855
+    },
+    {
+     "accuracy": 0.8181818181818182
+    },
+    {
+     "accuracy": 0.6
+    }
+   ],
+   "accuracy": 0.6841430174763508
+  },
+  {
+   "method": "world_oracle",
+   "cell": "ALL [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.9479166666666666
+    },
+    {
+     "accuracy": 0.9438202247191011
+    },
+    {
+     "accuracy": 0.9361702127659575
+    },
+    {
+     "accuracy": 0.9855072463768116
+    },
+    {
+     "accuracy": 0.96
+    },
+    {
+     "accuracy": 0.9885057471264368
+    },
+    {
+     "accuracy": 0.989010989010989
+    },
+    {
+     "accuracy": 0.8953488372093024
+    },
+    {
+     "accuracy": 0.946236559139785
+    },
+    {
+     "accuracy": 0.9176470588235294
+    },
+    {
+     "accuracy": 0.8533333333333334
+    },
+    {
+     "accuracy": 0.8648648648648649
+    }
+   ],
+   "accuracy": 0.9356968116697315
+  },
+  {
+   "method": "world_oracle",
+   "cell": "AGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "DISAGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "ALL [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.625
+    },
+    {
+     "accuracy": 0.6629213483146067
+    },
+    {
+     "accuracy": 0.7127659574468085
+    },
+    {
+     "accuracy": 0.6376811594202898
+    },
+    {
+     "accuracy": 0.6933333333333334
+    },
+    {
+     "accuracy": 0.8505747126436781
+    },
+    {
+     "accuracy": 0.6483516483516484
+    },
+    {
+     "accuracy": 0.7674418604651163
+    },
+    {
+     "accuracy": 0.6344086021505376
+    },
+    {
+     "accuracy": 0.6235294117647059
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.7297297297297297
+    }
+   ],
+   "accuracy": 0.6877003691905933
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "AGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6373626373626373
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.7045454545454546
+    },
+    {
+     "accuracy": 0.6323529411764706
+    },
+    {
+     "accuracy": 0.6944444444444444
+    },
+    {
+     "accuracy": 0.8488372093023255
+    },
+    {
+     "accuracy": 0.6444444444444445
+    },
+    {
+     "accuracy": 0.7532467532467533
+    },
+    {
+     "accuracy": 0.6363636363636364
+    },
+    {
+     "accuracy": 0.6153846153846154
+    },
+    {
+     "accuracy": 0.671875
+    },
+    {
+     "accuracy": 0.75
+    }
+   ],
+   "accuracy": 0.687960316911454
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "DISAGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.4
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.8333333333333334
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.8888888888888888
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.7142857142857143
+    },
+    {
+     "accuracy": 0.6363636363636364
+    },
+    {
+     "accuracy": 0.6
+    }
+   ],
+   "accuracy": 0.7449615199615199
+  },
+  {
+   "method": "constant",
+   "cell": "ALL [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7916666666666666
+    },
+    {
+     "accuracy": 0.7415730337078652
+    },
+    {
+     "accuracy": 0.6808510638297872
+    },
+    {
+     "accuracy": 0.7681159420289855
+    },
+    {
+     "accuracy": 0.7466666666666667
+    },
+    {
+     "accuracy": 0.735632183908046
+    },
+    {
+     "accuracy": 0.7472527472527473
+    },
+    {
+     "accuracy": 0.6976744186046512
+    },
+    {
+     "accuracy": 0.6236559139784946
+    },
+    {
+     "accuracy": 0.7411764705882353
+    },
+    {
+     "accuracy": 0.64
+    },
+    {
+     "accuracy": 0.6081081081081081
+    }
+   ],
+   "accuracy": 0.7101977679450212
+  },
+  {
+   "method": "constant",
+   "cell": "AGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.8131868131868132
+    },
+    {
+     "accuracy": 0.7857142857142857
+    },
+    {
+     "accuracy": 0.7159090909090909
+    },
+    {
+     "accuracy": 0.7647058823529411
+    },
+    {
+     "accuracy": 0.7777777777777778
+    },
+    {
+     "accuracy": 0.7441860465116279
+    },
+    {
+     "accuracy": 0.7555555555555555
+    },
+    {
+     "accuracy": 0.7792207792207793
+    },
+    {
+     "accuracy": 0.6363636363636364
+    },
+    {
+     "accuracy": 0.7564102564102564
+    },
+    {
+     "accuracy": 0.71875
+    },
+    {
+     "accuracy": 0.671875
+    }
+   ],
+   "accuracy": 0.7433045936668972
+  },
+  {
+   "method": "constant",
+   "cell": "DISAGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.4
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.4
+    },
+    {
+     "accuracy": 0.5714285714285714
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.2
+    }
+   ],
+   "accuracy": 0.2433261183261183
+  },
+  {
+   "method": "random",
+   "cell": "ALL [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.13194444444444442
+    },
+    {
+     "accuracy": 0.15730337078651682
+    },
+    {
+     "accuracy": 0.1276595744680851
+    },
+    {
+     "accuracy": 0.12077294685990336
+    },
+    {
+     "accuracy": 0.16444444444444442
+    },
+    {
+     "accuracy": 0.07279693486590037
+    },
+    {
+     "accuracy": 0.1391941391941392
+    },
+    {
+     "accuracy": 0.17054263565891475
+    },
+    {
+     "accuracy": 0.15053763440860216
+    },
+    {
+     "accuracy": 0.1843137254901961
+    },
+    {
+     "accuracy": 0.1822222222222222
+    },
+    {
+     "accuracy": 0.17567567567567569
+    }
+   ],
+   "accuracy": 0.14811731237658704
+  },
+  {
+   "method": "random",
+   "cell": "AGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.1282051282051282
+    },
+    {
+     "accuracy": 0.1626984126984127
+    },
+    {
+     "accuracy": 0.12878787878787878
+    },
+    {
+     "accuracy": 0.11764705882352941
+    },
+    {
+     "accuracy": 0.162037037037037
+    },
+    {
+     "accuracy": 0.07364341085271317
+    },
+    {
+     "accuracy": 0.137037037037037
+    },
+    {
+     "accuracy": 0.16450216450216454
+    },
+    {
+     "accuracy": 0.14772727272727273
+    },
+    {
+     "accuracy": 0.1837606837606838
+    },
+    {
+     "accuracy": 0.19270833333333331
+    },
+    {
+     "accuracy": 0.1875
+    }
+   ],
+   "accuracy": 0.1488545348137659
+  },
+  {
+   "method": "random",
+   "cell": "DISAGREE [sens 0.25]",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.06666666666666667
+    },
+    {
+     "accuracy": 0.1111111111111111
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.2222222222222222
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.2222222222222222
+    },
+    {
+     "accuracy": 0.2
+    },
+    {
+     "accuracy": 0.19047619047619047
+    },
+    {
+     "accuracy": 0.1212121212121212
+    },
+    {
+     "accuracy": 0.1
+    }
+   ],
+   "accuracy": 0.17504810004810004
+  }
+ ],
+ "provenance": {
+  "commit": "31556cd5ccec4763369b467b05c3f71b2496e390",
+  "dirty": true,
+  "prereg": "docs/PREREG_FOLLOWS_B.md",
+  "domain": "skirmish",
+  "margin": 0.1,
+  "data_seed": 0,
+  "n_models": 24,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "torch": "2.13.0+cpu"
+ },
+ "rows": [
+  {
+   "method": "interpreter",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6743589743589744
+    },
+    {
+     "accuracy": 0.6770025839793282
+    },
+    {
+     "accuracy": 0.800524934383202
+    },
+    {
+     "accuracy": 0.7492877492877493
+    },
+    {
+     "accuracy": 0.7787114845938374
+    },
+    {
+     "accuracy": 0.8732782369146005
+    },
+    {
+     "accuracy": 0.7433862433862433
+    },
+    {
+     "accuracy": 0.7888888888888889
+    },
+    {
+     "accuracy": 0.7154471544715447
+    },
+    {
+     "accuracy": 0.6351706036745406
+    },
+    {
+     "accuracy": 0.6186440677966102
+    },
+    {
+     "accuracy": 0.6666666666666667
+    }
+   ],
+   "accuracy": 0.7267806323668489
+  },
+  {
+   "method": "interpreter",
+   "cell": "AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.711484593837535
+    },
+    {
+     "accuracy": 0.681547619047619
+    },
+    {
+     "accuracy": 0.8304597701149427
+    },
+    {
+     "accuracy": 0.7538940809968848
+    },
+    {
+     "accuracy": 0.7968253968253968
+    },
+    {
+     "accuracy": 0.868945868945869
+    },
+    {
+     "accuracy": 0.7578347578347578
+    },
+    {
+     "accuracy": 0.84
+    },
+    {
+     "accuracy": 0.7387387387387387
+    },
+    {
+     "accuracy": 0.6635802469135802
+    },
+    {
+     "accuracy": 0.6268115942028986
+    },
+    {
+     "accuracy": 0.6989247311827957
+    }
+   ],
+   "accuracy": 0.7474206165534182
+  },
+  {
+   "method": "interpreter",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2727272727272727
+    },
+    {
+     "accuracy": 0.6470588235294118
+    },
+    {
+     "accuracy": 0.4848484848484849
+    },
+    {
+     "accuracy": 0.7
+    },
+    {
+     "accuracy": 0.6428571428571429
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "accuracy": 0.5333333333333333
+    },
+    {
+     "accuracy": 0.49999999999999994
+    },
+    {
+     "accuracy": 0.47368421052631576
+    },
+    {
+     "accuracy": 0.5897435897435896
+    },
+    {
+     "accuracy": 0.5416666666666666
+    }
+   ],
+   "accuracy": 0.5784562566489811
+  },
+  {
+   "method": "world_oracle",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.9153846153846154
+    },
+    {
+     "accuracy": 0.8682170542635659
+    },
+    {
+     "accuracy": 0.9133858267716536
+    },
+    {
+     "accuracy": 0.9145299145299145
+    },
+    {
+     "accuracy": 0.8823529411764706
+    },
+    {
+     "accuracy": 0.9669421487603306
+    },
+    {
+     "accuracy": 0.9285714285714286
+    },
+    {
+     "accuracy": 0.8333333333333334
+    },
+    {
+     "accuracy": 0.9024390243902439
+    },
+    {
+     "accuracy": 0.8503937007874016
+    },
+    {
+     "accuracy": 0.7796610169491526
+    },
+    {
+     "accuracy": 0.7948717948717948
+    }
+   ],
+   "accuracy": 0.8791735666491589
+  },
+  {
+   "method": "world_oracle",
+   "cell": "AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5692307692307692
+    },
+    {
+     "accuracy": 0.6201550387596899
+    },
+    {
+     "accuracy": 0.6771653543307087
+    },
+    {
+     "accuracy": 0.5384615384615384
+    },
+    {
+     "accuracy": 0.6386554621848739
+    },
+    {
+     "accuracy": 0.7603305785123967
+    },
+    {
+     "accuracy": 0.6111111111111112
+    },
+    {
+     "accuracy": 0.7166666666666667
+    },
+    {
+     "accuracy": 0.5934959349593496
+    },
+    {
+     "accuracy": 0.5748031496062992
+    },
+    {
+     "accuracy": 0.5932203389830508
+    },
+    {
+     "accuracy": 0.6239316239316239
+    }
+   ],
+   "accuracy": 0.6264356305615065
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5966386554621849
+    },
+    {
+     "accuracy": 0.625
+    },
+    {
+     "accuracy": 0.6637931034482759
+    },
+    {
+     "accuracy": 0.5420560747663551
+    },
+    {
+     "accuracy": 0.638095238095238
+    },
+    {
+     "accuracy": 0.7692307692307693
+    },
+    {
+     "accuracy": 0.6239316239316239
+    },
+    {
+     "accuracy": 0.73
+    },
+    {
+     "accuracy": 0.6126126126126126
+    },
+    {
+     "accuracy": 0.5740740740740741
+    },
+    {
+     "accuracy": 0.5978260869565217
+    },
+    {
+     "accuracy": 0.6559139784946236
+    }
+   ],
+   "accuracy": 0.6357643514226899
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2727272727272727
+    },
+    {
+     "accuracy": 0.5882352941176471
+    },
+    {
+     "accuracy": 0.8181818181818182
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.6428571428571429
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.4444444444444444
+    },
+    {
+     "accuracy": 0.65
+    },
+    {
+     "accuracy": 0.4166666666666667
+    },
+    {
+     "accuracy": 0.5789473684210527
+    },
+    {
+     "accuracy": 0.5769230769230769
+    },
+    {
+     "accuracy": 0.5
+    }
+   ],
+   "accuracy": 0.5407485903615935
+  },
+  {
+   "method": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.676923076923077
+    },
+    {
+     "accuracy": 0.6434108527131783
+    },
+    {
+     "accuracy": 0.5590551181102362
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6218487394957983
+    },
+    {
+     "accuracy": 0.6694214876033058
+    },
+    {
+     "accuracy": 0.6507936507936508
+    },
+    {
+     "accuracy": 0.5916666666666667
+    },
+    {
+     "accuracy": 0.5609756097560976
+    },
+    {
+     "accuracy": 0.6141732283464567
+    },
+    {
+     "accuracy": 0.5423728813559322
+    },
+    {
+     "accuracy": 0.5213675213675214
+    }
+   ],
+   "accuracy": 0.6098896249832156
+  },
+  {
+   "method": "constant",
+   "cell": "AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6974789915966386
+    },
+    {
+     "accuracy": 0.7142857142857143
+    },
+    {
+     "accuracy": 0.5948275862068966
+    },
+    {
+     "accuracy": 0.6822429906542056
+    },
+    {
+     "accuracy": 0.6761904761904762
+    },
+    {
+     "accuracy": 0.6666666666666666
+    },
+    {
+     "accuracy": 0.6837606837606838
+    },
+    {
+     "accuracy": 0.68
+    },
+    {
+     "accuracy": 0.5855855855855856
+    },
+    {
+     "accuracy": 0.6388888888888888
+    },
+    {
+     "accuracy": 0.6521739130434783
+    },
+    {
+     "accuracy": 0.6236559139784946
+    }
+   ],
+   "accuracy": 0.6579797842381441
+  },
+  {
+   "method": "constant",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.45454545454545453
+    },
+    {
+     "accuracy": 0.17647058823529413
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.21428571428571427
+    },
+    {
+     "accuracy": 0.75
+    },
+    {
+     "accuracy": 0.2222222222222222
+    },
+    {
+     "accuracy": 0.15
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.47368421052631576
+    },
+    {
+     "accuracy": 0.15384615384615385
+    },
+    {
+     "accuracy": 0.125
+    }
+   ],
+   "accuracy": 0.3112671549010559
+  },
+  {
+   "method": "random",
+   "cell": "ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.1641025641025641
+    },
+    {
+     "accuracy": 0.15503875968992248
+    },
+    {
+     "accuracy": 0.1443569553805774
+    },
+    {
+     "accuracy": 0.11965811965811965
+    },
+    {
+     "accuracy": 0.14845938375350134
+    },
+    {
+     "accuracy": 0.1542699724517906
+    },
+    {
+     "accuracy": 0.14814814814814814
+    },
+    {
+     "accuracy": 0.1472222222222222
+    },
+    {
+     "accuracy": 0.15176151761517614
+    },
+    {
+     "accuracy": 0.12860892388451442
+    },
+    {
+     "accuracy": 0.1581920903954802
+    },
+    {
+     "accuracy": 0.13105413105413105
+    }
+   ],
+   "accuracy": 0.14590606569634565
+  },
+  {
+   "method": "random",
+   "cell": "AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.16246498599439774
+    },
+    {
+     "accuracy": 0.1577380952380952
+    },
+    {
+     "accuracy": 0.14080459770114942
+    },
+    {
+     "accuracy": 0.102803738317757
+    },
+    {
+     "accuracy": 0.14603174603174604
+    },
+    {
+     "accuracy": 0.15099715099715097
+    },
+    {
+     "accuracy": 0.1452991452991453
+    },
+    {
+     "accuracy": 0.16333333333333333
+    },
+    {
+     "accuracy": 0.15315315315315312
+    },
+    {
+     "accuracy": 0.12345679012345678
+    },
+    {
+     "accuracy": 0.16304347826086954
+    },
+    {
+     "accuracy": 0.13261648745519714
+    }
+   ],
+   "accuracy": 0.14514522515878767
+  },
+  {
+   "method": "random",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.1372549019607843
+    },
+    {
+     "accuracy": 0.1818181818181818
+    },
+    {
+     "accuracy": 0.29999999999999993
+    },
+    {
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.18518518518518517
+    },
+    {
+     "accuracy": 0.06666666666666667
+    },
+    {
+     "accuracy": 0.13888888888888887
+    },
+    {
+     "accuracy": 0.15789473684210525
+    },
+    {
+     "accuracy": 0.14102564102564102
+    },
+    {
+     "accuracy": 0.125
+    }
+   ],
+   "accuracy": 0.16935158757269178
+  }
+ ],
+ "comparisons": [
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.2671891017479252,
+   "a": 0.5784562566489811,
+   "b": 0.3112671549010559,
+   "p": 0.0029296875,
+   "p_adj": 0.005859375,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "world_oracle",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.5784562566489811,
+   "a": 0.5784562566489811,
+   "b": 0.0,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "delta": 0.40910466907628934,
+   "a": 0.5784562566489811,
+   "b": 0.16935158757269178,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "AGREE",
+   "n_models": 12,
+   "delta": 0.08944083231527411,
+   "a": 0.7474206165534182,
+   "b": 0.6579797842381441,
+   "p": 0.00537109375,
+   "p_adj": 0.005859375,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "AGREE",
+   "n_models": 12,
+   "delta": 0.6022753913946305,
+   "a": 0.7474206165534182,
+   "b": 0.14514522515878767,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "delta": 0.11689100738363319,
+   "a": 0.7267806323668489,
+   "b": 0.6098896249832156,
+   "p": 0.0009765625,
+   "p_adj": 0.0029296875,
+   "reject": true
+  }
+ ],
+ "gate": "CONFIRMED",
+ "wall_seconds": 737.7022731304169
+}

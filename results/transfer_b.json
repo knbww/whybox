@@ -1,0 +1,1429 @@
+{
+ "provenance": {
+  "commit": "8e10633212022caee90324932dba62f2586ba298",
+  "dirty": false,
+  "prereg": "docs/PREREG_TRANSFER_B.md",
+  "pairs": [
+   [
+    "skirmish",
+    "clinic"
+   ],
+   [
+    "clinic",
+    "skirmish"
+   ]
+  ],
+  "margin": 0.1,
+  "n_models": 24,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "torch": "2.13.0+cpu"
+ },
+ "rows": [
+  {
+   "method": "constant_source",
+   "cell": "skirmish->clinic|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.11702127659574468
+    },
+    {
+     "accuracy": 0.10909090909090909
+    },
+    {
+     "accuracy": 0.11904761904761904
+    },
+    {
+     "accuracy": 0.1623931623931624
+    },
+    {
+     "accuracy": 0.09009009009009009
+    },
+    {
+     "accuracy": 0.17142857142857143
+    },
+    {
+     "accuracy": 0.13761467889908258
+    },
+    {
+     "accuracy": 0.10576923076923077
+    },
+    {
+     "accuracy": 0.14606741573033707
+    },
+    {
+     "accuracy": 0.08974358974358974
+    },
+    {
+     "accuracy": 0.15294117647058825
+    },
+    {
+     "accuracy": 0.11702127659574468
+    }
+   ],
+   "accuracy": 0.12651908307122248
+  },
+  {
+   "method": "constant_source",
+   "cell": "skirmish->clinic|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.15447154471544716
+    },
+    {
+     "accuracy": 0.11904761904761904
+    },
+    {
+     "accuracy": 0.15126050420168066
+    },
+    {
+     "accuracy": 0.171875
+    },
+    {
+     "accuracy": 0.10852713178294573
+    },
+    {
+     "accuracy": 0.15966386554621848
+    },
+    {
+     "accuracy": 0.15555555555555556
+    },
+    {
+     "accuracy": 0.128
+    },
+    {
+     "accuracy": 0.19672131147540983
+    },
+    {
+     "accuracy": 0.13934426229508196
+    },
+    {
+     "accuracy": 0.18333333333333332
+    },
+    {
+     "accuracy": 0.12295081967213115
+    }
+   ],
+   "accuracy": 0.1492292456354519
+  },
+  {
+   "method": "constant_source",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.27586206896551724
+    },
+    {
+     "accuracy": 0.1875
+    },
+    {
+     "accuracy": 0.22857142857142856
+    },
+    {
+     "accuracy": 0.2727272727272727
+    },
+    {
+     "accuracy": 0.2222222222222222
+    },
+    {
+     "accuracy": 0.07142857142857142
+    },
+    {
+     "accuracy": 0.23076923076923078
+    },
+    {
+     "accuracy": 0.23809523809523808
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.22727272727272727
+    },
+    {
+     "accuracy": 0.2571428571428571
+    },
+    {
+     "accuracy": 0.14285714285714285
+    }
+   ],
+   "accuracy": 0.2239818411154618
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "skirmish->clinic|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.648936170212766
+    },
+    {
+     "accuracy": 0.7
+    },
+    {
+     "accuracy": 0.6547619047619048
+    },
+    {
+     "accuracy": 0.6410256410256411
+    },
+    {
+     "accuracy": 0.7207207207207207
+    },
+    {
+     "accuracy": 0.638095238095238
+    },
+    {
+     "accuracy": 0.6330275229357798
+    },
+    {
+     "accuracy": 0.6538461538461539
+    },
+    {
+     "accuracy": 0.7303370786516854
+    },
+    {
+     "accuracy": 0.6282051282051282
+    },
+    {
+     "accuracy": 0.6705882352941176
+    },
+    {
+     "accuracy": 0.6914893617021277
+    }
+   ],
+   "accuracy": 0.6675860962876053
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "skirmish->clinic|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6016260162601627
+    },
+    {
+     "accuracy": 0.6746031746031746
+    },
+    {
+     "accuracy": 0.5966386554621849
+    },
+    {
+     "accuracy": 0.6328125
+    },
+    {
+     "accuracy": 0.6744186046511628
+    },
+    {
+     "accuracy": 0.6050420168067226
+    },
+    {
+     "accuracy": 0.5703703703703704
+    },
+    {
+     "accuracy": 0.632
+    },
+    {
+     "accuracy": 0.639344262295082
+    },
+    {
+     "accuracy": 0.5655737704918032
+    },
+    {
+     "accuracy": 0.5833333333333334
+    },
+    {
+     "accuracy": 0.5901639344262295
+    }
+   ],
+   "accuracy": 0.6138272198916855
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.4482758620689655
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.45714285714285713
+    },
+    {
+     "accuracy": 0.5454545454545454
+    },
+    {
+     "accuracy": 0.3888888888888889
+    },
+    {
+     "accuracy": 0.35714285714285715
+    },
+    {
+     "accuracy": 0.3076923076923077
+    },
+    {
+     "accuracy": 0.5238095238095238
+    },
+    {
+     "accuracy": 0.3939393939393939
+    },
+    {
+     "accuracy": 0.45454545454545453
+    },
+    {
+     "accuracy": 0.37142857142857144
+    },
+    {
+     "accuracy": 0.25
+    }
+   ],
+   "accuracy": 0.41652668850944713
+  },
+  {
+   "method": "interpreter",
+   "cell": "skirmish->clinic|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5957446808510638
+    },
+    {
+     "accuracy": 0.6303030303030303
+    },
+    {
+     "accuracy": 0.6388888888888888
+    },
+    {
+     "accuracy": 0.5840455840455842
+    },
+    {
+     "accuracy": 0.6216216216216216
+    },
+    {
+     "accuracy": 0.5555555555555555
+    },
+    {
+     "accuracy": 0.5504587155963303
+    },
+    {
+     "accuracy": 0.5448717948717949
+    },
+    {
+     "accuracy": 0.6217228464419476
+    },
+    {
+     "accuracy": 0.5683760683760684
+    },
+    {
+     "accuracy": 0.5921568627450979
+    },
+    {
+     "accuracy": 0.5673758865248227
+    }
+   ],
+   "accuracy": 0.5892601279851505
+  },
+  {
+   "method": "interpreter",
+   "cell": "skirmish->clinic|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5420054200542005
+    },
+    {
+     "accuracy": 0.5925925925925927
+    },
+    {
+     "accuracy": 0.5854341736694678
+    },
+    {
+     "accuracy": 0.5859375
+    },
+    {
+     "accuracy": 0.5555555555555555
+    },
+    {
+     "accuracy": 0.5322128851540616
+    },
+    {
+     "accuracy": 0.4888888888888889
+    },
+    {
+     "accuracy": 0.5333333333333332
+    },
+    {
+     "accuracy": 0.5409836065573771
+    },
+    {
+     "accuracy": 0.49999999999999994
+    },
+    {
+     "accuracy": 0.5138888888888888
+    },
+    {
+     "accuracy": 0.5191256830601092
+    }
+   ],
+   "accuracy": 0.5408298773128729
+  },
+  {
+   "method": "interpreter",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.367816091954023
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.45714285714285713
+    },
+    {
+     "accuracy": 0.6060606060606061
+    },
+    {
+     "accuracy": 0.14814814814814814
+    },
+    {
+     "accuracy": 0.35714285714285715
+    },
+    {
+     "accuracy": 0.23076923076923078
+    },
+    {
+     "accuracy": 0.47619047619047616
+    },
+    {
+     "accuracy": 0.3232323232323232
+    },
+    {
+     "accuracy": 0.37878787878787873
+    },
+    {
+     "accuracy": 0.32380952380952377
+    },
+    {
+     "accuracy": 0.35714285714285715
+    }
+   ],
+   "accuracy": 0.36329801530950956
+  },
+  {
+   "method": "random",
+   "cell": "skirmish->clinic|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2765957446808511
+    },
+    {
+     "accuracy": 0.19090909090909092
+    },
+    {
+     "accuracy": 0.21428571428571427
+    },
+    {
+     "accuracy": 0.18803418803418803
+    },
+    {
+     "accuracy": 0.24324324324324326
+    },
+    {
+     "accuracy": 0.23809523809523808
+    },
+    {
+     "accuracy": 0.22018348623853212
+    },
+    {
+     "accuracy": 0.17307692307692307
+    },
+    {
+     "accuracy": 0.3258426966292135
+    },
+    {
+     "accuracy": 0.3333333333333333
+    },
+    {
+     "accuracy": 0.11764705882352941
+    },
+    {
+     "accuracy": 0.2765957446808511
+    }
+   ],
+   "accuracy": 0.23315353850255904
+  },
+  {
+   "method": "random",
+   "cell": "skirmish->clinic|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.25203252032520324
+    },
+    {
+     "accuracy": 0.1746031746031746
+    },
+    {
+     "accuracy": 0.18487394957983194
+    },
+    {
+     "accuracy": 0.1875
+    },
+    {
+     "accuracy": 0.23255813953488372
+    },
+    {
+     "accuracy": 0.24369747899159663
+    },
+    {
+     "accuracy": 0.22962962962962963
+    },
+    {
+     "accuracy": 0.16
+    },
+    {
+     "accuracy": 0.27049180327868855
+    },
+    {
+     "accuracy": 0.28688524590163933
+    },
+    {
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "accuracy": 0.2459016393442623
+    }
+   ],
+   "accuracy": 0.21957002065463138
+  },
+  {
+   "method": "random",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.1724137931034483
+    },
+    {
+     "accuracy": 0.0625
+    },
+    {
+     "accuracy": 0.11428571428571428
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "accuracy": 0.2857142857142857
+    },
+    {
+     "accuracy": 0.2692307692307692
+    },
+    {
+     "accuracy": 0.09523809523809523
+    },
+    {
+     "accuracy": 0.12121212121212122
+    },
+    {
+     "accuracy": 0.20454545454545456
+    },
+    {
+     "accuracy": 0.2857142857142857
+    },
+    {
+     "accuracy": 0.14285714285714285
+    }
+   ],
+   "accuracy": 0.17518304253218045
+  },
+  {
+   "method": "world_oracle",
+   "cell": "skirmish->clinic|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "skirmish->clinic|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7642276422764228
+    },
+    {
+     "accuracy": 0.873015873015873
+    },
+    {
+     "accuracy": 0.7058823529411765
+    },
+    {
+     "accuracy": 0.9140625
+    },
+    {
+     "accuracy": 0.8604651162790697
+    },
+    {
+     "accuracy": 0.8823529411764706
+    },
+    {
+     "accuracy": 0.8074074074074075
+    },
+    {
+     "accuracy": 0.832
+    },
+    {
+     "accuracy": 0.7295081967213115
+    },
+    {
+     "accuracy": 0.639344262295082
+    },
+    {
+     "accuracy": 0.7083333333333334
+    },
+    {
+     "accuracy": 0.7704918032786885
+    }
+   ],
+   "accuracy": 0.7905909523937362
+  },
+  {
+   "method": "world_oracle",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  },
+  {
+   "method": "constant_source",
+   "cell": "clinic->skirmish|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.16806722689075632
+    },
+    {
+     "accuracy": 0.08928571428571429
+    },
+    {
+     "accuracy": 0.15517241379310345
+    },
+    {
+     "accuracy": 0.12149532710280374
+    },
+    {
+     "accuracy": 0.12380952380952381
+    },
+    {
+     "accuracy": 0.1452991452991453
+    },
+    {
+     "accuracy": 0.1282051282051282
+    },
+    {
+     "accuracy": 0.13
+    },
+    {
+     "accuracy": 0.23423423423423423
+    },
+    {
+     "accuracy": 0.17592592592592593
+    },
+    {
+     "accuracy": 0.21739130434782608
+    },
+    {
+     "accuracy": 0.17204301075268819
+    }
+   ],
+   "accuracy": 0.15507741288723748
+  },
+  {
+   "method": "constant_source",
+   "cell": "clinic->skirmish|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.17692307692307693
+    },
+    {
+     "accuracy": 0.09302325581395349
+    },
+    {
+     "accuracy": 0.15748031496062992
+    },
+    {
+     "accuracy": 0.11965811965811966
+    },
+    {
+     "accuracy": 0.11764705882352941
+    },
+    {
+     "accuracy": 0.1487603305785124
+    },
+    {
+     "accuracy": 0.11904761904761904
+    },
+    {
+     "accuracy": 0.13333333333333333
+    },
+    {
+     "accuracy": 0.25203252032520324
+    },
+    {
+     "accuracy": 0.16535433070866143
+    },
+    {
+     "accuracy": 0.19491525423728814
+    },
+    {
+     "accuracy": 0.18803418803418803
+    }
+   ],
+   "accuracy": 0.15551745020367622
+  },
+  {
+   "method": "constant_source",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2727272727272727
+    },
+    {
+     "accuracy": 0.11764705882352941
+    },
+    {
+     "accuracy": 0.18181818181818182
+    },
+    {
+     "accuracy": 0.1
+    },
+    {
+     "accuracy": 0.07142857142857142
+    },
+    {
+     "accuracy": 0.25
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.15
+    },
+    {
+     "accuracy": 0.4166666666666667
+    },
+    {
+     "accuracy": 0.10526315789473684
+    },
+    {
+     "accuracy": 0.11538461538461539
+    },
+    {
+     "accuracy": 0.25
+    }
+   ],
+   "accuracy": 0.16924462706196453
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "clinic->skirmish|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5966386554621849
+    },
+    {
+     "accuracy": 0.625
+    },
+    {
+     "accuracy": 0.6637931034482759
+    },
+    {
+     "accuracy": 0.5420560747663551
+    },
+    {
+     "accuracy": 0.638095238095238
+    },
+    {
+     "accuracy": 0.7692307692307693
+    },
+    {
+     "accuracy": 0.6239316239316239
+    },
+    {
+     "accuracy": 0.73
+    },
+    {
+     "accuracy": 0.6126126126126126
+    },
+    {
+     "accuracy": 0.5740740740740741
+    },
+    {
+     "accuracy": 0.5978260869565217
+    },
+    {
+     "accuracy": 0.6559139784946236
+    }
+   ],
+   "accuracy": 0.6357643514226899
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "clinic->skirmish|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5692307692307692
+    },
+    {
+     "accuracy": 0.6201550387596899
+    },
+    {
+     "accuracy": 0.6771653543307087
+    },
+    {
+     "accuracy": 0.5384615384615384
+    },
+    {
+     "accuracy": 0.6386554621848739
+    },
+    {
+     "accuracy": 0.7603305785123967
+    },
+    {
+     "accuracy": 0.6111111111111112
+    },
+    {
+     "accuracy": 0.7166666666666667
+    },
+    {
+     "accuracy": 0.5934959349593496
+    },
+    {
+     "accuracy": 0.5748031496062992
+    },
+    {
+     "accuracy": 0.5932203389830508
+    },
+    {
+     "accuracy": 0.6239316239316239
+    }
+   ],
+   "accuracy": 0.6264356305615065
+  },
+  {
+   "method": "first_order_pointer",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2727272727272727
+    },
+    {
+     "accuracy": 0.5882352941176471
+    },
+    {
+     "accuracy": 0.8181818181818182
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.6428571428571429
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.4444444444444444
+    },
+    {
+     "accuracy": 0.65
+    },
+    {
+     "accuracy": 0.4166666666666667
+    },
+    {
+     "accuracy": 0.5789473684210527
+    },
+    {
+     "accuracy": 0.5769230769230769
+    },
+    {
+     "accuracy": 0.5
+    }
+   ],
+   "accuracy": 0.5407485903615935
+  },
+  {
+   "method": "interpreter",
+   "cell": "clinic->skirmish|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.7030812324929971
+    },
+    {
+     "accuracy": 0.636904761904762
+    },
+    {
+     "accuracy": 0.7672413793103449
+    },
+    {
+     "accuracy": 0.6573208722741433
+    },
+    {
+     "accuracy": 0.7492063492063491
+    },
+    {
+     "accuracy": 0.8376068376068376
+    },
+    {
+     "accuracy": 0.7008547008547008
+    },
+    {
+     "accuracy": 0.8099999999999998
+    },
+    {
+     "accuracy": 0.6966966966966968
+    },
+    {
+     "accuracy": 0.6604938271604938
+    },
+    {
+     "accuracy": 0.6594202898550724
+    },
+    {
+     "accuracy": 0.7455197132616489
+    }
+   ],
+   "accuracy": 0.7186955550520039
+  },
+  {
+   "method": "interpreter",
+   "cell": "clinic->skirmish|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.6923076923076923
+    },
+    {
+     "accuracy": 0.6304909560723514
+    },
+    {
+     "accuracy": 0.7637795275590552
+    },
+    {
+     "accuracy": 0.6638176638176638
+    },
+    {
+     "accuracy": 0.7507002801120448
+    },
+    {
+     "accuracy": 0.8264462809917356
+    },
+    {
+     "accuracy": 0.6904761904761905
+    },
+    {
+     "accuracy": 0.775
+    },
+    {
+     "accuracy": 0.6693766937669378
+    },
+    {
+     "accuracy": 0.6404199475065617
+    },
+    {
+     "accuracy": 0.6497175141242938
+    },
+    {
+     "accuracy": 0.7065527065527065
+    }
+   ],
+   "accuracy": 0.7049237877739362
+  },
+  {
+   "method": "interpreter",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.5757575757575757
+    },
+    {
+     "accuracy": 0.5882352941176471
+    },
+    {
+     "accuracy": 0.7272727272727272
+    },
+    {
+     "accuracy": 0.7333333333333333
+    },
+    {
+     "accuracy": 0.7619047619047619
+    },
+    {
+     "accuracy": 0.5
+    },
+    {
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "accuracy": 0.6
+    },
+    {
+     "accuracy": 0.4166666666666667
+    },
+    {
+     "accuracy": 0.5263157894736842
+    },
+    {
+     "accuracy": 0.6153846153846154
+    },
+    {
+     "accuracy": 0.5555555555555555
+    }
+   ],
+   "accuracy": 0.5963318229185103
+  },
+  {
+   "method": "random",
+   "cell": "clinic->skirmish|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.19327731092436976
+    },
+    {
+     "accuracy": 0.15178571428571427
+    },
+    {
+     "accuracy": 0.14655172413793102
+    },
+    {
+     "accuracy": 0.14018691588785046
+    },
+    {
+     "accuracy": 0.14285714285714285
+    },
+    {
+     "accuracy": 0.11965811965811966
+    },
+    {
+     "accuracy": 0.1111111111111111
+    },
+    {
+     "accuracy": 0.11
+    },
+    {
+     "accuracy": 0.08108108108108109
+    },
+    {
+     "accuracy": 0.17592592592592593
+    },
+    {
+     "accuracy": 0.11956521739130435
+    },
+    {
+     "accuracy": 0.11827956989247312
+    }
+   ],
+   "accuracy": 0.13418998609608535
+  },
+  {
+   "method": "random",
+   "cell": "clinic->skirmish|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.2076923076923077
+    },
+    {
+     "accuracy": 0.13953488372093023
+    },
+    {
+     "accuracy": 0.15748031496062992
+    },
+    {
+     "accuracy": 0.13675213675213677
+    },
+    {
+     "accuracy": 0.13445378151260504
+    },
+    {
+     "accuracy": 0.11570247933884298
+    },
+    {
+     "accuracy": 0.10317460317460317
+    },
+    {
+     "accuracy": 0.11666666666666667
+    },
+    {
+     "accuracy": 0.07317073170731707
+    },
+    {
+     "accuracy": 0.15748031496062992
+    },
+    {
+     "accuracy": 0.16101694915254236
+    },
+    {
+     "accuracy": 0.11965811965811966
+    }
+   ],
+   "accuracy": 0.13523194077477765
+  },
+  {
+   "method": "random",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.36363636363636365
+    },
+    {
+     "accuracy": 0.058823529411764705
+    },
+    {
+     "accuracy": 0.2727272727272727
+    },
+    {
+     "accuracy": 0.1
+    },
+    {
+     "accuracy": 0.07142857142857142
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.15
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.05263157894736842
+    },
+    {
+     "accuracy": 0.3076923076923077
+    },
+    {
+     "accuracy": 0.125
+    }
+   ],
+   "accuracy": 0.12516163532030403
+  },
+  {
+   "method": "world_oracle",
+   "cell": "clinic->skirmish|AGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    },
+    {
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "clinic->skirmish|ALL",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.9153846153846154
+    },
+    {
+     "accuracy": 0.8682170542635659
+    },
+    {
+     "accuracy": 0.9133858267716536
+    },
+    {
+     "accuracy": 0.9145299145299145
+    },
+    {
+     "accuracy": 0.8823529411764706
+    },
+    {
+     "accuracy": 0.9669421487603306
+    },
+    {
+     "accuracy": 0.9285714285714286
+    },
+    {
+     "accuracy": 0.8333333333333334
+    },
+    {
+     "accuracy": 0.9024390243902439
+    },
+    {
+     "accuracy": 0.8503937007874016
+    },
+    {
+     "accuracy": 0.7796610169491526
+    },
+    {
+     "accuracy": 0.7948717948717948
+    }
+   ],
+   "accuracy": 0.8791735666491589
+  },
+  {
+   "method": "world_oracle",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "per_model": [
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    },
+    {
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  }
+ ],
+ "comparisons": [
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant_source",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "delta": 0.13931617419404774,
+   "a": 0.36329801530950956,
+   "b": 0.2239818411154618,
+   "p": 0.005859375,
+   "p_adj": 0.005859375,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "skirmish->clinic|DISAGREE",
+   "n_models": 12,
+   "delta": 0.1881149727773291,
+   "a": 0.36329801530950956,
+   "b": 0.17518304253218045,
+   "p": 0.0029296875,
+   "p_adj": 0.005859375,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant_source",
+   "cell": "skirmish->clinic|ALL",
+   "n_models": 12,
+   "delta": 0.39160063167742104,
+   "a": 0.5408298773128729,
+   "b": 0.1492292456354519,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant_source",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "delta": 0.4270871958565457,
+   "a": 0.5963318229185103,
+   "b": 0.16924462706196453,
+   "p": 0.0009765625,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "clinic->skirmish|DISAGREE",
+   "n_models": 12,
+   "delta": 0.47117018759820617,
+   "a": 0.5963318229185103,
+   "b": 0.12516163532030403,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant_source",
+   "cell": "clinic->skirmish|ALL",
+   "n_models": 12,
+   "delta": 0.5494063375702598,
+   "a": 0.7049237877739362,
+   "b": 0.15551745020367622,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  }
+ ],
+ "gate": "CONFIRMED",
+ "wall_seconds": 365.7692942619324
+}

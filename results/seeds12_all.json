@@ -1,0 +1,4087 @@
+{
+ "provenance": {
+  "commit": "3f110a9f2185fb6d678280bb83855de6e5787682",
+  "dirty_tracked": false,
+  "protocol_commit": "3f110a9f2185fb6d678280bb83855de6e5787682",
+  "protocol_commit_date": "2026-09-22T18:37:17+05:00",
+  "started_utc": "2026-09-22T13:37:25+00:00",
+  "script": "scripts/seeds12_all.py",
+  "script_sha256": "bf6ddb1e30b1437e95103f443a5248fb6d8b19269e798ea2120e9c0ebb989277",
+  "modules": {
+   "follows_b": "scripts/follows_b.py",
+   "mint": "src/mint/__init__.py"
+  },
+  "protocol": "module docstring, committed before the run",
+  "domain": "skirmish",
+  "fit_population": {
+   "path": "results/cache/volume/new_models.pt",
+   "sha256": "e3b59962192afe7b0b878baf25bbde65606234e93a488ce7457f687c24d5a000",
+   "targets": [
+    {
+     "initialisation": 8,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 8,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 8,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 9,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 9,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 9,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 10,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 10,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 10,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 11,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 11,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 11,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 12,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 12,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 12,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 13,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 13,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 13,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 14,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 14,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 14,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 15,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 15,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 15,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 16,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 16,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 16,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 17,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 17,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 17,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 18,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 18,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 18,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 19,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 19,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 19,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    }
+   ]
+  },
+  "held_population": {
+   "path": "results/cache/fresh/held.pt",
+   "sha256": "6b4cf2e39aef4cf5f965a0f27f70cd48fe08340ca213056e508301ae2ee4a3e5",
+   "targets": [
+    {
+     "initialisation": 40,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 40,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 40,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 41,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 41,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 41,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 42,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 42,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 42,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 43,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 43,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 43,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 44,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 44,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 44,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 45,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 45,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 45,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 46,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 46,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 46,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 47,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 47,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 47,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 48,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 48,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 48,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 49,
+     "strength": 0.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 49,
+     "strength": 1.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 49,
+     "strength": 2.0,
+     "widths": [
+      24,
+      24,
+      12
+     ]
+    },
+    {
+     "initialisation": 50,
+     "strength": 0.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 50,
+     "strength": 1.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 50,
+     "strength": 2.0,
+     "widths": [
+      48
+     ]
+    },
+    {
+     "initialisation": 51,
+     "strength": 0.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 51,
+     "strength": 1.0,
+     "widths": [
+      32,
+      16
+     ]
+    },
+    {
+     "initialisation": 51,
+     "strength": 2.0,
+     "widths": [
+      32,
+      16
+     ]
+    }
+   ]
+  },
+  "fit_initialisations": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "held_initialisations": [
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51
+  ],
+  "unit": "initialisation",
+  "independent_units": 12,
+  "margin": 0.1,
+  "interpreter_seeds": [
+   0,
+   1,
+   2
+  ],
+  "epochs": 40,
+  "random_draws": 3,
+  "random_seed": 0,
+  "constant_cause": 0,
+  "state_counts": {
+   "ALL": 4450,
+   "AGREE": 3904,
+   "DISAGREE": 546,
+   "DISAGREE_WORLD_HAS_CAUSE": 546
+  },
+  "dropped_units": {
+   "ALL": [],
+   "AGREE": [],
+   "DISAGREE": [],
+   "DISAGREE_WORLD_HAS_CAUSE": []
+  },
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.2",
+  "python": "3.14.4"
+ },
+ "rows": [
+  {
+   "method": "interpreter",
+   "cell": "ALL",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.644803595570859
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.809024409024409
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.7897140493914688
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.6310749774164407
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.8481163055731646
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.7296197975859126
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.6702947471283371
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.8124776458109793
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.7654247130425071
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.6013599363562298
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.8041897879296253
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.7508954920474699
+    }
+   ],
+   "accuracy": 0.7380829547397835
+  },
+  {
+   "method": "interpreter",
+   "cell": "AGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6679950901689521
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.8095936321742774
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.7992291468944427
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.6512519901577651
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.8588456429630161
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.7561991421793787
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.6994678932178932
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.8276601998824221
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.8132296553349185
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.635989010989011
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.8111544426199598
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.773538618987418
+    }
+   ],
+   "accuracy": 0.7586795387974545
+  },
+  {
+   "method": "interpreter",
+   "cell": "DISAGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.5282186948853616
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.7901234567901234
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.7198412698412698
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5439005439005439
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.5709876543209876
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.562962962962963
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5288699350484247
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.493202614379085
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.4601704879482657
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.7259900593233927
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.6352657004830918
+    }
+   ],
+   "accuracy": 0.5929240779532553
+  },
+  {
+   "method": "interpreter",
+   "cell": "DISAGREE_WORLD_HAS_CAUSE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.5282186948853616
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.7901234567901234
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.7198412698412698
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5439005439005439
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.5709876543209876
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.562962962962963
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5288699350484247
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.5555555555555556
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.493202614379085
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.4601704879482657
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.7259900593233927
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.6352657004830918
+    }
+   ],
+   "accuracy": 0.5929240779532553
+  },
+  {
+   "method": "world_oracle",
+   "cell": "ALL",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.8533567313618464
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.9435204435204435
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.8880656977431172
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.7880758807588076
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.9587933709017292
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.8733269632555851
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.8287358403045036
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.9433344433344434
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.8596513968322338
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.7969234810612463
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.9274099883855982
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.866044203309991
+    }
+   ],
+   "accuracy": 0.8772698700641288
+  },
+  {
+   "method": "world_oracle",
+   "cell": "AGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 1.0
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 1.0
+    }
+   ],
+   "accuracy": 1.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "DISAGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  },
+  {
+   "method": "world_oracle",
+   "cell": "DISAGREE_WORLD_HAS_CAUSE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.0
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.0
+    }
+   ],
+   "accuracy": 0.0
+  },
+  {
+   "method": "constant",
+   "cell": "ALL",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6023861191380373
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.6987063987063987
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.5989572255701289
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.6058265582655826
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.6932642729230022
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.5897663139015402
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.6111501794149876
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.6415251415251415
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.6060546236250369
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.6089026501360456
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.6557620338108143
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.6678653292116165
+    }
+   ],
+   "accuracy": 0.6316805705190277
+  },
+  {
+   "method": "constant",
+   "cell": "AGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6662316610312311
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.7202426442895652
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.6500685437097965
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.7066145607179042
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.700572056417422
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.6370262286514538
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.6889159451659452
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.6716490299823633
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.676356191024008
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.6936324193605747
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.6870254585771827
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.7258104569261331
+    }
+   ],
+   "accuracy": 0.6853454329877984
+  },
+  {
+   "method": "constant",
+   "cell": "DISAGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.22486772486772488
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.3148148148148148
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.19365079365079363
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.2347882003054417
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.6944444444444443
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.25
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.23396435753415157
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.14814814814814814
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.2184313725490196
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.277336860670194
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.26695526695526695
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.3132045088566828
+    }
+   ],
+   "accuracy": 0.2808838743997235
+  },
+  {
+   "method": "constant",
+   "cell": "DISAGREE_WORLD_HAS_CAUSE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.22486772486772488
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.3148148148148148
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.19365079365079363
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.2347882003054417
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.6944444444444443
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.25
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.23396435753415157
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.14814814814814814
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.2184313725490196
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.277336860670194
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.26695526695526695
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.3132045088566828
+    }
+   ],
+   "accuracy": 0.2808838743997235
+  },
+  {
+   "method": "random",
+   "cell": "ALL",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.13771062223747646
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.1353969353969354
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.13394481862223795
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.15519421860885274
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.17759671979280578
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.1424274908469747
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.15729936402728498
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.14601447934781267
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.14710498864223528
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.13171496545902986
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.15774078375704392
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.14801729999509317
+    }
+   ],
+   "accuracy": 0.14751355722781523
+  },
+  {
+   "method": "random",
+   "cell": "AGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.14936383649183527
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.1336877361804048
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.1385454673274983
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.15848892748588797
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.1783897759677918
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.1435012228332986
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.16161315536315538
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.14450323339212226
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.138890732505918
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.12993142240715055
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.15450723712217962
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.149185780506893
+    }
+   ],
+   "accuracy": 0.14838404396534463
+  },
+  {
+   "method": "random",
+   "cell": "DISAGREE",
+   "unit": "initialisation",
+   "role": "arm",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.07231040564373897
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.09656084656084656
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.14038260589984727
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.18827160493827158
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.14312169312169312
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.1354968448789959
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.17901234567901234
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.17673202614379083
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.1280129335684891
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.18662818662818662
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.13607085346215783
+    }
+   ],
+   "accuracy": 0.14577225109930808
+  },
+  {
+   "method": "random",
+   "cell": "DISAGREE_WORLD_HAS_CAUSE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.07231040564373897
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.16666666666666666
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.09656084656084656
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.14038260589984727
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.18827160493827158
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.14312169312169312
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.1354968448789959
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.17901234567901234
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.17673202614379083
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.1280129335684891
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.18662818662818662
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.13607085346215783
+    }
+   ],
+   "accuracy": 0.14577225109930808
+  },
+  {
+   "method": "check_first_order_meanabs",
+   "cell": "ALL",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6051776441802018
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.6722568722568724
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.6349196502422308
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5546070460704607
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.7254264421911197
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.6549558763457893
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5916373996342111
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.6765271765271765
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.6721073594592942
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.5283842847105454
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.671957671957672
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.618488844026665
+    }
+   ],
+   "accuracy": 0.6338705223001865
+  },
+  {
+   "method": "check_first_order_meanabs",
+   "cell": "AGREE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6099362190095677
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.6775183760521003
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.6471707265633239
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5628166160081053
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.7387210936349269
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.6682684455931048
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.598205266955267
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.6909171075837742
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.7085957853861219
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.5415777588107685
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.6843817102437791
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.6171512852928782
+    }
+   ],
+   "accuracy": 0.6454383659278098
+  },
+  {
+   "method": "check_first_order_meanabs",
+   "cell": "DISAGREE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.58994708994709
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.6296296296296297
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.5404761904761904
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5172413793103449
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.3148148148148148
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.5936507936507937
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5734345745787394
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.40740740740740744
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.40313725490196073
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.4669312169312169
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.5098605098605099
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.6143317230273752
+    }
+   ],
+   "accuracy": 0.5134052153780061
+  },
+  {
+   "method": "check_first_order_meanabs",
+   "cell": "DISAGREE_WORLD_HAS_CAUSE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.58994708994709
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.6296296296296297
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.5404761904761904
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5172413793103449
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.3148148148148148
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.5936507936507937
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5734345745787394
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.40740740740740744
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.40313725490196073
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.4669312169312169
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.5098605098605099
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.6143317230273752
+    }
+   ],
+   "accuracy": 0.5134052153780061
+  },
+  {
+   "method": "check_first_order_signed",
+   "cell": "ALL",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.8022285330469474
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.9674751674751675
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.9033188585607941
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.7688346883468835
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.9749993913880929
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.8670490750653901
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.816087455552324
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.9570522070522071
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.8620510182105338
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.7602710602650496
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.9571557620338108
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.9029293630265177
+    }
+   ],
+   "accuracy": 0.8782877150019766
+  },
+  {
+   "method": "check_first_order_signed",
+   "cell": "AGREE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.833714186420445
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.9708393105753811
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.9340198249499103
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.821464756115212
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.9824534864124989
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.9113415236625388
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.8717532467532467
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.9803350970017637
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.9117571145181155
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.8208684519364131
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.9623805313460485
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.9470117693094937
+    }
+   ],
+   "accuracy": 0.9123282749167556
+  },
+  {
+   "method": "check_first_order_signed",
+   "cell": "DISAGREE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6349206349206349
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.9259259259259259
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.6658730158730158
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5778474399164054
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.8888888888888888
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.5523809523809524
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5521808473753554
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.5740740740740741
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.5356862745098039
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.5008818342151675
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.8956228956228957
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.5958132045088567
+    }
+   ],
+   "accuracy": 0.658341332350998
+  },
+  {
+   "method": "check_first_order_signed",
+   "cell": "DISAGREE_WORLD_HAS_CAUSE",
+   "unit": "initialisation",
+   "role": "reported",
+   "n_units": 12,
+   "per_model": [
+    {
+     "initialisation": 40,
+     "accuracy": 0.6349206349206349
+    },
+    {
+     "initialisation": 41,
+     "accuracy": 0.9259259259259259
+    },
+    {
+     "initialisation": 42,
+     "accuracy": 0.6658730158730158
+    },
+    {
+     "initialisation": 43,
+     "accuracy": 0.5778474399164054
+    },
+    {
+     "initialisation": 44,
+     "accuracy": 0.8888888888888888
+    },
+    {
+     "initialisation": 45,
+     "accuracy": 0.5523809523809524
+    },
+    {
+     "initialisation": 46,
+     "accuracy": 0.5521808473753554
+    },
+    {
+     "initialisation": 47,
+     "accuracy": 0.5740740740740741
+    },
+    {
+     "initialisation": 48,
+     "accuracy": 0.5356862745098039
+    },
+    {
+     "initialisation": 49,
+     "accuracy": 0.5008818342151675
+    },
+    {
+     "initialisation": 50,
+     "accuracy": 0.8956228956228957
+    },
+    {
+     "initialisation": 51,
+     "accuracy": 0.5958132045088567
+    }
+   ],
+   "accuracy": 0.658341332350998
+  }
+ ],
+ "comparisons": [
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "unit": "initialisation",
+   "delta": 0.31204020355353185,
+   "a": 0.5929240779532553,
+   "b": 0.2808838743997235,
+   "p": 0.0009765625,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "world_oracle",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "unit": "initialisation",
+   "delta": 0.5929240779532553,
+   "a": 0.5929240779532553,
+   "b": 0.0,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "DISAGREE",
+   "n_models": 12,
+   "unit": "initialisation",
+   "delta": 0.4471518268539474,
+   "a": 0.5929240779532553,
+   "b": 0.14577225109930808,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "AGREE",
+   "n_models": 12,
+   "unit": "initialisation",
+   "delta": 0.07333410580965624,
+   "a": 0.7586795387974545,
+   "b": 0.6853454329877984,
+   "p": 0.01220703125,
+   "p_adj": 0.01220703125,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "random",
+   "cell": "AGREE",
+   "n_models": 12,
+   "unit": "initialisation",
+   "delta": 0.6102954948321099,
+   "a": 0.7586795387974545,
+   "b": 0.14838404396534463,
+   "p": 0.00048828125,
+   "p_adj": 0.0029296875,
+   "reject": true
+  },
+  {
+   "metric": "accuracy",
+   "method": "interpreter",
+   "reference": "constant",
+   "cell": "ALL",
+   "n_models": 12,
+   "unit": "initialisation",
+   "delta": 0.10640238422075589,
+   "a": 0.7380829547397835,
+   "b": 0.6316805705190277,
+   "p": 0.0009765625,
+   "p_adj": 0.0029296875,
+   "reject": true
+  }
+ ],
+ "per_target": [
+  {
+   "initialisation": 40,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 132,
+    "AGREE": 118,
+    "DISAGREE": 14,
+    "DISAGREE_WORLD_HAS_CAUSE": 14
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6338383838383838,
+     "AGREE": 0.632768361581921,
+     "DISAGREE": 0.6428571428571429,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6428571428571429
+    },
+    "world_oracle": {
+     "ALL": 0.8939393939393939,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6287878787878788,
+     "AGREE": 0.6779661016949152,
+     "DISAGREE": 0.21428571428571427,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.21428571428571427
+    },
+    "random": {
+     "ALL": 0.15404040404040403,
+     "AGREE": 0.1638418079096045,
+     "DISAGREE": 0.07142857142857142,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.07142857142857142
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5681818181818182,
+     "AGREE": 0.559322033898305,
+     "DISAGREE": 0.6428571428571429,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6428571428571429
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8257575757575758,
+     "AGREE": 0.8305084745762712,
+     "DISAGREE": 0.7857142857142857,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7857142857142857
+    }
+   }
+  },
+  {
+   "initialisation": 40,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 119,
+    "AGREE": 101,
+    "DISAGREE": 18,
+    "DISAGREE_WORLD_HAS_CAUSE": 18
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6918767507002801,
+     "AGREE": 0.7293729372937293,
+     "DISAGREE": 0.48148148148148145,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.48148148148148145
+    },
+    "world_oracle": {
+     "ALL": 0.8487394957983193,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6218487394957983,
+     "AGREE": 0.693069306930693,
+     "DISAGREE": 0.2222222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2222222222222222
+    },
+    "random": {
+     "ALL": 0.13445378151260504,
+     "AGREE": 0.1353135313531353,
+     "DISAGREE": 0.12962962962962962,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.12962962962962962
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6386554621848739,
+     "AGREE": 0.6534653465346535,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7983193277310925,
+     "AGREE": 0.8514851485148515,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    }
+   }
+  },
+  {
+   "initialisation": 40,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 115,
+    "AGREE": 94,
+    "DISAGREE": 21,
+    "DISAGREE_WORLD_HAS_CAUSE": 21
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6086956521739131,
+     "AGREE": 0.6418439716312057,
+     "DISAGREE": 0.4603174603174603,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4603174603174603
+    },
+    "world_oracle": {
+     "ALL": 0.8173913043478261,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5565217391304348,
+     "AGREE": 0.6276595744680851,
+     "DISAGREE": 0.23809523809523808,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.23809523809523808
+    },
+    "random": {
+     "ALL": 0.12463768115942028,
+     "AGREE": 0.14893617021276595,
+     "DISAGREE": 0.015873015873015872,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.015873015873015872
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6086956521739131,
+     "AGREE": 0.6170212765957447,
+     "DISAGREE": 0.5714285714285714,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5714285714285714
+    },
+    "check_first_order_signed": {
+     "ALL": 0.782608695652174,
+     "AGREE": 0.8191489361702128,
+     "DISAGREE": 0.6190476190476191,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6190476190476191
+    }
+   }
+  },
+  {
+   "initialisation": 41,
+   "strength": 0.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 130,
+    "AGREE": 124,
+    "DISAGREE": 6,
+    "DISAGREE_WORLD_HAS_CAUSE": 6
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7923076923076923,
+     "AGREE": 0.8010752688172044,
+     "DISAGREE": 0.611111111111111,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.611111111111111
+    },
+    "world_oracle": {
+     "ALL": 0.9538461538461539,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.7615384615384615,
+     "AGREE": 0.7903225806451613,
+     "DISAGREE": 0.16666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666666
+    },
+    "random": {
+     "ALL": 0.13333333333333336,
+     "AGREE": 0.13172043010752688,
+     "DISAGREE": 0.16666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666666
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6846153846153846,
+     "AGREE": 0.6774193548387096,
+     "DISAGREE": 0.8333333333333334,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8333333333333334
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9923076923076923,
+     "AGREE": 0.9919354838709677,
+     "DISAGREE": 1.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 1.0
+    }
+   }
+  },
+  {
+   "initialisation": 41,
+   "strength": 1.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 130,
+    "AGREE": 121,
+    "DISAGREE": 9,
+    "DISAGREE_WORLD_HAS_CAUSE": 9
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8179487179487179,
+     "AGREE": 0.8181818181818182,
+     "DISAGREE": 0.8148148148148148,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8148148148148148
+    },
+    "world_oracle": {
+     "ALL": 0.9307692307692308,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.676923076923077,
+     "AGREE": 0.6942148760330579,
+     "DISAGREE": 0.4444444444444444,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4444444444444444
+    },
+    "random": {
+     "ALL": 0.10769230769230768,
+     "AGREE": 0.10743801652892562,
+     "DISAGREE": 0.1111111111111111,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.1111111111111111
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6384615384615384,
+     "AGREE": 0.6694214876033058,
+     "DISAGREE": 0.2222222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2222222222222222
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9461538461538461,
+     "AGREE": 0.9586776859504132,
+     "DISAGREE": 0.7777777777777778,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7777777777777778
+    }
+   }
+  },
+  {
+   "initialisation": 41,
+   "strength": 2.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 111,
+    "AGREE": 105,
+    "DISAGREE": 6,
+    "DISAGREE_WORLD_HAS_CAUSE": 6
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8168168168168167,
+     "AGREE": 0.8095238095238095,
+     "DISAGREE": 0.9444444444444445,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.9444444444444445
+    },
+    "world_oracle": {
+     "ALL": 0.9459459459459459,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6576576576576577,
+     "AGREE": 0.6761904761904762,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "random": {
+     "ALL": 0.16516516516516516,
+     "AGREE": 0.1619047619047619,
+     "DISAGREE": 0.2222222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2222222222222222
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6936936936936937,
+     "AGREE": 0.6857142857142857,
+     "DISAGREE": 0.8333333333333334,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8333333333333334
+    },
+    "check_first_order_signed": {
+     "ALL": 0.963963963963964,
+     "AGREE": 0.9619047619047619,
+     "DISAGREE": 1.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 1.0
+    }
+   }
+  },
+  {
+   "initialisation": 42,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 130,
+    "AGREE": 116,
+    "DISAGREE": 14,
+    "DISAGREE_WORLD_HAS_CAUSE": 14
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7282051282051283,
+     "AGREE": 0.7183908045977011,
+     "DISAGREE": 0.8095238095238094,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8095238095238094
+    },
+    "world_oracle": {
+     "ALL": 0.8923076923076924,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6384615384615384,
+     "AGREE": 0.6896551724137931,
+     "DISAGREE": 0.21428571428571427,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.21428571428571427
+    },
+    "random": {
+     "ALL": 0.1358974358974359,
+     "AGREE": 0.14080459770114942,
+     "DISAGREE": 0.09523809523809523,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.09523809523809523
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6230769230769231,
+     "AGREE": 0.6293103448275862,
+     "DISAGREE": 0.5714285714285714,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5714285714285714
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8692307692307693,
+     "AGREE": 0.8879310344827587,
+     "DISAGREE": 0.7142857142857143,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7142857142857143
+    }
+   }
+  },
+  {
+   "initialisation": 42,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 124,
+    "AGREE": 109,
+    "DISAGREE": 15,
+    "DISAGREE_WORLD_HAS_CAUSE": 15
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7956989247311829,
+     "AGREE": 0.8226299694189603,
+     "DISAGREE": 0.6,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6
+    },
+    "world_oracle": {
+     "ALL": 0.8790322580645161,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6048387096774194,
+     "AGREE": 0.6605504587155964,
+     "DISAGREE": 0.2,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2
+    },
+    "random": {
+     "ALL": 0.12903225806451613,
+     "AGREE": 0.13149847094801223,
+     "DISAGREE": 0.1111111111111111,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.1111111111111111
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6209677419354839,
+     "AGREE": 0.6422018348623854,
+     "DISAGREE": 0.4666666666666667,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4666666666666667
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9032258064516129,
+     "AGREE": 0.9541284403669725,
+     "DISAGREE": 0.5333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5333333333333333
+    }
+   }
+  },
+  {
+   "initialisation": 42,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 112,
+    "AGREE": 100,
+    "DISAGREE": 12,
+    "DISAGREE_WORLD_HAS_CAUSE": 12
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8452380952380952,
+     "AGREE": 0.8566666666666666,
+     "DISAGREE": 0.75,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.75
+    },
+    "world_oracle": {
+     "ALL": 0.8928571428571429,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5535714285714286,
+     "AGREE": 0.6,
+     "DISAGREE": 0.16666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666666
+    },
+    "random": {
+     "ALL": 0.1369047619047619,
+     "AGREE": 0.14333333333333334,
+     "DISAGREE": 0.08333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.08333333333333333
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6607142857142857,
+     "AGREE": 0.67,
+     "DISAGREE": 0.5833333333333334,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5833333333333334
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9375,
+     "AGREE": 0.96,
+     "DISAGREE": 0.75,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.75
+    }
+   }
+  },
+  {
+   "initialisation": 43,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 120,
+    "AGREE": 98,
+    "DISAGREE": 22,
+    "DISAGREE_WORLD_HAS_CAUSE": 22
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6277777777777778,
+     "AGREE": 0.6700680272108842,
+     "DISAGREE": 0.4393939393939394,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4393939393939394
+    },
+    "world_oracle": {
+     "ALL": 0.8166666666666667,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5916666666666667,
+     "AGREE": 0.6836734693877551,
+     "DISAGREE": 0.18181818181818182,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.18181818181818182
+    },
+    "random": {
+     "ALL": 0.1472222222222222,
+     "AGREE": 0.15986394557823128,
+     "DISAGREE": 0.0909090909090909,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0909090909090909
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5583333333333333,
+     "AGREE": 0.5714285714285714,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8083333333333333,
+     "AGREE": 0.8367346938775511,
+     "DISAGREE": 0.6818181818181818,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6818181818181818
+    }
+   }
+  },
+  {
+   "initialisation": 43,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 120,
+    "AGREE": 94,
+    "DISAGREE": 26,
+    "DISAGREE_WORLD_HAS_CAUSE": 26
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6611111111111111,
+     "AGREE": 0.698581560283688,
+     "DISAGREE": 0.5256410256410257,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5256410256410257
+    },
+    "world_oracle": {
+     "ALL": 0.7833333333333333,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5916666666666667,
+     "AGREE": 0.648936170212766,
+     "DISAGREE": 0.38461538461538464,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.38461538461538464
+    },
+    "random": {
+     "ALL": 0.16388888888888886,
+     "AGREE": 0.15602836879432624,
+     "DISAGREE": 0.19230769230769226,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.19230769230769226
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6583333333333333,
+     "AGREE": 0.7021276595744681,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7583333333333333,
+     "AGREE": 0.8297872340425532,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    }
+   }
+  },
+  {
+   "initialisation": 43,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 123,
+    "AGREE": 94,
+    "DISAGREE": 29,
+    "DISAGREE_WORLD_HAS_CAUSE": 29
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6043360433604336,
+     "AGREE": 0.5851063829787233,
+     "DISAGREE": 0.6666666666666667,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6666666666666667
+    },
+    "world_oracle": {
+     "ALL": 0.7642276422764228,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6341463414634146,
+     "AGREE": 0.7872340425531915,
+     "DISAGREE": 0.13793103448275862,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.13793103448275862
+    },
+    "random": {
+     "ALL": 0.15447154471544713,
+     "AGREE": 0.1595744680851064,
+     "DISAGREE": 0.13793103448275862,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.13793103448275862
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.44715447154471544,
+     "AGREE": 0.4148936170212766,
+     "DISAGREE": 0.5517241379310345,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5517241379310345
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7398373983739838,
+     "AGREE": 0.7978723404255319,
+     "DISAGREE": 0.5517241379310345,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5517241379310345
+    }
+   }
+  },
+  {
+   "initialisation": 44,
+   "strength": 0.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 115,
+    "AGREE": 113,
+    "DISAGREE": 2,
+    "DISAGREE_WORLD_HAS_CAUSE": 2
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.872463768115942,
+     "AGREE": 0.8790560471976402,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    },
+    "world_oracle": {
+     "ALL": 0.9826086956521739,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6782608695652174,
+     "AGREE": 0.672566371681416,
+     "DISAGREE": 1.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 1.0
+    },
+    "random": {
+     "ALL": 0.19130434782608696,
+     "AGREE": 0.1887905604719764,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.782608695652174,
+     "AGREE": 0.7964601769911505,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9739130434782609,
+     "AGREE": 0.9734513274336283,
+     "DISAGREE": 1.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 1.0
+    }
+   }
+  },
+  {
+   "initialisation": 44,
+   "strength": 1.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 123,
+    "AGREE": 114,
+    "DISAGREE": 9,
+    "DISAGREE_WORLD_HAS_CAUSE": 9
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8509485094850948,
+     "AGREE": 0.868421052631579,
+     "DISAGREE": 0.6296296296296297,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6296296296296297
+    },
+    "world_oracle": {
+     "ALL": 0.926829268292683,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.7073170731707317,
+     "AGREE": 0.7368421052631579,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "random": {
+     "ALL": 0.17344173441734417,
+     "AGREE": 0.17543859649122803,
+     "DISAGREE": 0.14814814814814814,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.14814814814814814
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6829268292682927,
+     "AGREE": 0.7017543859649122,
+     "DISAGREE": 0.4444444444444444,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4444444444444444
+    },
+    "check_first_order_signed": {
+     "ALL": 0.959349593495935,
+     "AGREE": 0.9824561403508771,
+     "DISAGREE": 0.6666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6666666666666666
+    }
+   }
+  },
+  {
+   "initialisation": 44,
+   "strength": 2.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 121,
+    "AGREE": 117,
+    "DISAGREE": 4,
+    "DISAGREE_WORLD_HAS_CAUSE": 4
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8209366391184573,
+     "AGREE": 0.8290598290598291,
+     "DISAGREE": 0.5833333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5833333333333333
+    },
+    "world_oracle": {
+     "ALL": 0.9669421487603306,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6942148760330579,
+     "AGREE": 0.6923076923076923,
+     "DISAGREE": 0.75,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.75
+    },
+    "random": {
+     "ALL": 0.1680440771349862,
+     "AGREE": 0.17094017094017094,
+     "DISAGREE": 0.08333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.08333333333333333
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.7107438016528925,
+     "AGREE": 0.717948717948718,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9917355371900827,
+     "AGREE": 0.9914529914529915,
+     "DISAGREE": 1.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 1.0
+    }
+   }
+  },
+  {
+   "initialisation": 45,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 133,
+    "AGREE": 112,
+    "DISAGREE": 21,
+    "DISAGREE_WORLD_HAS_CAUSE": 21
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.724310776942356,
+     "AGREE": 0.7767857142857143,
+     "DISAGREE": 0.44444444444444436,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.44444444444444436
+    },
+    "world_oracle": {
+     "ALL": 0.8421052631578947,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6090225563909775,
+     "AGREE": 0.6607142857142857,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "random": {
+     "ALL": 0.12280701754385967,
+     "AGREE": 0.13095238095238096,
+     "DISAGREE": 0.07936507936507936,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.07936507936507936
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6240601503759399,
+     "AGREE": 0.6696428571428571,
+     "DISAGREE": 0.38095238095238093,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.38095238095238093
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8646616541353384,
+     "AGREE": 0.9285714285714286,
+     "DISAGREE": 0.5238095238095238,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5238095238095238
+    }
+   }
+  },
+  {
+   "initialisation": 45,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 121,
+    "AGREE": 109,
+    "DISAGREE": 12,
+    "DISAGREE_WORLD_HAS_CAUSE": 12
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6749311294765841,
+     "AGREE": 0.6880733944954127,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    },
+    "world_oracle": {
+     "ALL": 0.9008264462809917,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5537190082644629,
+     "AGREE": 0.6055045871559633,
+     "DISAGREE": 0.08333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.08333333333333333
+    },
+    "random": {
+     "ALL": 0.14600550964187325,
+     "AGREE": 0.14067278287461774,
+     "DISAGREE": 0.19444444444444442,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.19444444444444442
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5785123966942148,
+     "AGREE": 0.5688073394495413,
+     "DISAGREE": 0.6666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6666666666666666
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8512396694214877,
+     "AGREE": 0.908256880733945,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    }
+   }
+  },
+  {
+   "initialisation": 45,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 122,
+    "AGREE": 107,
+    "DISAGREE": 15,
+    "DISAGREE_WORLD_HAS_CAUSE": 15
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7896174863387978,
+     "AGREE": 0.8037383177570093,
+     "DISAGREE": 0.6888888888888889,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6888888888888889
+    },
+    "world_oracle": {
+     "ALL": 0.8770491803278688,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6065573770491803,
+     "AGREE": 0.6448598130841121,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "random": {
+     "ALL": 0.15846994535519124,
+     "AGREE": 0.15887850467289716,
+     "DISAGREE": 0.15555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.15555555555555556
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.7622950819672131,
+     "AGREE": 0.7663551401869159,
+     "DISAGREE": 0.7333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7333333333333333
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8852459016393442,
+     "AGREE": 0.897196261682243,
+     "DISAGREE": 0.8,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8
+    }
+   }
+  },
+  {
+   "initialisation": 46,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 129,
+    "AGREE": 110,
+    "DISAGREE": 19,
+    "DISAGREE_WORLD_HAS_CAUSE": 19
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7080103359173127,
+     "AGREE": 0.7272727272727273,
+     "DISAGREE": 0.5964912280701754,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5964912280701754
+    },
+    "world_oracle": {
+     "ALL": 0.8527131782945736,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5968992248062015,
+     "AGREE": 0.6545454545454545,
+     "DISAGREE": 0.2631578947368421,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2631578947368421
+    },
+    "random": {
+     "ALL": 0.1731266149870801,
+     "AGREE": 0.17878787878787877,
+     "DISAGREE": 0.14035087719298245,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.14035087719298245
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6124031007751938,
+     "AGREE": 0.5818181818181818,
+     "DISAGREE": 0.7894736842105263,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7894736842105263
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8294573643410853,
+     "AGREE": 0.8545454545454545,
+     "DISAGREE": 0.6842105263157895,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6842105263157895
+    }
+   }
+  },
+  {
+   "initialisation": 46,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 119,
+    "AGREE": 96,
+    "DISAGREE": 23,
+    "DISAGREE_WORLD_HAS_CAUSE": 23
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6414565826330532,
+     "AGREE": 0.6631944444444444,
+     "DISAGREE": 0.5507246376811594,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5507246376811594
+    },
+    "world_oracle": {
+     "ALL": 0.8067226890756303,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6302521008403361,
+     "AGREE": 0.6979166666666666,
+     "DISAGREE": 0.34782608695652173,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.34782608695652173
+    },
+    "random": {
+     "ALL": 0.15966386554621845,
+     "AGREE": 0.16319444444444445,
+     "DISAGREE": 0.14492753623188406,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.14492753623188406
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5798319327731093,
+     "AGREE": 0.59375,
+     "DISAGREE": 0.5217391304347826,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5217391304347826
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8235294117647058,
+     "AGREE": 0.875,
+     "DISAGREE": 0.6086956521739131,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6086956521739131
+    }
+   }
+  },
+  {
+   "initialisation": 46,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 127,
+    "AGREE": 105,
+    "DISAGREE": 22,
+    "DISAGREE_WORLD_HAS_CAUSE": 22
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6614173228346457,
+     "AGREE": 0.7079365079365079,
+     "DISAGREE": 0.4393939393939394,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4393939393939394
+    },
+    "world_oracle": {
+     "ALL": 0.8267716535433071,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6062992125984252,
+     "AGREE": 0.7142857142857143,
+     "DISAGREE": 0.09090909090909091,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.09090909090909091
+    },
+    "random": {
+     "ALL": 0.13910761154855641,
+     "AGREE": 0.14285714285714285,
+     "DISAGREE": 0.1212121212121212,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.1212121212121212
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5826771653543307,
+     "AGREE": 0.6190476190476191,
+     "DISAGREE": 0.4090909090909091,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4090909090909091
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7952755905511811,
+     "AGREE": 0.8857142857142857,
+     "DISAGREE": 0.36363636363636365,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.36363636363636365
+    }
+   }
+  },
+  {
+   "initialisation": 47,
+   "strength": 0.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 126,
+    "AGREE": 120,
+    "DISAGREE": 6,
+    "DISAGREE_WORLD_HAS_CAUSE": 6
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8386243386243387,
+     "AGREE": 0.8555555555555555,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    },
+    "world_oracle": {
+     "ALL": 0.9523809523809523,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5714285714285714,
+     "AGREE": 0.5916666666666667,
+     "DISAGREE": 0.16666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666666
+    },
+    "random": {
+     "ALL": 0.12698412698412698,
+     "AGREE": 0.12222222222222222,
+     "DISAGREE": 0.2222222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2222222222222222
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6507936507936508,
+     "AGREE": 0.6666666666666666,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9603174603174603,
+     "AGREE": 0.9833333333333333,
+     "DISAGREE": 0.5,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5
+    }
+   }
+  },
+  {
+   "initialisation": 47,
+   "strength": 1.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 132,
+    "AGREE": 126,
+    "DISAGREE": 6,
+    "DISAGREE_WORLD_HAS_CAUSE": 6
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8181818181818182,
+     "AGREE": 0.8280423280423281,
+     "DISAGREE": 0.611111111111111,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.611111111111111
+    },
+    "world_oracle": {
+     "ALL": 0.9545454545454546,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.7121212121212122,
+     "AGREE": 0.7380952380952381,
+     "DISAGREE": 0.16666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666666
+    },
+    "random": {
+     "ALL": 0.15151515151515152,
+     "AGREE": 0.15079365079365076,
+     "DISAGREE": 0.16666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666666
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.7121212121212122,
+     "AGREE": 0.7301587301587301,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9621212121212122,
+     "AGREE": 0.9761904761904762,
+     "DISAGREE": 0.6666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6666666666666666
+    }
+   }
+  },
+  {
+   "initialisation": 47,
+   "strength": 2.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 117,
+    "AGREE": 108,
+    "DISAGREE": 9,
+    "DISAGREE_WORLD_HAS_CAUSE": 9
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7806267806267807,
+     "AGREE": 0.7993827160493828,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    },
+    "world_oracle": {
+     "ALL": 0.9230769230769231,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6410256410256411,
+     "AGREE": 0.6851851851851852,
+     "DISAGREE": 0.1111111111111111,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.1111111111111111
+    },
+    "random": {
+     "ALL": 0.15954415954415951,
+     "AGREE": 0.16049382716049382,
+     "DISAGREE": 0.14814814814814814,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.14814814814814814
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6666666666666666,
+     "AGREE": 0.6759259259259259,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9487179487179487,
+     "AGREE": 0.9814814814814815,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    }
+   }
+  },
+  {
+   "initialisation": 48,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 131,
+    "AGREE": 114,
+    "DISAGREE": 17,
+    "DISAGREE_WORLD_HAS_CAUSE": 17
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7633587786259542,
+     "AGREE": 0.7748538011695906,
+     "DISAGREE": 0.6862745098039216,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6862745098039216
+    },
+    "world_oracle": {
+     "ALL": 0.8702290076335878,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6183206106870229,
+     "AGREE": 0.6754385964912281,
+     "DISAGREE": 0.23529411764705882,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.23529411764705882
+    },
+    "random": {
+     "ALL": 0.1501272264631043,
+     "AGREE": 0.14912280701754385,
+     "DISAGREE": 0.1568627450980392,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.1568627450980392
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6717557251908397,
+     "AGREE": 0.6929824561403509,
+     "DISAGREE": 0.5294117647058824,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5294117647058824
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8549618320610687,
+     "AGREE": 0.8859649122807017,
+     "DISAGREE": 0.6470588235294118,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6470588235294118
+    }
+   }
+  },
+  {
+   "initialisation": 48,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 116,
+    "AGREE": 91,
+    "DISAGREE": 25,
+    "DISAGREE_WORLD_HAS_CAUSE": 25
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7298850574712644,
+     "AGREE": 0.8315018315018315,
+     "DISAGREE": 0.36,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.36
+    },
+    "world_oracle": {
+     "ALL": 0.7844827586206896,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5862068965517241,
+     "AGREE": 0.7142857142857143,
+     "DISAGREE": 0.12,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.12
+    },
+    "random": {
+     "ALL": 0.15229885057471262,
+     "AGREE": 0.12820512820512817,
+     "DISAGREE": 0.24,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.24
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6551724137931034,
+     "AGREE": 0.7032967032967034,
+     "DISAGREE": 0.48,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.48
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8448275862068966,
+     "AGREE": 0.9230769230769231,
+     "DISAGREE": 0.56,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.56
+    }
+   }
+  },
+  {
+   "initialisation": 48,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 132,
+    "AGREE": 122,
+    "DISAGREE": 10,
+    "DISAGREE_WORLD_HAS_CAUSE": 10
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.803030303030303,
+     "AGREE": 0.8333333333333333,
+     "DISAGREE": 0.4333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4333333333333333
+    },
+    "world_oracle": {
+     "ALL": 0.9242424242424242,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6136363636363636,
+     "AGREE": 0.639344262295082,
+     "DISAGREE": 0.3,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3
+    },
+    "random": {
+     "ALL": 0.13888888888888887,
+     "AGREE": 0.13934426229508196,
+     "DISAGREE": 0.13333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.13333333333333333
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6893939393939394,
+     "AGREE": 0.7295081967213115,
+     "DISAGREE": 0.2,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8863636363636364,
+     "AGREE": 0.9262295081967213,
+     "DISAGREE": 0.4,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4
+    }
+   }
+  },
+  {
+   "initialisation": 49,
+   "strength": 0.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 117,
+    "AGREE": 103,
+    "DISAGREE": 14,
+    "DISAGREE_WORLD_HAS_CAUSE": 14
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6438746438746439,
+     "AGREE": 0.6666666666666666,
+     "DISAGREE": 0.47619047619047616,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.47619047619047616
+    },
+    "world_oracle": {
+     "ALL": 0.8803418803418803,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6495726495726496,
+     "AGREE": 0.6990291262135923,
+     "DISAGREE": 0.2857142857142857,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2857142857142857
+    },
+    "random": {
+     "ALL": 0.10256410256410255,
+     "AGREE": 0.11003236245954691,
+     "DISAGREE": 0.047619047619047616,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.047619047619047616
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5299145299145299,
+     "AGREE": 0.5436893203883495,
+     "DISAGREE": 0.42857142857142855,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.42857142857142855
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7777777777777778,
+     "AGREE": 0.8252427184466019,
+     "DISAGREE": 0.42857142857142855,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.42857142857142855
+    }
+   }
+  },
+  {
+   "initialisation": 49,
+   "strength": 1.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 131,
+    "AGREE": 104,
+    "DISAGREE": 27,
+    "DISAGREE_WORLD_HAS_CAUSE": 27
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.5801526717557252,
+     "AGREE": 0.6185897435897435,
+     "DISAGREE": 0.43209876543209874,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.43209876543209874
+    },
+    "world_oracle": {
+     "ALL": 0.7938931297709924,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6259541984732825,
+     "AGREE": 0.7115384615384616,
+     "DISAGREE": 0.2962962962962963,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2962962962962963
+    },
+    "random": {
+     "ALL": 0.12722646310432567,
+     "AGREE": 0.1185897435897436,
+     "DISAGREE": 0.16049382716049382,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16049382716049382
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.4961832061068702,
+     "AGREE": 0.5096153846153846,
+     "DISAGREE": 0.4444444444444444,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4444444444444444
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7786259541984732,
+     "AGREE": 0.8461538461538461,
+     "DISAGREE": 0.5185185185185185,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5185185185185185
+    }
+   }
+  },
+  {
+   "initialisation": 49,
+   "strength": 2.0,
+   "widths": [
+    24,
+    24,
+    12
+   ],
+   "n_states": {
+    "ALL": 127,
+    "AGREE": 91,
+    "DISAGREE": 36,
+    "DISAGREE_WORLD_HAS_CAUSE": 36
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.5800524934383201,
+     "AGREE": 0.6227106227106227,
+     "DISAGREE": 0.4722222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4722222222222222
+    },
+    "world_oracle": {
+     "ALL": 0.7165354330708661,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.5511811023622047,
+     "AGREE": 0.6703296703296703,
+     "DISAGREE": 0.25,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.25
+    },
+    "random": {
+     "ALL": 0.16535433070866143,
+     "AGREE": 0.16117216117216115,
+     "DISAGREE": 0.17592592592592593,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.17592592592592593
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5590551181102362,
+     "AGREE": 0.5714285714285714,
+     "DISAGREE": 0.5277777777777778,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5277777777777778
+    },
+    "check_first_order_signed": {
+     "ALL": 0.7244094488188977,
+     "AGREE": 0.7912087912087912,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    }
+   }
+  },
+  {
+   "initialisation": 50,
+   "strength": 0.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 123,
+    "AGREE": 116,
+    "DISAGREE": 7,
+    "DISAGREE_WORLD_HAS_CAUSE": 7
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8157181571815718,
+     "AGREE": 0.807471264367816,
+     "DISAGREE": 0.9523809523809523,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.9523809523809523
+    },
+    "world_oracle": {
+     "ALL": 0.943089430894309,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6422764227642277,
+     "AGREE": 0.6637931034482759,
+     "DISAGREE": 0.2857142857142857,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2857142857142857
+    },
+    "random": {
+     "ALL": 0.16531165311653115,
+     "AGREE": 0.16954022988505746,
+     "DISAGREE": 0.09523809523809523,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.09523809523809523
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6341463414634146,
+     "AGREE": 0.646551724137931,
+     "DISAGREE": 0.42857142857142855,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.42857142857142855
+    },
+    "check_first_order_signed": {
+     "ALL": 0.975609756097561,
+     "AGREE": 0.9741379310344828,
+     "DISAGREE": 1.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 1.0
+    }
+   }
+  },
+  {
+   "initialisation": 50,
+   "strength": 1.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 123,
+    "AGREE": 112,
+    "DISAGREE": 11,
+    "DISAGREE_WORLD_HAS_CAUSE": 11
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8455284552845529,
+     "AGREE": 0.8482142857142857,
+     "DISAGREE": 0.8181818181818182,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8181818181818182
+    },
+    "world_oracle": {
+     "ALL": 0.9105691056910569,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6504065040650406,
+     "AGREE": 0.6964285714285714,
+     "DISAGREE": 0.18181818181818182,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.18181818181818182
+    },
+    "random": {
+     "ALL": 0.1544715447154472,
+     "AGREE": 0.14583333333333331,
+     "DISAGREE": 0.24242424242424246,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.24242424242424246
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6991869918699187,
+     "AGREE": 0.7142857142857143,
+     "DISAGREE": 0.5454545454545454,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5454545454545454
+    },
+    "check_first_order_signed": {
+     "ALL": 0.959349593495935,
+     "AGREE": 0.9642857142857143,
+     "DISAGREE": 0.9090909090909091,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.9090909090909091
+    }
+   }
+  },
+  {
+   "initialisation": 50,
+   "strength": 2.0,
+   "widths": [
+    48
+   ],
+   "n_states": {
+    "ALL": 126,
+    "AGREE": 117,
+    "DISAGREE": 9,
+    "DISAGREE_WORLD_HAS_CAUSE": 9
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.7513227513227514,
+     "AGREE": 0.7777777777777778,
+     "DISAGREE": 0.4074074074074074,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4074074074074074
+    },
+    "world_oracle": {
+     "ALL": 0.9285714285714286,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6746031746031746,
+     "AGREE": 0.7008547008547008,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "random": {
+     "ALL": 0.1534391534391534,
+     "AGREE": 0.1481481481481481,
+     "DISAGREE": 0.2222222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.2222222222222222
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6825396825396826,
+     "AGREE": 0.6923076923076923,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9365079365079365,
+     "AGREE": 0.9487179487179487,
+     "DISAGREE": 0.7777777777777778,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7777777777777778
+    }
+   }
+  },
+  {
+   "initialisation": 51,
+   "strength": 0.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 131,
+    "AGREE": 113,
+    "DISAGREE": 18,
+    "DISAGREE_WORLD_HAS_CAUSE": 18
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.8091603053435115,
+     "AGREE": 0.8053097345132744,
+     "DISAGREE": 0.8333333333333334,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.8333333333333334
+    },
+    "world_oracle": {
+     "ALL": 0.8625954198473282,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6564885496183206,
+     "AGREE": 0.6991150442477876,
+     "DISAGREE": 0.3888888888888889,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3888888888888889
+    },
+    "random": {
+     "ALL": 0.16030534351145037,
+     "AGREE": 0.1592920353982301,
+     "DISAGREE": 0.16666666666666669,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.16666666666666669
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.648854961832061,
+     "AGREE": 0.6371681415929203,
+     "DISAGREE": 0.7222222222222222,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7222222222222222
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9236641221374046,
+     "AGREE": 0.9469026548672567,
+     "DISAGREE": 0.7777777777777778,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.7777777777777778
+    }
+   }
+  },
+  {
+   "initialisation": 51,
+   "strength": 1.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 121,
+    "AGREE": 112,
+    "DISAGREE": 9,
+    "DISAGREE_WORLD_HAS_CAUSE": 9
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.765840220385675,
+     "AGREE": 0.7738095238095237,
+     "DISAGREE": 0.6666666666666666,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.6666666666666666
+    },
+    "world_oracle": {
+     "ALL": 0.9256198347107438,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6942148760330579,
+     "AGREE": 0.7232142857142857,
+     "DISAGREE": 0.3333333333333333,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.3333333333333333
+    },
+    "random": {
+     "ALL": 0.14600550964187325,
+     "AGREE": 0.14880952380952378,
+     "DISAGREE": 0.1111111111111111,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.1111111111111111
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.6363636363636364,
+     "AGREE": 0.6428571428571429,
+     "DISAGREE": 0.5555555555555556,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5555555555555556
+    },
+    "check_first_order_signed": {
+     "ALL": 0.9173553719008265,
+     "AGREE": 0.9553571428571429,
+     "DISAGREE": 0.4444444444444444,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.4444444444444444
+    }
+   }
+  },
+  {
+   "initialisation": 51,
+   "strength": 2.0,
+   "widths": [
+    32,
+    16
+   ],
+   "n_states": {
+    "ALL": 121,
+    "AGREE": 98,
+    "DISAGREE": 23,
+    "DISAGREE_WORLD_HAS_CAUSE": 23
+   },
+   "accuracy": {
+    "interpreter": {
+     "ALL": 0.6776859504132231,
+     "AGREE": 0.7414965986394557,
+     "DISAGREE": 0.40579710144927533,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.40579710144927533
+    },
+    "world_oracle": {
+     "ALL": 0.8099173553719008,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.0
+    },
+    "constant": {
+     "ALL": 0.6528925619834711,
+     "AGREE": 0.7551020408163265,
+     "DISAGREE": 0.21739130434782608,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.21739130434782608
+    },
+    "random": {
+     "ALL": 0.1377410468319559,
+     "AGREE": 0.13945578231292516,
+     "DISAGREE": 0.13043478260869568,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.13043478260869568
+    },
+    "check_first_order_meanabs": {
+     "ALL": 0.5702479338842975,
+     "AGREE": 0.5714285714285714,
+     "DISAGREE": 0.5652173913043478,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5652173913043478
+    },
+    "check_first_order_signed": {
+     "ALL": 0.8677685950413223,
+     "AGREE": 0.9387755102040817,
+     "DISAGREE": 0.5652173913043478,
+     "DISAGREE_WORLD_HAS_CAUSE": 0.5652173913043478
+    }
+   }
+  }
+ ],
+ "by_strength_descriptive": {
+  "role": "reported only; not in the family; no test",
+  "strengths": {
+   "0": {
+    "interpreter": {
+     "ALL": 0.7464708405628843,
+     "AGREE": 0.7596061644363913,
+     "DISAGREE": 0.6243334122591089
+    },
+    "constant": {
+     "ALL": 0.6368936666906446,
+     "AGREE": 0.6798738310958609,
+     "DISAGREE": 0.31131881247980314
+    },
+    "world_oracle": {
+     "ALL": 0.8952353112468838,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0
+    },
+    "random": {
+     "ALL": 0.1469186523741448,
+     "AGREE": 0.15041427154094575,
+     "DISAGREE": 0.1388250409148242
+    }
+   },
+   "1": {
+    "interpreter": {
+     "ALL": 0.7394633290970883,
+     "AGREE": 0.7657177407839454,
+     "DISAGREE": 0.5871587921829468
+    },
+    "constant": {
+     "ALL": 0.6379557551902342,
+     "AGREE": 0.693383036836681,
+     "DISAGREE": 0.25949077358497646
+    },
+    "world_oracle": {
+     "ALL": 0.8704469170794701,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0
+    },
+    "random": {
+     "ALL": 0.14547465544293867,
+     "AGREE": 0.14181796593050577,
+     "DISAGREE": 0.1626979600288779
+    }
+   },
+   "2": {
+    "interpreter": {
+     "ALL": 0.7283146945593781,
+     "AGREE": 0.750714711172027,
+     "DISAGREE": 0.5672800294177106
+    },
+    "constant": {
+     "ALL": 0.6201922896762045,
+     "AGREE": 0.6827794310308531,
+     "DISAGREE": 0.271842037134391
+    },
+    "world_oracle": {
+     "ALL": 0.8661273818660323,
+     "AGREE": 1.0,
+     "DISAGREE": 0.0
+    },
+    "random": {
+     "ALL": 0.1501473638663623,
+     "AGREE": 0.1529198944245824,
+     "DISAGREE": 0.1357937523542221
+    }
+   }
+  }
+ },
+ "gate": "CONFIRMED",
+ "wall_seconds": 796.8547899723053
+}

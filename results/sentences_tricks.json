@@ -1,0 +1,436 @@
+{
+ "provenance": {
+  "script": "scripts/sentences_tricks.py",
+  "script_sha256": "1282e82a4e89e8065d732f3f3746ce0a3c93396407f2720432084e77f70ce70a",
+  "started_utc": "2026-10-03T07:31:54+00:00",
+  "commit": "558f7a8ac033541df860dc809e4665ed5b0b86d4",
+  "protocol_commit": "558f7a8ac033541df860dc809e4665ed5b0b86d4",
+  "interpreter": {
+   "weights": "results/sentences_tricks_interpreter.pt",
+   "sha256": "82a6eb7eaae8fea699b9d775f64e6e769527b1dcba83e03b0ce6ad31f38d23e8",
+   "trained_at_commit": "558f7a8ac033541df860dc809e4665ed5b0b86d4"
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "n_focal": 160,
+  "n_probe": 256,
+  "seed": 0,
+  "margin": 0.1,
+  "attract": 0.0,
+  "steps": 16,
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.2",
+  "python": "3.14.4"
+ },
+ "results": {
+  "gpt2": {
+   "rc_obj": {
+    "n_states": {
+     "ALL": 136,
+     "SINGLE_AGREE": 91,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 45,
+     "OVER": 0
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "ATTRACTOR_NUMBER",
+     "MODIFIER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 1.0,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": NaN,
+      "NONE": 1.0,
+      "OVER": NaN
+     },
+     "live": {
+      "ALL": 0.5625,
+      "SINGLE_AGREE": 0.4835164835164835,
+      "SINGLE_DISAGREE": NaN,
+      "NONE": 0.7222222222222222,
+      "OVER": NaN
+     },
+     "random": {
+      "ALL": 0.3333333333333333,
+      "SINGLE_AGREE": 0.3333333333333333,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.3333333333333333,
+      "OVER": 0.3333333333333333
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": NaN,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.4375,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.09342113882303238,
+     0.28522807359695435
+    ],
+    "logit_std": 3.1741321086883545,
+    "example": {
+     "sentence": "The quiet author that the critic trusts ...",
+     "B_rests_on": "MODIFIER",
+     "interpreter_named": [
+      "MODIFIER",
+      "MODIFIER",
+      "MODIFIER"
+     ]
+    },
+    "read_out": "above the live floor"
+   },
+   "rc_subj": {
+    "n_states": {
+     "ALL": 129,
+     "SINGLE_AGREE": 88,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 40,
+     "OVER": 0
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "ATTRACTOR_NUMBER",
+     "MODIFIER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.9276485788113694,
+      "SINGLE_AGREE": 0.9318181818181818,
+      "SINGLE_DISAGREE": 1.0,
+      "NONE": 0.9166666666666666,
+      "OVER": NaN
+     },
+     "live": {
+      "ALL": 0.5478036175710593,
+      "SINGLE_AGREE": 0.4867424242424242,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.6875,
+      "OVER": NaN
+     },
+     "random": {
+      "ALL": 0.3333333333333333,
+      "SINGLE_AGREE": 0.3333333333333333,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.3333333333333333,
+      "OVER": 0.3333333333333333
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.3798449612403101,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.07042636722326279,
+     0.2776528596878052
+    ],
+    "logit_std": 2.9317808151245117,
+    "example": {
+     "sentence": "The quiet author that likes the manager ...",
+     "B_rests_on": "MODIFIER",
+     "interpreter_named": [
+      "MODIFIER",
+      "MODIFIER",
+      "MODIFIER"
+     ]
+    },
+    "read_out": "above the live floor"
+   },
+   "wide": {
+    "n_states": {
+     "ALL": 135,
+     "SINGLE_AGREE": 82,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 22,
+     "OVER": 31
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "COORDINATION",
+     "SECOND_DET",
+     "MODIFIER",
+     "SECOND_NUMBER",
+     "SECOND_PREP",
+     "THIRD_NUMBER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.8864197530864197,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": NaN,
+      "NONE": 0.8484848484848485,
+      "OVER": 0.6129032258064516
+     },
+     "live": {
+      "ALL": 0.30074074074074075,
+      "SINGLE_AGREE": 0.2910569105691057,
+      "SINGLE_DISAGREE": NaN,
+      "NONE": 0.4098484848484848,
+      "OVER": 0.24892473118279573
+     },
+     "random": {
+      "ALL": 0.14285714285714285,
+      "SINGLE_AGREE": 0.14285714285714285,
+      "SINGLE_DISAGREE": 0.14285714285714285,
+      "NONE": 0.14285714285714285,
+      "OVER": 0.14285714285714285
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": NaN,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.5856790123456791,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.1773967742919922,
+     0.5589122772216797
+    ],
+    "logit_std": 3.008936882019043,
+    "example": {
+     "sentence": "The teacher near my quiet tables beside the tables ...",
+     "B_rests_on": "THIRD_NUMBER",
+     "interpreter_named": [
+      "THIRD_NUMBER",
+      "THIRD_NUMBER",
+      "THIRD_NUMBER"
+     ]
+    },
+    "read_out": "above the live floor"
+   }
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct": {
+   "rc_obj": {
+    "n_states": {
+     "ALL": 129,
+     "SINGLE_AGREE": 86,
+     "SINGLE_DISAGREE": 5,
+     "NONE": 38,
+     "OVER": 0
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "ATTRACTOR_NUMBER",
+     "MODIFIER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.9767441860465116,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.6,
+      "NONE": 0.9736842105263158,
+      "OVER": NaN
+     },
+     "live": {
+      "ALL": 0.562015503875969,
+      "SINGLE_AGREE": 0.4903100775193799,
+      "SINGLE_DISAGREE": 0.36666666666666664,
+      "NONE": 0.75,
+      "OVER": NaN
+     },
+     "random": {
+      "ALL": 0.3333333333333333,
+      "SINGLE_AGREE": 0.3333333333333333,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.3333333333333333,
+      "OVER": 0.3333333333333333
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.4147286821705427,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.025197912007570267,
+     0.09829467535018921
+    ],
+    "logit_std": 3.6961441040039062,
+    "example": {
+     "sentence": "The new artist that the friends help ...",
+     "B_rests_on": "ATTRACTOR_NUMBER",
+     "interpreter_named": [
+      "ATTRACTOR_NUMBER",
+      "ATTRACTOR_NUMBER",
+      "ATTRACTOR_NUMBER"
+     ]
+    },
+    "read_out": "above the live floor"
+   },
+   "rc_subj": {
+    "n_states": {
+     "ALL": 135,
+     "SINGLE_AGREE": 72,
+     "SINGLE_DISAGREE": 14,
+     "NONE": 49,
+     "OVER": 0
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "ATTRACTOR_NUMBER",
+     "MODIFIER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.9185185185185185,
+      "SINGLE_AGREE": 0.8981481481481483,
+      "SINGLE_DISAGREE": 0.9761904761904762,
+      "NONE": 0.9319727891156462,
+      "OVER": NaN
+     },
+     "live": {
+      "ALL": 0.5790123456790124,
+      "SINGLE_AGREE": 0.5092592592592592,
+      "SINGLE_DISAGREE": 0.39285714285714285,
+      "NONE": 0.7346938775510204,
+      "OVER": NaN
+     },
+     "random": {
+      "ALL": 0.3333333333333333,
+      "SINGLE_AGREE": 0.3333333333333333,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.3333333333333333,
+      "OVER": 0.3333333333333333
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.3395061728395061,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.008891809731721878,
+     0.03961829096078873
+    ],
+    "logit_std": 3.0854127407073975,
+    "example": {
+     "sentence": "The quiet authors that help the students ...",
+     "B_rests_on": "ATTRACTOR_NUMBER",
+     "interpreter_named": [
+      "ATTRACTOR_NUMBER",
+      "SUBJECT_NUMBER",
+      "ATTRACTOR_NUMBER"
+     ]
+    },
+    "read_out": "above the live floor"
+   },
+   "wide": {
+    "n_states": {
+     "ALL": 138,
+     "SINGLE_AGREE": 79,
+     "SINGLE_DISAGREE": 2,
+     "NONE": 26,
+     "OVER": 31
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "COORDINATION",
+     "SECOND_DET",
+     "MODIFIER",
+     "SECOND_NUMBER",
+     "SECOND_PREP",
+     "THIRD_NUMBER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.7922705314009663,
+      "SINGLE_AGREE": 0.9873417721518988,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": 0.8205128205128205,
+      "OVER": 0.3225806451612903
+     },
+     "live": {
+      "ALL": 0.30785024154589374,
+      "SINGLE_AGREE": 0.29050632911392404,
+      "SINGLE_DISAGREE": 0.29166666666666663,
+      "NONE": 0.4416666666666667,
+      "OVER": 0.24086021505376348
+     },
+     "random": {
+      "ALL": 0.14285714285714285,
+      "SINGLE_AGREE": 0.14285714285714285,
+      "SINGLE_DISAGREE": 0.14285714285714285,
+      "NONE": 0.14285714285714285,
+      "OVER": 0.14285714285714285
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.4844202898550725,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.3230239152908325,
+     0.9963364601135254
+    ],
+    "logit_std": 3.478384256362915,
+    "example": {
+     "sentence": "The author near the small offices beside the table ...",
+     "B_rests_on": "SECOND_NUMBER",
+     "interpreter_named": [
+      "SECOND_NUMBER",
+      "MODIFIER",
+      "SECOND_NUMBER"
+     ]
+    },
+    "read_out": "above the live floor"
+   }
+  }
+ },
+ "wall_seconds": 477.3395326137543
+}

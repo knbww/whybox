@@ -1,0 +1,52 @@
+# Semantic transfer: can the mapping from internals to a *named* cause be
+# learned where it is legible, and carried to models that were never seen?
+#
+# The previous run trained the mapping on tabular MLPs, whose in-cell naming
+# ceilings were 0.42-0.49, and tested on a language model whose ceiling was
+# 0.90.  It trained on the hard cells and tested on the easy one.  This inverts
+# that: the source is agreement/lm, and the targets are
+#
+#   agreement/lm held-out models   unseen models, same task      (semantic transfer)
+#   polarity/lm, entail/lm         unseen LM tasks, disjoint factor vocabularies
+#   seqworld/transformer           unseen architecture, not a language model
+#   skirmish/mlp                   unseen domain and architecture family
+#
+# One source factor (COORDINATION) is removed from the candidate set during
+# training and restored at evaluation, so `naming.accuracy_unseen_factor`
+# measures naming a cause that was never a training candidate.
+run_name: semantic
+cells:
+  - {domain: agreement, family: lm}
+  - {domain: polarity,  family: lm}
+  - {domain: entail,    family: lm}
+  - {domain: seqworld,  family: transformer}
+  - {domain: skirmish,  family: mlp}
+source_cells: [agreement/lm]
+holdout_factors:
+  agreement: [COORDINATION]
+extra_source_arms:
+  - {name: A_learned_only, overrides: {use_retrieval: false}}
+ceiling_cells: [polarity/lm, entail/lm, seqworld/transformer]
+
+seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+spurious: [0.0, 1.0, 2.0]
+target_n_train: 6000
+target_epochs: 60
+n_focal: 160
+n_probe: 512
+holdout_models: 8
+feature_ablations: false
+explanation_eval: true
+data_seed: 0
+
+interpreter:
+  epochs: 25
+  lr: 0.001
+  batch_size: 64
+  d_model: 96
+  n_layers: 3
+  n_heads: 4
+  dropout: 0.1
+  name_balance_power: 0.5
+  use_retrieval: true
+  seed: 0

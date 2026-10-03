@@ -1,0 +1,729 @@
+{
+  "provenance": {
+    "commit": "e97259b3b628ab7b705149ae61383a403abade90",
+    "dirty": true,
+    "prereg": "docs/PREREG_STRUCTURE.md",
+    "data_seed": 3,
+    "reader_seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_models": 24
+  },
+  "cells": [
+    "interact->witness",
+    "witness->interact"
+  ],
+  "rows": [
+    {
+      "method": "reader",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.3275946275946276
+        },
+        {
+          "balanced_accuracy": 0.21319638966697793
+        },
+        {
+          "balanced_accuracy": 0.2993333333333334
+        },
+        {
+          "balanced_accuracy": 0.3692261904761905
+        },
+        {
+          "balanced_accuracy": 0.3345893719806763
+        },
+        {
+          "balanced_accuracy": 0.37297178130511455
+        },
+        {
+          "balanced_accuracy": 0.3875930521091811
+        },
+        {
+          "balanced_accuracy": 0.367124183006536
+        },
+        {
+          "balanced_accuracy": 0.2831746031746032
+        },
+        {
+          "balanced_accuracy": 0.2934472934472934
+        },
+        {
+          "balanced_accuracy": 0.360927960927961
+        },
+        {
+          "balanced_accuracy": 0.2857575757575758
+        }
+      ],
+      "balanced_accuracy": 0.32457803023167253
+    },
+    {
+      "method": "reader_positions_only",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.3612535612535612
+        },
+        {
+          "balanced_accuracy": 0.2572673513849984
+        },
+        {
+          "balanced_accuracy": 0.3294444444444445
+        },
+        {
+          "balanced_accuracy": 0.3109523809523809
+        },
+        {
+          "balanced_accuracy": 0.27410628019323674
+        },
+        {
+          "balanced_accuracy": 0.3576058201058201
+        },
+        {
+          "balanced_accuracy": 0.4033912324234905
+        },
+        {
+          "balanced_accuracy": 0.4447058823529411
+        },
+        {
+          "balanced_accuracy": 0.27825396825396825
+        },
+        {
+          "balanced_accuracy": 0.3533984533984534
+        },
+        {
+          "balanced_accuracy": 0.32336182336182334
+        },
+        {
+          "balanced_accuracy": 0.34454545454545454
+        }
+      ],
+      "balanced_accuracy": 0.33652388772254777
+    },
+    {
+      "method": "reader_units_only",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.24963369963369964
+        },
+        {
+          "balanced_accuracy": 0.19315281668222847
+        },
+        {
+          "balanced_accuracy": 0.25066666666666665
+        },
+        {
+          "balanced_accuracy": 0.2813690476190476
+        },
+        {
+          "balanced_accuracy": 0.28664909969257796
+        },
+        {
+          "balanced_accuracy": 0.2955467372134038
+        },
+        {
+          "balanced_accuracy": 0.2554728425696167
+        },
+        {
+          "balanced_accuracy": 0.29254901960784313
+        },
+        {
+          "balanced_accuracy": 0.19804232804232802
+        },
+        {
+          "balanced_accuracy": 0.28339438339438333
+        },
+        {
+          "balanced_accuracy": 0.2527879527879528
+        },
+        {
+          "balanced_accuracy": 0.26020202020202016
+        }
+      ],
+      "balanced_accuracy": 0.25828888450931403
+    },
+    {
+      "method": "first_order_heuristic",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.2007936507936508
+        },
+        {
+          "balanced_accuracy": 0.31531279178338
+        },
+        {
+          "balanced_accuracy": 0.24533333333333332
+        },
+        {
+          "balanced_accuracy": 0.3980357142857143
+        },
+        {
+          "balanced_accuracy": 0.386798418972332
+        },
+        {
+          "balanced_accuracy": 0.2898148148148148
+        },
+        {
+          "balanced_accuracy": 0.24937965260545908
+        },
+        {
+          "balanced_accuracy": 0.22647058823529412
+        },
+        {
+          "balanced_accuracy": 0.19555555555555554
+        },
+        {
+          "balanced_accuracy": 0.29975579975579975
+        },
+        {
+          "balanced_accuracy": 0.19401709401709402
+        },
+        {
+          "balanced_accuracy": 0.19757575757575757
+        }
+      ],
+      "balanced_accuracy": 0.26657026431068215
+    },
+    {
+      "method": "random",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.18076923076923074
+        },
+        {
+          "balanced_accuracy": 0.25275443510737633
+        },
+        {
+          "balanced_accuracy": 0.22733333333333333
+        },
+        {
+          "balanced_accuracy": 0.3094642857142857
+        },
+        {
+          "balanced_accuracy": 0.17853754940711464
+        },
+        {
+          "balanced_accuracy": 0.20515873015873015
+        },
+        {
+          "balanced_accuracy": 0.18110008271298592
+        },
+        {
+          "balanced_accuracy": 0.32098039215686275
+        },
+        {
+          "balanced_accuracy": 0.17968253968253967
+        },
+        {
+          "balanced_accuracy": 0.23980463980463979
+        },
+        {
+          "balanced_accuracy": 0.2575091575091575
+        },
+        {
+          "balanced_accuracy": 0.18242424242424243
+        }
+      ],
+      "balanced_accuracy": 0.22629321823170825
+    },
+    {
+      "method": "majority_of_source",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        }
+      ],
+      "balanced_accuracy": 0.20000000000000004
+    },
+    {
+      "method": "in_domain_ceiling",
+      "cell": "interact->witness",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.3355107855107855
+        },
+        {
+          "balanced_accuracy": 0.3777155306567071
+        },
+        {
+          "balanced_accuracy": 0.3738333333333333
+        },
+        {
+          "balanced_accuracy": 0.4359523809523809
+        },
+        {
+          "balanced_accuracy": 0.3370004391743522
+        },
+        {
+          "balanced_accuracy": 0.5025132275132275
+        },
+        {
+          "balanced_accuracy": 0.3915908464295561
+        },
+        {
+          "balanced_accuracy": 0.427516339869281
+        },
+        {
+          "balanced_accuracy": 0.28925925925925927
+        },
+        {
+          "balanced_accuracy": 0.4293854293854294
+        },
+        {
+          "balanced_accuracy": 0.3518111518111518
+        },
+        {
+          "balanced_accuracy": 0.36171717171717166
+        }
+      ],
+      "balanced_accuracy": 0.3844838246343863
+    },
+    {
+      "method": "reader",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.3286231884057971
+        },
+        {
+          "balanced_accuracy": 0.381578947368421
+        },
+        {
+          "balanced_accuracy": 0.3149019607843137
+        },
+        {
+          "balanced_accuracy": 0.3744444444444444
+        },
+        {
+          "balanced_accuracy": 0.31527777777777777
+        },
+        {
+          "balanced_accuracy": 0.3333333333333333
+        },
+        {
+          "balanced_accuracy": 0.48838612368024137
+        },
+        {
+          "balanced_accuracy": 0.3055555555555556
+        },
+        {
+          "balanced_accuracy": 0.4252503052503052
+        },
+        {
+          "balanced_accuracy": 0.44242424242424244
+        },
+        {
+          "balanced_accuracy": 0.2878306878306878
+        },
+        {
+          "balanced_accuracy": 0.38311688311688313
+        }
+      ],
+      "balanced_accuracy": 0.3650602874976669
+    },
+    {
+      "method": "reader_positions_only",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.3123188405797101
+        },
+        {
+          "balanced_accuracy": 0.3982456140350877
+        },
+        {
+          "balanced_accuracy": 0.3043137254901961
+        },
+        {
+          "balanced_accuracy": 0.3333333333333333
+        },
+        {
+          "balanced_accuracy": 0.3152777777777778
+        },
+        {
+          "balanced_accuracy": 0.33
+        },
+        {
+          "balanced_accuracy": 0.4187028657616893
+        },
+        {
+          "balanced_accuracy": 0.33205387205387205
+        },
+        {
+          "balanced_accuracy": 0.4164102564102565
+        },
+        {
+          "balanced_accuracy": 0.45909090909090916
+        },
+        {
+          "balanced_accuracy": 0.2888888888888889
+        },
+        {
+          "balanced_accuracy": 0.37359307359307364
+        }
+      ],
+      "balanced_accuracy": 0.3568524297512328
+    },
+    {
+      "method": "reader_units_only",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.3046772068511199
+        },
+        {
+          "balanced_accuracy": 0.3063352826510721
+        },
+        {
+          "balanced_accuracy": 0.3947058823529412
+        },
+        {
+          "balanced_accuracy": 0.2423076923076923
+        },
+        {
+          "balanced_accuracy": 0.30083333333333334
+        },
+        {
+          "balanced_accuracy": 0.22444444444444445
+        },
+        {
+          "balanced_accuracy": 0.2992307692307692
+        },
+        {
+          "balanced_accuracy": 0.3655555555555556
+        },
+        {
+          "balanced_accuracy": 0.3891375291375292
+        },
+        {
+          "balanced_accuracy": 0.25721925133689844
+        },
+        {
+          "balanced_accuracy": 0.2973544973544973
+        },
+        {
+          "balanced_accuracy": 0.2556776556776557
+        }
+      ],
+      "balanced_accuracy": 0.3031232583527924
+    },
+    {
+      "method": "first_order_heuristic",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.28231225296442686
+        },
+        {
+          "balanced_accuracy": 0.3055555555555555
+        },
+        {
+          "balanced_accuracy": 0.3843137254901961
+        },
+        {
+          "balanced_accuracy": 0.18222222222222223
+        },
+        {
+          "balanced_accuracy": 0.18333333333333332
+        },
+        {
+          "balanced_accuracy": 0.21666666666666665
+        },
+        {
+          "balanced_accuracy": 0.2852488687782805
+        },
+        {
+          "balanced_accuracy": 0.15636363636363634
+        },
+        {
+          "balanced_accuracy": 0.2745854145854146
+        },
+        {
+          "balanced_accuracy": 0.303475935828877
+        },
+        {
+          "balanced_accuracy": 0.24888888888888888
+        },
+        {
+          "balanced_accuracy": 0.22065581477346186
+        }
+      ],
+      "balanced_accuracy": 0.25363519295424664
+    },
+    {
+      "method": "random",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.19499341238471674
+        },
+        {
+          "balanced_accuracy": 0.310233918128655
+        },
+        {
+          "balanced_accuracy": 0.1719607843137255
+        },
+        {
+          "balanced_accuracy": 0.13555555555555557
+        },
+        {
+          "balanced_accuracy": 0.23972222222222225
+        },
+        {
+          "balanced_accuracy": 0.26
+        },
+        {
+          "balanced_accuracy": 0.42321266968325794
+        },
+        {
+          "balanced_accuracy": 0.24282828282828284
+        },
+        {
+          "balanced_accuracy": 0.3922477522477522
+        },
+        {
+          "balanced_accuracy": 0.2871657754010695
+        },
+        {
+          "balanced_accuracy": 0.2538095238095238
+        },
+        {
+          "balanced_accuracy": 0.16970415205709327
+        }
+      ],
+      "balanced_accuracy": 0.25678617071932125
+    },
+    {
+      "method": "majority_of_source",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        },
+        {
+          "balanced_accuracy": 0.2
+        }
+      ],
+      "balanced_accuracy": 0.20000000000000004
+    },
+    {
+      "method": "in_domain_ceiling",
+      "cell": "witness->interact",
+      "per_model": [
+        {
+          "balanced_accuracy": 0.4840689503732982
+        },
+        {
+          "balanced_accuracy": 0.6383040935672515
+        },
+        {
+          "balanced_accuracy": 0.5769281045751634
+        },
+        {
+          "balanced_accuracy": 0.5335612535612536
+        },
+        {
+          "balanced_accuracy": 0.6532407407407408
+        },
+        {
+          "balanced_accuracy": 0.5333333333333334
+        },
+        {
+          "balanced_accuracy": 0.4860633484162895
+        },
+        {
+          "balanced_accuracy": 0.45474747474747473
+        },
+        {
+          "balanced_accuracy": 0.43759573759573756
+        },
+        {
+          "balanced_accuracy": 0.46024955436720144
+        },
+        {
+          "balanced_accuracy": 0.45444444444444443
+        },
+        {
+          "balanced_accuracy": 0.5635989283048106
+        }
+      ],
+      "balanced_accuracy": 0.5230113303355832
+    }
+  ],
+  "comparisons": [
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader",
+      "reference": "reader_positions_only",
+      "cell": "interact->witness",
+      "n_models": 12,
+      "delta": -0.011945857490875185,
+      "a": 0.32457803023167253,
+      "b": 0.33652388772254777,
+      "p": 0.38916015625,
+      "p_adj": 0.650390625,
+      "reject": false
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader",
+      "reference": "reader_positions_only",
+      "cell": "witness->interact",
+      "n_models": 12,
+      "delta": 0.008207857746434025,
+      "a": 0.3650602874976669,
+      "b": 0.3568524297512328,
+      "p": 0.3251953125,
+      "p_adj": 0.650390625,
+      "reject": false
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader",
+      "reference": "first_order_heuristic",
+      "cell": "interact->witness",
+      "n_models": 12,
+      "delta": 0.058007765920990446,
+      "a": 0.32457803023167253,
+      "b": 0.26657026431068215,
+      "p": 0.04345703125,
+      "p_adj": 0.2607421875,
+      "reject": false
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader",
+      "reference": "first_order_heuristic",
+      "cell": "witness->interact",
+      "n_models": 12,
+      "delta": 0.11142509454342026,
+      "a": 0.3650602874976669,
+      "b": 0.25363519295424664,
+      "p": 0.001953125,
+      "p_adj": 0.015625,
+      "reject": true
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader_positions_only",
+      "reference": "first_order_heuristic",
+      "cell": "interact->witness",
+      "n_models": 12,
+      "delta": 0.06995362341186563,
+      "a": 0.33652388772254777,
+      "b": 0.26657026431068215,
+      "p": 0.04443359375,
+      "p_adj": 0.2607421875,
+      "reject": false
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader_positions_only",
+      "reference": "first_order_heuristic",
+      "cell": "witness->interact",
+      "n_models": 12,
+      "delta": 0.10321723679698623,
+      "a": 0.3568524297512328,
+      "b": 0.25363519295424664,
+      "p": 0.00244140625,
+      "p_adj": 0.01708984375,
+      "reject": true
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader_units_only",
+      "reference": "random",
+      "cell": "interact->witness",
+      "n_models": 12,
+      "delta": 0.03199566627760578,
+      "a": 0.25828888450931403,
+      "b": 0.22629321823170825,
+      "p": 0.0673828125,
+      "p_adj": 0.26953125,
+      "reject": false
+    },
+    {
+      "metric": "balanced_accuracy",
+      "method": "reader_units_only",
+      "reference": "random",
+      "cell": "witness->interact",
+      "n_models": 12,
+      "delta": 0.04633708763347116,
+      "a": 0.3031232583527924,
+      "b": 0.25678617071932125,
+      "p": 0.109375,
+      "p_adj": 0.328125,
+      "reject": false
+    }
+  ],
+  "wall_seconds": 3170.1425466537476
+}

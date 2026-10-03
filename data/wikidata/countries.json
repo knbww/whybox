@@ -1,0 +1,429 @@
+{
+  "source": "Wikidata Query Service",
+  "endpoint": "https://query.wikidata.org/sparql",
+  "query": "SELECT ?entity (MIN(?capL) AS ?capital) (MIN(?langL) AS ?language)\n       (MIN(?curL) AS ?currency) (MIN(?contL) AS ?continent) WHERE {\n  ?c wdt:P31 wd:Q6256 ; wdt:P36 ?cap ; wdt:P37 ?lang ; wdt:P38 ?cur ; wdt:P30 ?cont .\n  ?c rdfs:label ?entity   FILTER(lang(?entity)=\"en\")\n  ?cap rdfs:label ?capL   FILTER(lang(?capL)=\"en\")\n  ?lang rdfs:label ?langL FILTER(lang(?langL)=\"en\")\n  ?cur rdfs:label ?curL   FILTER(lang(?curL)=\"en\")\n  ?cont rdfs:label ?contL FILTER(lang(?contL)=\"en\")\n} GROUP BY ?entity ORDER BY ?entity LIMIT 60",
+  "fetched_utc": "2026-08-24T17:17:42Z",
+  "n_rows": 60,
+  "rows": [
+    {
+      "entity": "Afghanistan",
+      "capital": "Kabul",
+      "language": "Arabic",
+      "currency": "afghani",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Albania",
+      "capital": "Tirana",
+      "language": "Albanian",
+      "currency": "Albanian lek",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Algeria",
+      "capital": "Algiers",
+      "language": "Arabic",
+      "currency": "Algerian dinar",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Angola",
+      "capital": "Luanda",
+      "language": "Portuguese",
+      "currency": "kwanza",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Argentina",
+      "capital": "Buenos Aires",
+      "language": "Spanish",
+      "currency": "Argentine convertible peso",
+      "continent": "South America"
+    },
+    {
+      "entity": "Armenia",
+      "capital": "Yerevan",
+      "language": "Armenian",
+      "currency": "Armenian dram",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Aruba",
+      "capital": "Oranjestad",
+      "language": "Dutch",
+      "currency": "Aruban florin",
+      "continent": "North America"
+    },
+    {
+      "entity": "Australia",
+      "capital": "Canberra",
+      "language": "English",
+      "currency": "Australian dollar",
+      "continent": "Oceania"
+    },
+    {
+      "entity": "Azerbaijan",
+      "capital": "Baku",
+      "language": "Azerbaijani",
+      "currency": "Azerbaijani manat",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Bahrain",
+      "capital": "Manama",
+      "language": "Arabic",
+      "currency": "Bahraini dinar",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Bangladesh",
+      "capital": "Dhaka",
+      "language": "Bangla",
+      "currency": "Bangladeshi taka",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Barbados",
+      "capital": "Bridgetown",
+      "language": "Bajan Creole",
+      "currency": "Barbadian dollar",
+      "continent": "North America"
+    },
+    {
+      "entity": "Belarus",
+      "capital": "Minsk",
+      "language": "Belarusian",
+      "currency": "Belarusian ruble",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Belize",
+      "capital": "Belmopan",
+      "language": "English",
+      "currency": "Belize dollar",
+      "continent": "North America"
+    },
+    {
+      "entity": "Benin",
+      "capital": "Porto-Novo",
+      "language": "French",
+      "currency": "West African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Bhutan",
+      "capital": "Thimphu",
+      "language": "Dzongkha",
+      "currency": "ngultrum",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Bolivia",
+      "capital": "La Paz",
+      "language": "Aymara",
+      "currency": "boliviano",
+      "continent": "South America"
+    },
+    {
+      "entity": "Bosnia and Herzegovina",
+      "capital": "Sarajevo",
+      "language": "Bosnian",
+      "currency": "convertible mark",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Botswana",
+      "capital": "Gaborone",
+      "language": "English",
+      "currency": "Botswana pula",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Brazil",
+      "capital": "Brasília",
+      "language": "Portuguese",
+      "currency": "Brazilian real",
+      "continent": "South America"
+    },
+    {
+      "entity": "Brunei",
+      "capital": "Bandar Seri Begawan",
+      "language": "British English",
+      "currency": "Brunei dollar",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Burkina Faso",
+      "capital": "Ouagadougou",
+      "language": "Bissa",
+      "currency": "West African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Burundi",
+      "capital": "Gitega",
+      "language": "English",
+      "currency": "Burundian franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Cambodia",
+      "capital": "Phnom Penh",
+      "language": "Khmer",
+      "currency": "riel",
+      "continent": "Asia"
+    },
+    {
+      "entity": "Cameroon",
+      "capital": "Yaoundé",
+      "language": "English",
+      "currency": "Central African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Canada",
+      "capital": "Ottawa",
+      "language": "English",
+      "currency": "Canadian dollar",
+      "continent": "North America"
+    },
+    {
+      "entity": "Cape Verde",
+      "capital": "Praia",
+      "language": "Cape Verdean Creole",
+      "currency": "Cape Verdean escudo",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Central African Republic",
+      "capital": "Bangui",
+      "language": "French",
+      "currency": "Central African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Chad",
+      "capital": "N'Djamena",
+      "language": "Arabic",
+      "currency": "Central African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Chile",
+      "capital": "Santiago",
+      "language": "Spanish",
+      "currency": "Chilean peso",
+      "continent": "South America"
+    },
+    {
+      "entity": "Colombia",
+      "capital": "Bogotá",
+      "language": "Spanish",
+      "currency": "Colombian peso",
+      "continent": "South America"
+    },
+    {
+      "entity": "Comoros",
+      "capital": "Moroni",
+      "language": "Arabic",
+      "currency": "Comorian franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Cook Islands",
+      "capital": "Avarua",
+      "language": "Cook Islands Maori",
+      "currency": "Cook Islands dollar",
+      "continent": "Insular Oceania"
+    },
+    {
+      "entity": "Costa Rica",
+      "capital": "San José",
+      "language": "Spanish",
+      "currency": "Costa Rican colón",
+      "continent": "North America"
+    },
+    {
+      "entity": "Cuba",
+      "capital": "Havana",
+      "language": "Spanish",
+      "currency": "Cuban peso",
+      "continent": "North America"
+    },
+    {
+      "entity": "Curaçao",
+      "capital": "Willemstad",
+      "language": "Dutch",
+      "currency": "Caribbean guilder",
+      "continent": "North America"
+    },
+    {
+      "entity": "Czech Republic",
+      "capital": "Prague",
+      "language": "Czech",
+      "currency": "Czech koruna",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Democratic Republic of the Congo",
+      "capital": "Kinshasa",
+      "language": "French",
+      "currency": "Congolese franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Denmark",
+      "capital": "Copenhagen",
+      "language": "Danish",
+      "currency": "Danish krone",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Djibouti",
+      "capital": "Djibouti",
+      "language": "Arabic",
+      "currency": "Djiboutian franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Dominica",
+      "capital": "Roseau",
+      "language": "English",
+      "currency": "Eastern Caribbean dollar",
+      "continent": "North America"
+    },
+    {
+      "entity": "Dominican Republic",
+      "capital": "Santo Domingo",
+      "language": "Spanish",
+      "currency": "Dominican peso",
+      "continent": "North America"
+    },
+    {
+      "entity": "Ecuador",
+      "capital": "Quito",
+      "language": "Northern Quichua",
+      "currency": "United States dollar",
+      "continent": "South America"
+    },
+    {
+      "entity": "Egypt",
+      "capital": "Cairo",
+      "language": "Arabic",
+      "currency": "Egyptian pound",
+      "continent": "Africa"
+    },
+    {
+      "entity": "El Salvador",
+      "capital": "San Salvador",
+      "language": "Spanish",
+      "currency": "Bitcoin",
+      "continent": "North America"
+    },
+    {
+      "entity": "Equatorial Guinea",
+      "capital": "Ciudad de la Paz",
+      "language": "French",
+      "currency": "Central African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Eritrea",
+      "capital": "Asmara",
+      "language": "Arabic",
+      "currency": "nakfa",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Eswatini",
+      "capital": "Lobamba",
+      "language": "English",
+      "currency": "lilangeni",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Ethiopia",
+      "capital": "Addis Ababa",
+      "language": "Amharic",
+      "currency": "bir",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Federated States of Micronesia",
+      "capital": "Palikir",
+      "language": "English",
+      "currency": "United States dollar",
+      "continent": "Oceania"
+    },
+    {
+      "entity": "Fiji",
+      "capital": "Suva",
+      "language": "English",
+      "currency": "Fijian dollar",
+      "continent": "Insular Oceania"
+    },
+    {
+      "entity": "France",
+      "capital": "Paris",
+      "language": "French",
+      "currency": "CFP Franc",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Gabon",
+      "capital": "Libreville",
+      "language": "French",
+      "currency": "Central African CFA franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Georgia",
+      "capital": "Tbilisi",
+      "language": "Georgian",
+      "currency": "Georgian lari",
+      "continent": "Europe"
+    },
+    {
+      "entity": "Ghana",
+      "capital": "Accra",
+      "language": "English",
+      "currency": "Ghana cedi",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Greenland",
+      "capital": "Nuuk",
+      "language": "Greenlandic",
+      "currency": "Danish krone",
+      "continent": "North America"
+    },
+    {
+      "entity": "Grenada",
+      "capital": "St. George's",
+      "language": "English",
+      "currency": "Eastern Caribbean dollar",
+      "continent": "North America"
+    },
+    {
+      "entity": "Guatemala",
+      "capital": "Guatemala City",
+      "language": "Spanish",
+      "currency": "quetzal",
+      "continent": "North America"
+    },
+    {
+      "entity": "Guinea",
+      "capital": "Conakry",
+      "language": "French",
+      "currency": "Guinean franc",
+      "continent": "Africa"
+    },
+    {
+      "entity": "Guinea-Bissau",
+      "capital": "Bissau",
+      "language": "Portuguese",
+      "currency": "West African CFA franc",
+      "continent": "Africa"
+    }
+  ]
+}
