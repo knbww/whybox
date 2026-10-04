@@ -3,6 +3,11 @@ import pytest
 
 from mint.domains import REGISTRY, annotate, get_domain, sigmoid
 
+# Real data used as published: no decoy input, and the outcome is the dataset's own
+# four-level label (mint.domains.car).
+NO_DECOY = {"car"}
+LEVELS = {"car": {0, 1, 2, 3}}
+
 
 @pytest.mark.parametrize("name", sorted(REGISTRY))
 def test_sample_shapes_and_determinism(name):
@@ -11,11 +16,11 @@ def test_sample_shapes_and_determinism(name):
     b = d.sample(64, np.random.default_rng(3))
     assert a.raw.shape == (64, d.spec.n_inputs)
     assert np.array_equal(a.raw, b.raw), "sampling must be seed-deterministic"
-    assert set(np.unique(a.y)) <= {0, 1}
+    assert set(np.unique(a.y)) <= LEVELS.get(name, {0, 1})
     assert np.allclose(a.logit, d.logit(a.raw))
 
 
-@pytest.mark.parametrize("name", sorted(REGISTRY))
+@pytest.mark.parametrize("name", sorted(set(REGISTRY) - NO_DECOY))
 def test_spurious_inputs_have_zero_causal_weight(name):
     """The decoy input predicts the outcome but must not cause it."""
     d = get_domain(name)
@@ -30,7 +35,7 @@ def test_spurious_inputs_have_zero_causal_weight(name):
     assert np.allclose(d.logit(perturbed), base), "spurious input leaked into the DGP"
 
 
-@pytest.mark.parametrize("name", sorted(REGISTRY))
+@pytest.mark.parametrize("name", sorted(set(REGISTRY) - NO_DECOY))
 def test_spurious_inputs_are_predictive(name):
     """...and it must actually correlate, otherwise no decoy units appear."""
     d = get_domain(name)

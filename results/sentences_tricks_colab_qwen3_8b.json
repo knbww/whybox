@@ -1,0 +1,234 @@
+{
+ "provenance": {
+  "script": "scripts/sentences_tricks.py",
+  "script_sha256": "d82303bee41f437effac12dd3513bce83f6b0d891273abf6c9e1b984f4a6acf2",
+  "started_utc": "2026-10-03T13:00:15+00:00",
+  "commit": "5d7c73882264f6e17cc4162b2d57f8069997b9ad",
+  "protocol_commit": "5103fe96b96393afc5046507bcd3fa9d06d2d25d",
+  "interpreter": {
+   "weights": "results/sentences_tricks_interpreter.pt",
+   "sha256": "82a6eb7eaae8fea699b9d775f64e6e769527b1dcba83e03b0ce6ad31f38d23e8",
+   "trained_at_commit": "558f7a8ac033541df860dc809e4665ed5b0b86d4"
+  },
+  "device": "cuda",
+  "dtype": "float32",
+  "load_in_4bit": true,
+  "role": "read-out",
+  "n_focal": 160,
+  "n_probe": 256,
+  "seed": 0,
+  "margin": 0.1,
+  "attract": 0.0,
+  "steps": 16,
+  "torch": "2.11.0+cu130",
+  "numpy": "2.1.3",
+  "python": "3.13.15"
+ },
+ "results": {
+  "Qwen/Qwen3-8B": {
+   "rc_obj": {
+    "n_states": {
+     "ALL": 141,
+     "SINGLE_AGREE": 89,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 51,
+     "OVER": 0
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "ATTRACTOR_NUMBER",
+     "MODIFIER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.9054373522458629,
+      "SINGLE_AGREE": 0.9400749063670413,
+      "SINGLE_DISAGREE": 1.0,
+      "NONE": 0.8431372549019608,
+      "OVER": NaN
+     },
+     "live": {
+      "ALL": 0.6028368794326241,
+      "SINGLE_AGREE": 0.5112359550561798,
+      "SINGLE_DISAGREE": 0.5,
+      "NONE": 0.7647058823529411,
+      "OVER": NaN
+     },
+     "random": {
+      "ALL": 0.3333333333333333,
+      "SINGLE_AGREE": 0.3333333333333333,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.3333333333333333,
+      "OVER": 0.3333333333333333
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.3026004728132388,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.3927803337574005,
+     1.1526938676834106
+    ],
+    "logit_std": 4.836754322052002,
+    "example": {
+     "sentence": "The quiet author that the critic trusts ...",
+     "B_rests_on": "MODIFIER",
+     "interpreter_named": [
+      "MODIFIER",
+      "MODIFIER",
+      "MODIFIER"
+     ]
+    },
+    "read_out": "above the live floor"
+   },
+   "rc_subj": {
+    "n_states": {
+     "ALL": 136,
+     "SINGLE_AGREE": 81,
+     "SINGLE_DISAGREE": 6,
+     "NONE": 49,
+     "OVER": 0
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "ATTRACTOR_NUMBER",
+     "MODIFIER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.8161764705882353,
+      "SINGLE_AGREE": 0.8189300411522633,
+      "SINGLE_DISAGREE": 0.6666666666666666,
+      "NONE": 0.8299319727891156,
+      "OVER": NaN
+     },
+     "live": {
+      "ALL": 0.607843137254902,
+      "SINGLE_AGREE": 0.5123456790123457,
+      "SINGLE_DISAGREE": 0.3611111111111111,
+      "NONE": 0.7959183673469388,
+      "OVER": NaN
+     },
+     "random": {
+      "ALL": 0.3333333333333333,
+      "SINGLE_AGREE": 0.3333333333333333,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.3333333333333333,
+      "OVER": 0.3333333333333333
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.20833333333333334,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.34650465846061707,
+     1.0231273174285889
+    ],
+    "logit_std": 3.49088716506958,
+    "example": {
+     "sentence": "The quiet author that likes the manager ...",
+     "B_rests_on": "MODIFIER",
+     "interpreter_named": [
+      "MODIFIER",
+      "MODIFIER",
+      "MODIFIER"
+     ]
+    },
+    "read_out": "above the live floor"
+   },
+   "wide": {
+    "n_states": {
+     "ALL": 141,
+     "SINGLE_AGREE": 80,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 30,
+     "OVER": 30
+    },
+    "n_sentences": 160,
+    "factors": [
+     "SUBJECT_NUMBER",
+     "COORDINATION",
+     "SECOND_DET",
+     "MODIFIER",
+     "SECOND_NUMBER",
+     "SECOND_PREP",
+     "THIRD_NUMBER"
+    ],
+    "arms": {
+     "interpreter": {
+      "ALL": 0.735224586288416,
+      "SINGLE_AGREE": 0.9,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": 0.7555555555555554,
+      "OVER": 0.3
+     },
+     "live": {
+      "ALL": 0.3458628841607565,
+      "SINGLE_AGREE": 0.32645833333333335,
+      "SINGLE_DISAGREE": 0.3333333333333333,
+      "NONE": 0.4744444444444444,
+      "OVER": 0.2694444444444445
+     },
+     "random": {
+      "ALL": 0.14285714285714285,
+      "SINGLE_AGREE": 0.14285714285714285,
+      "SINGLE_DISAGREE": 0.14285714285714285,
+      "NONE": 0.14285714285714285,
+      "OVER": 0.14285714285714285
+     },
+     "grammar_oracle": {
+      "ALL": NaN,
+      "SINGLE_AGREE": 1.0,
+      "SINGLE_DISAGREE": 0.0,
+      "NONE": NaN,
+      "OVER": NaN
+     }
+    },
+    "test": {
+     "delta": 0.38936170212765964,
+     "p": 0.0,
+     "p_adj": 0.0,
+     "reject": true
+    },
+    "completeness_residual": [
+     0.7094485759735107,
+     1.7220903635025024
+    ],
+    "logit_std": 3.1076481342315674,
+    "example": {
+     "sentence": "The teacher near my quiet tables beside the tables ...",
+     "B_rests_on": "SECOND_NUMBER",
+     "interpreter_named": [
+      "SECOND_DET",
+      "SECOND_DET",
+      "SECOND_DET"
+     ]
+    },
+    "read_out": "above the live floor"
+   }
+  }
+ },
+ "wall_seconds": 715.0954988002777
+}
