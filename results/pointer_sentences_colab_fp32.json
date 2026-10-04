@@ -1,0 +1,585 @@
+{
+ "provenance": {
+  "script": "scripts/pointer_sentences.py",
+  "script_sha256": "c327d27e46e6e87923e8bb1dcee340e1af1538f73af85ff45d9962d8be824f0f",
+  "started_utc": "2026-10-04T12:09:04+00:00",
+  "commit": "4e3a4a5c2273854807bad9a5b0f2928acb4d0b99",
+  "protocol_commit": "4e3a4a5c2273854807bad9a5b0f2928acb4d0b99",
+  "interpreter": {
+   "weights": "results/sentences_tricks_interpreter.pt",
+   "sha256": "82a6eb7eaae8fea699b9d775f64e6e769527b1dcba83e03b0ce6ad31f38d23e8",
+   "trained_at_commit": "558f7a8ac033541df860dc809e4665ed5b0b86d4"
+  },
+  "device": "cuda",
+  "dtype": "float32",
+  "load_in_4bit": false,
+  "n_focal": 160,
+  "n_probe": 256,
+  "seed": 0,
+  "margin": 0.1,
+  "steps": 16,
+  "torch": "2.11.0+cu130",
+  "numpy": "2.1.3",
+  "python": "3.13.15"
+ },
+ "results": {
+  "gpt2-large": {
+   "rc_obj": {
+    "n_states": {
+     "ALL": 129,
+     "SINGLE_AGREE": 91,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 38,
+     "OVER": 0
+    },
+    "interpreter": {
+     "ALL": 0.9612403100775194,
+     "SINGLE_AGREE": 0.945054945054945,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 1.0,
+     "OVER": NaN
+    },
+    "pointer": {
+     "ALL": 0.9534883720930233,
+     "SINGLE_AGREE": 0.945054945054945,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.9736842105263158,
+     "OVER": NaN
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.3333333333333333,
+     "SINGLE_AGREE": 0.2,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 1.0,
+     "OVER": NaN
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.2,
+     "SINGLE_AGREE": 0.2,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": NaN,
+     "OVER": NaN
+    },
+    "n_pointer_wrong": {
+     "ALL": 6,
+     "SINGLE_AGREE": 5,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 1,
+     "OVER": 0
+    },
+    "n_interp_wrong": {
+     "ALL": 5,
+     "SINGLE_AGREE": 5,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 0,
+     "OVER": 0
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   },
+   "rc_subj": {
+    "n_states": {
+     "ALL": 127,
+     "SINGLE_AGREE": 84,
+     "SINGLE_DISAGREE": 5,
+     "NONE": 38,
+     "OVER": 0
+    },
+    "interpreter": {
+     "ALL": 0.8661417322834645,
+     "SINGLE_AGREE": 0.8134920634920635,
+     "SINGLE_DISAGREE": 1.0,
+     "NONE": 0.9649122807017543,
+     "OVER": NaN
+    },
+    "pointer": {
+     "ALL": 0.9212598425196851,
+     "SINGLE_AGREE": 0.8928571428571429,
+     "SINGLE_DISAGREE": 1.0,
+     "NONE": 0.9736842105263158,
+     "OVER": NaN
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.0,
+     "SINGLE_AGREE": 0.0,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.0,
+     "OVER": NaN
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.4117647058823529,
+     "SINGLE_AGREE": 0.4375,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.0,
+     "OVER": NaN
+    },
+    "n_pointer_wrong": {
+     "ALL": 10,
+     "SINGLE_AGREE": 9,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 1,
+     "OVER": 0
+    },
+    "n_interp_wrong": {
+     "ALL": 17,
+     "SINGLE_AGREE": 16,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 1,
+     "OVER": 0
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   },
+   "wide": {
+    "n_states": {
+     "ALL": 134,
+     "SINGLE_AGREE": 81,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 22,
+     "OVER": 31
+    },
+    "interpreter": {
+     "ALL": 0.6517412935323381,
+     "SINGLE_AGREE": 0.6707818930041152,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.7272727272727273,
+     "OVER": 0.5483870967741935
+    },
+    "pointer": {
+     "ALL": 0.7014925373134329,
+     "SINGLE_AGREE": 0.7283950617283951,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.8181818181818182,
+     "OVER": 0.5483870967741935
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.05,
+     "SINGLE_AGREE": 0.0303030303030303,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.0,
+     "OVER": 0.09523809523809523
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.11627906976744186,
+     "SINGLE_AGREE": 0.125,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.3333333333333333,
+     "OVER": 0.0
+    },
+    "n_pointer_wrong": {
+     "ALL": 40,
+     "SINGLE_AGREE": 22,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 4,
+     "OVER": 14
+    },
+    "n_interp_wrong": {
+     "ALL": 43,
+     "SINGLE_AGREE": 24,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 6,
+     "OVER": 13
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   }
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct": {
+   "rc_obj": {
+    "n_states": {
+     "ALL": 142,
+     "SINGLE_AGREE": 89,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 52,
+     "OVER": 0
+    },
+    "interpreter": {
+     "ALL": 0.9624413145539907,
+     "SINGLE_AGREE": 1.0,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.9166666666666667,
+     "OVER": NaN
+    },
+    "pointer": {
+     "ALL": 0.9929577464788732,
+     "SINGLE_AGREE": 1.0,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 1.0,
+     "OVER": NaN
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.0,
+     "SINGLE_AGREE": NaN,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": NaN,
+     "OVER": NaN
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.8,
+     "SINGLE_AGREE": NaN,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 1.0,
+     "OVER": NaN
+    },
+    "n_pointer_wrong": {
+     "ALL": 1,
+     "SINGLE_AGREE": 0,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 0,
+     "OVER": 0
+    },
+    "n_interp_wrong": {
+     "ALL": 5,
+     "SINGLE_AGREE": 0,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 4,
+     "OVER": 0
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   },
+   "rc_subj": {
+    "n_states": {
+     "ALL": 134,
+     "SINGLE_AGREE": 80,
+     "SINGLE_DISAGREE": 10,
+     "NONE": 44,
+     "OVER": 0
+    },
+    "interpreter": {
+     "ALL": 0.8830845771144279,
+     "SINGLE_AGREE": 0.8958333333333334,
+     "SINGLE_DISAGREE": 0.7,
+     "NONE": 0.9015151515151516,
+     "OVER": NaN
+    },
+    "pointer": {
+     "ALL": 0.9104477611940298,
+     "SINGLE_AGREE": 0.9875,
+     "SINGLE_DISAGREE": 0.3,
+     "NONE": 0.9090909090909091,
+     "OVER": NaN
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.4166666666666667,
+     "SINGLE_AGREE": 0.0,
+     "SINGLE_DISAGREE": 0.5714285714285714,
+     "NONE": 0.25,
+     "OVER": NaN
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.5625,
+     "SINGLE_AGREE": 0.875,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.4,
+     "OVER": NaN
+    },
+    "n_pointer_wrong": {
+     "ALL": 12,
+     "SINGLE_AGREE": 1,
+     "SINGLE_DISAGREE": 7,
+     "NONE": 4,
+     "OVER": 0
+    },
+    "n_interp_wrong": {
+     "ALL": 16,
+     "SINGLE_AGREE": 8,
+     "SINGLE_DISAGREE": 3,
+     "NONE": 5,
+     "OVER": 0
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   },
+   "wide": {
+    "n_states": {
+     "ALL": 138,
+     "SINGLE_AGREE": 81,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 25,
+     "OVER": 31
+    },
+    "interpreter": {
+     "ALL": 0.7898550724637681,
+     "SINGLE_AGREE": 1.0,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.76,
+     "OVER": 0.2903225806451613
+    },
+    "pointer": {
+     "ALL": 0.8188405797101449,
+     "SINGLE_AGREE": 1.0,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.92,
+     "OVER": 0.2903225806451613
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.0,
+     "SINGLE_AGREE": NaN,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.0,
+     "OVER": 0.0
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.10714285714285714,
+     "SINGLE_AGREE": NaN,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.6,
+     "OVER": 0.0
+    },
+    "n_pointer_wrong": {
+     "ALL": 25,
+     "SINGLE_AGREE": 0,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 2,
+     "OVER": 22
+    },
+    "n_interp_wrong": {
+     "ALL": 28,
+     "SINGLE_AGREE": 0,
+     "SINGLE_DISAGREE": 1,
+     "NONE": 5,
+     "OVER": 22
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   }
+  },
+  "openai-community/gpt2-xl": {
+   "rc_obj": {
+    "n_states": {
+     "ALL": 119,
+     "SINGLE_AGREE": 91,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 28,
+     "OVER": 0
+    },
+    "interpreter": {
+     "ALL": 0.969187675070028,
+     "SINGLE_AGREE": 0.978021978021978,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.9404761904761905,
+     "OVER": NaN
+    },
+    "pointer": {
+     "ALL": 0.9747899159663865,
+     "SINGLE_AGREE": 0.978021978021978,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.9642857142857143,
+     "OVER": NaN
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 1.0,
+     "SINGLE_AGREE": 1.0,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 1.0,
+     "OVER": NaN
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 1.0,
+     "SINGLE_AGREE": 1.0,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 1.0,
+     "OVER": NaN
+    },
+    "n_pointer_wrong": {
+     "ALL": 3,
+     "SINGLE_AGREE": 2,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 1,
+     "OVER": 0
+    },
+    "n_interp_wrong": {
+     "ALL": 3,
+     "SINGLE_AGREE": 2,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 1,
+     "OVER": 0
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   },
+   "rc_subj": {
+    "n_states": {
+     "ALL": 124,
+     "SINGLE_AGREE": 81,
+     "SINGLE_DISAGREE": 8,
+     "NONE": 35,
+     "OVER": 0
+    },
+    "interpreter": {
+     "ALL": 0.9059139784946236,
+     "SINGLE_AGREE": 0.9218106995884774,
+     "SINGLE_DISAGREE": 0.625,
+     "NONE": 0.9333333333333332,
+     "OVER": NaN
+    },
+    "pointer": {
+     "ALL": 0.9354838709677419,
+     "SINGLE_AGREE": 0.9876543209876543,
+     "SINGLE_DISAGREE": 0.375,
+     "NONE": 0.9428571428571428,
+     "OVER": NaN
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.3333333333333333,
+     "SINGLE_AGREE": 0.0,
+     "SINGLE_DISAGREE": 0.4,
+     "NONE": 0.3333333333333333,
+     "OVER": NaN
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.5454545454545454,
+     "SINGLE_AGREE": 0.8333333333333334,
+     "SINGLE_DISAGREE": 0.0,
+     "NONE": 0.5,
+     "OVER": NaN
+    },
+    "n_pointer_wrong": {
+     "ALL": 8,
+     "SINGLE_AGREE": 1,
+     "SINGLE_DISAGREE": 5,
+     "NONE": 2,
+     "OVER": 0
+    },
+    "n_interp_wrong": {
+     "ALL": 11,
+     "SINGLE_AGREE": 6,
+     "SINGLE_DISAGREE": 3,
+     "NONE": 2,
+     "OVER": 0
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   },
+   "wide": {
+    "n_states": {
+     "ALL": 129,
+     "SINGLE_AGREE": 82,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 18,
+     "OVER": 29
+    },
+    "interpreter": {
+     "ALL": 0.7364341085271318,
+     "SINGLE_AGREE": 0.8495934959349594,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 0.7962962962962963,
+     "OVER": 0.37931034482758613
+    },
+    "pointer": {
+     "ALL": 0.7906976744186046,
+     "SINGLE_AGREE": 0.8780487804878049,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 1.0,
+     "OVER": 0.41379310344827586
+    },
+    "interp_where_pointer_wrong": {
+     "ALL": 0.0,
+     "SINGLE_AGREE": 0.0,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": NaN,
+     "OVER": 0.0
+    },
+    "pointer_where_interp_wrong": {
+     "ALL": 0.15625,
+     "SINGLE_AGREE": 0.16666666666666666,
+     "SINGLE_DISAGREE": NaN,
+     "NONE": 1.0,
+     "OVER": 0.0
+    },
+    "n_pointer_wrong": {
+     "ALL": 27,
+     "SINGLE_AGREE": 10,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 0,
+     "OVER": 17
+    },
+    "n_interp_wrong": {
+     "ALL": 32,
+     "SINGLE_AGREE": 12,
+     "SINGLE_DISAGREE": 0,
+     "NONE": 3,
+     "OVER": 17
+    },
+    "control": {
+     "exact": false,
+     "failures": [],
+     "passed": true
+    }
+   }
+  }
+ },
+ "pooled": {
+  "ALL": {
+   "n": 1176,
+   "interpreter": 0.8571428571428571,
+   "pointer": 0.8877551020408163,
+   "interp_where_pointer_wrong": 0.1111111111111111,
+   "pointer_where_interp_wrong": 0.26875,
+   "n_pointer_wrong": 132,
+   "n_interp_wrong": 160
+  },
+  "SINGLE_AGREE": {
+   "n": 760,
+   "interpreter": 0.8995614035087719,
+   "pointer": 0.9342105263157895,
+   "interp_where_pointer_wrong": 0.07333333333333333,
+   "pointer_where_interp_wrong": 0.3698630136986301,
+   "n_pointer_wrong": 50,
+   "n_interp_wrong": 73
+  },
+  "SINGLE_DISAGREE": {
+   "n": 25,
+   "interpreter": 0.68,
+   "pointer": 0.44,
+   "interp_where_pointer_wrong": 0.42857142857142855,
+   "pointer_where_interp_wrong": 0.0,
+   "n_pointer_wrong": 14,
+   "n_interp_wrong": 8
+  },
+  "NONE": {
+   "n": 300,
+   "interpreter": 0.9011111111111112,
+   "pointer": 0.95,
+   "interp_where_pointer_wrong": 0.24444444444444444,
+   "pointer_where_interp_wrong": 0.5925925925925926,
+   "n_pointer_wrong": 15,
+   "n_interp_wrong": 27
+  },
+  "OVER": {
+   "n": 91,
+   "interpreter": 0.40659340659340654,
+   "pointer": 0.4175824175824176,
+   "interp_where_pointer_wrong": 0.025157232704402514,
+   "pointer_where_interp_wrong": 0.0,
+   "n_pointer_wrong": 53,
+   "n_interp_wrong": 52
+  }
+ },
+ "wall_seconds": 845.210911989212
+}
