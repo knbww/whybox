@@ -83,8 +83,9 @@ models (three strengths of a decoy feature), averaged. Protocols committed befor
 | chance | 14.3% | 14.3% | 14.3% |
 
 This supports parts 1 to 4: one trained model reads B's signals and names B's own cause
-where B departs from the world or from the typical model, above chance, a constant and the
-predictors that never read B. All six comparisons of the main protocol reject the null
+where B departs from the world or from the typical model. There it is above chance, the
+constant and the inputs-only classifier, and a predictor of the world or of typical models
+scores 0% by construction. All six comparisons of the main protocol reject the null
 after Holm correction: adjusted p = 0.003 for five of them, and 0.012 for the comparison
 with the constant where B agrees with the world. The three comparisons of the strict check
 (last column) are at adjusted p = 0.003. The smallest unadjusted p attainable with twelve
