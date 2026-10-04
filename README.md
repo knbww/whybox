@@ -30,6 +30,8 @@ Each run writes a new `results/my_*.json`; choose a GPU runtime. The notebook's 
 Russian. It was re-targeted from Pythia, SmolLM2, OLMo-2 and Phi-2 to these models before any
 of those families was run, so no results exist for them.
 
+**Weights on Hugging Face:** [la-Ilyaso/whybox](https://huggingface.co/la-Ilyaso/whybox).
+
 ## Why this matters
 
 A model can be accurate for the wrong reason. In a study of pneumonia detection on chest
