@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import math
 import os
 import re
 import subprocess
@@ -254,10 +255,34 @@ def cmd_audit() -> int:
     hyb = _load("results/frozen/hybrid_confirm.json")   # cited only as withdrawn
     for c in hyb["comparisons"]:
         add(abs(c["delta"]), "hybrid_confirm (withdrawn)")
+
+    def leaves(x):
+        if isinstance(x, dict):
+            for v in x.values():
+                yield from leaves(v)
+        elif isinstance(x, list):
+            for v in x:
+                yield from leaves(v)
+        elif isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x):
+            yield float(x)
+
+    # every other result file: a number in the documents may come from any of them
+    for f in sorted(ROOT.glob("results/*.json")) + sorted(ROOT.glob("results/frozen/*.json")):
+        try:
+            data = json.loads(f.read_text())
+        except (OSError, ValueError):
+            continue
+        for v in leaves(data):
+            add(v, str(f.relative_to(ROOT)))
+            add(abs(v), str(f.relative_to(ROOT)))
     num = re.compile(r"(?<![\d.])0\.\d{2,4}(?!\d)")
     for doc in ("README.md", "README.ru.md"):
         if not (ROOT / doc).exists():
-            print(f"     {red('✗')} {doc:24s} missing"); failures += 1; continue
+            if doc == "README.md":
+                print(f"     {red('✗')} {doc:24s} missing"); failures += 1
+            else:
+                print(f"     {dim('·')} {doc:24s} not present in this repository")
+            continue
         nums = set(num.findall((ROOT / doc).read_text()))
         missing = sorted(n for n in nums if n not in known)
         derived = sorted({known[n] for n in nums if n in known and not known[n].startswith("results/")})

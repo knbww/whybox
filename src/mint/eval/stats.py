@@ -22,7 +22,11 @@ def paired_sign_flip(a: np.ndarray, b: np.ndarray, n_perm: int = 20000,
                      seed: int = 0) -> tuple[float, float]:
     """Two-sided exact/Monte-Carlo sign-flip test on the paired differences.
 
-    Returns (mean difference, p).  Exact when 2^m <= n_perm.
+    Returns (mean difference, p).  Exact when 2^m <= n_perm.  Otherwise n_perm random sign
+    assignments are drawn and p = (b + 1) / (n_perm + 1), where b of them are at least as
+    extreme as the observed one, so a Monte Carlo p is never 0 (Phipson & Smyth, 2010).
+    Results stored before 2026-10-12 used b / n_perm and can contain p = 0, which means
+    p < 1 / n_perm.
     """
     d = np.asarray(a, dtype=float) - np.asarray(b, dtype=float)
     d = d[np.isfinite(d)]
@@ -30,13 +34,17 @@ def paired_sign_flip(a: np.ndarray, b: np.ndarray, n_perm: int = 20000,
     if m == 0:
         return float("nan"), float("nan")
     obs = abs(d.mean())
-    if 2 ** m <= n_perm:
+    exact = 2 ** m <= n_perm
+    if exact:
         signs = np.array(list(product([1, -1], repeat=m)), dtype=float)
     else:
         rng = np.random.default_rng(seed)
         signs = rng.choice([1.0, -1.0], size=(n_perm, m))
     null = np.abs((signs * d).mean(axis=1))
-    return float(d.mean()), float((null >= obs - 1e-12).mean())
+    hits = int((null >= obs - 1e-12).sum())
+    if exact:
+        return float(d.mean()), hits / len(null)
+    return float(d.mean()), (hits + 1) / (n_perm + 1)
 
 
 def min_attainable_p(n_models: int) -> float:

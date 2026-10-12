@@ -30,7 +30,14 @@ Each run writes a new `results/my_*.json`; choose a GPU runtime. The notebook's 
 Russian. It was re-targeted from Pythia, SmolLM2, OLMo-2 and Phi-2 to these models before any
 of those families was run, so no results exist for them.
 
+[`colab/R0_pythia.ipynb`](colab/R0_pythia.ipynb) belongs to a follow-up study (do causes have an
+address inside Pythia models?) that is not part of the competition paper; its script and protocol
+are embedded in the notebook.
+
 **Weights on Hugging Face:** [la-Ilyaso/whybox](https://huggingface.co/la-Ilyaso/whybox).
+
+**Protocols:** every confirmatory run had its protocol committed before the run; all of them are
+public in [`protocols/`](protocols/), with the commits that froze them.
 
 ## Why this matters
 
@@ -82,10 +89,12 @@ models (three strengths of a decoy feature), averaged. Protocols committed befor
 | first-order pointer (control, see below) | 87.8% | 65.8% | 61.9% |
 | chance | 14.3% | 14.3% | 14.3% |
 
-This supports parts 1 to 4: one trained model reads B's signals and names B's own cause
-where B departs from the world or from the typical model. There it is above chance, the
-constant and the inputs-only classifier, and a predictor of the world or of typical models
-scores 0% by construction. All six comparisons of the main protocol reject the null
+This supports parts 1 to 3, and part 4 against chance, the constant and the predictors that never
+read B: one trained model reads B's signals and names B's own cause where B departs from the world
+or from the typical model. There it is above chance, the constant and the inputs-only classifier,
+and a predictor of the world or of typical models scores 0% by construction. **Against the
+strongest non-learned method at this level it loses: the first-order pointer is more accurate in
+every column (87.8%, 65.8% and 61.9% against 73.8%, 59.3% and 54.9%).** All six comparisons of the main protocol reject the null
 after Holm correction: adjusted p = 0.003 for five of them, and 0.012 for the comparison
 with the constant where B agrees with the world. The three comparisons of the strict check
 (last column) are at adjusted p = 0.003. The smallest unadjusted p attainable with twelve
@@ -95,14 +104,15 @@ units is 0.0005.
 mostly rely on the same cause. The pooled accuracy alone does not show that B is read; the
 cells where B departs do.
 
-The **first-order pointer** is a parameter-free control. It sums the same per-input
-estimates over the inputs of each cause, so it needs the grouping of inputs into causes,
-which the interpreter does not receive. Where the pointer is wrong (542 of 4450 states), the
+The **first-order pointer** is a parameter-free method. It adds up, with their signs, the same
+per-input estimates over the inputs of each cause. Both methods rely on the grouping of inputs into
+causes: the pointer to add the estimates up, the interpreter at its last step, to name a cause from
+its per-input scores; the grouping is not an input of the interpreter. Where the pointer is wrong (542 of 4450 states), the
 interpreter is right in 20.8% of them, and in 29.9% where B departs from the world.
 
 **Which signals matter.** A diagnostic without a frozen protocol removed the stream of
 internal-unit signals, or the global signals, in three worlds: nothing changed detectably
-(adjusted p ≥ 0.41). The per-input estimates carry the accuracy.
+(adjusted p ≥ 0.40). The per-input estimates carry the accuracy.
 
 **Dynamic signals** ([`scripts/dynamics_deep.py`](scripts/dynamics_deep.py)). Adding all
 dynamic signals, computed along the path to the neutral state, raised accuracy on all states
@@ -111,9 +121,10 @@ adjusted p = 0.005). Where B departs from the world or from typical models there
 detectable change (+1.1 and +1.2 points, adjusted p = 1.0). On these small models the number
 of path segments (4 to 64) makes no detectable difference.
 
-### A real dataset: UCI Car Evaluation
+### A published dataset: UCI Car Evaluation
 
-1728 cars, six attributes, the published four-level acceptability, used as published.
+1728 cars, six attributes, the published four-level acceptability, used as published. The labels
+were produced by a published hierarchical decision model, so the rule behind every label is known.
 The causes are PRICE (buying and maintenance price) and COMFORT (doors, persons, luggage
 boot), two concepts of the published decision hierarchy, and the attribute *safety*, which
 together with COMFORT forms the hierarchy's TECH concept (chance 33.3%). Twelve independent
@@ -128,16 +139,16 @@ before the run: [`scripts/car_study.py`](scripts/car_study.py), result
 | where B departs from what other models rely on (6.8%) | 39.0% | constant **48.9%** (significantly higher, adjusted p = 0.009); inputs only 20.2%; pointer 40.3% | **not supported** |
 | trained only on the simulation, reads Car models | 60.3% (all states) | constant 38.7% | not supported: 37.3% vs 48.9% in the cell above |
 | trained only on Car, reads simulation models | 61.4% (all states) | constant 60.1% | not supported on all states; where B departs, 53.5% and 51.5% vs about 25% |
-| dynamic signals | **85.6%** vs 68.5% | | better |
+| dynamic signals | **85.6%** vs 68.5% | inputs-only classifier 93.0% | better than without them |
 
-On real data, predictors that never read B reach 93% on all states (the inputs-only
+On this dataset, predictors that never read B reach 93% on all states (the inputs-only
 classifier significantly above the interpreter, adjusted p = 0.007). So the evidence of
 reading B rests on the second row, 389 states. A post-hoc analysis (in
 [`scripts/pointer_control.py`](scripts/pointer_control.py)) found that 313 of those 389
 states come from models of one architecture. There, a predictor of typical models of the
 same architecture reaches 55.3%, against 53.0% for the interpreter. The strict check is
 significantly *below* a constant, which contradicts part 3 ("this model, not models in
-general") on real data, and neither transfer supports part 6.
+general") on Car Evaluation, and neither transfer supports part 6.
 
 Post hoc, the shortfall sits in states where the published rule names no single cause:
 2741 of the 3130 strict-check states, 38.2% vs 46.0% for the constant. On the remaining 389
@@ -172,9 +183,11 @@ streams are zeroed.
 | Qwen3-14B | 4-bit | **0.867** / 0.563 | **0.704** / 0.600 | **0.726** / 0.316 |
 
 Interpreter / floor; every cell is above the floor after Holm correction. This supports
-parts 1, 2, 5 and 6 of the hypothesis on one task, subject-verb agreement, in models up to
-14 billion parameters. It supports part 4 in the sense of "above chance among the causes
-that act": this protocol has no constant or world-predictor arm.
+parts 1, 2 and 6 of the hypothesis on one task, subject-verb agreement, in models up to
+14 billion parameters, and part 5 only in the sense that each answer is one of the human-named
+causes listed in advance. It supports part 4 in the sense of "above chance among the causes
+that act": this protocol has no constant or world-predictor arm, and the integrated-gradient
+pointer below, measured on six of the nine models, is more accurate.
 
 Part 3 is shown only descriptively. Models depart from grammar in 81 sentences over the
 nine models: 70 in the subject clause, 7 in the object clause, 4 in the long template. On
@@ -204,7 +217,11 @@ Before the twelve-initialisation design, held-out models came from four independ
 at three decoy strengths, so p-values that assume twelve units overstate the resolution;
 every effect below is positive in all four seed groups.
 
-- **Toy logic world.** A transformer language model: 71.4% (chance 25%, constant 31.6%).
+- **Toy logic world.** A transformer language model: 71.4% (chance 25%, constant 31.6%; a random
+  choice among the causes that act, 66.8%). In 160 of its 485 departure states the world names no
+  cause, and every method except random choice names the only acting cause. On the other 325 the
+  interpreter scores 48.8% against 44.7% for that random choice; the difference is not established
+  (p = 0.19). This split was made after the run ([`results/lm_disagree_split.json`](results/lm_disagree_split.json)).
 - **Transfer between unrelated simulated worlds.** Trained only on medical models, the
   interpreter reads tactical ones at 70.5%; trained on the tactical models themselves it
   reaches 72.7%. The difference is not established (p = 0.075, outside the protocol). In the
@@ -226,7 +243,7 @@ every effect below is positive in all four seed groups.
 - The correct answer depends on the neutral values chosen for each cause, and the input
   estimates are computed relative to the same values; the choice was not varied.
 - "This model, not models in general" holds on simulated worlds and is significantly
-  reversed on Car Evaluation; transfer between simulation and real data was not shown.
+  reversed on Car Evaluation; transfer between the simulation and Car Evaluation was not shown.
 - Pretrained language models were tested on one task in three templates, and the departures
   from grammar are too few per model for a separate test.
 - Path signals needed more segments for the Qwen3 models; a future protocol should fix the
@@ -243,9 +260,10 @@ and refuses to overwrite its result.
 The commit hashes recorded in result files refer to the author's private development
 repository; this repository is an export without that history. What can be checked here is
 the sha256 of each script, recorded in its result, and the times below. Every hash equals the
-script in this repository, except for the first language-model run (GPT-2 and Qwen2.5-0.5B).
-That run used the version before Amendment 1, which only added the `--load-in-4bit` and
-`--steps` options. The Colab runs record commits of this public repository.
+script in this repository, except for the language-model runs made before Amendment 1 (GPT-2,
+Qwen2.5-0.5B, GPT-2 large, Qwen2.5-1.5B and Qwen2.5-3B): they record the script of this
+repository's first commit `0c36794`. Amendment 1 only added the `--load-in-4bit` and `--steps`
+options. The Colab runs record commits of this public repository.
 
 | run | protocol committed (UTC) | run started (UTC) |
 |---|---|---|
@@ -257,9 +275,10 @@ That run used the version before Amendment 1, which only added the `--load-in-4b
 | `pointer_sentences` (GPT-2, Qwen2.5-0.5B) | 2026-10-04 11:24:49 | 11:25:01 |
 | `pointer_control` | 2026-10-04 11:24:49 | 11:32:20 |
 
-The earlier runs (`follows_b`, `transfer_b`, `statement`) predate this discipline. Their
-protocols were separate documents that are not in this repository, and their scripts
-overwrite their output. `follows_b.json` was produced from a modified working tree; a
+The runs of 13 to 15 September (`follows_b`, `transfer_b`, `statement`, `statement_lm`,
+`volume_study`, `signals_study`) kept their protocols in separate documents, committed before each
+run. They are published verbatim in [`protocols/`](protocols/), with the commits that froze them,
+the commits at which the runs were made and the read-outs. Their scripts overwrite their output. `follows_b.json` was produced from a modified working tree; a
 byte-identical rerun is documented in [`results/frozen/ERRATA.md`](results/frozen/ERRATA.md)
 §12, and §11 explains the four-seed qualification.
 
@@ -268,7 +287,10 @@ initialisations (all 4096 sign patterns for twelve units), with Holm correction 
 declared family and 95% percentile bootstrap intervals over initialisations. On pretrained
 language models the unit is the sentence: a Monte Carlo sign-flip test (20,000 flips) over
 the scored sentences of one model, with Holm correction over the (model, template) pairs of
-each run.
+each run. The stored p-values of these runs are the share of flips at least as extreme as the
+observed result, so most of them are 0, which means p < 1/20,000. With the usual correction,
+p = (b + 1) / (n + 1), every cell still rejects; the largest adjusted p is 0.0035 (Qwen3-14B,
+subject clause). The code now applies this correction ([`src/mint/eval/stats.py`](src/mint/eval/stats.py)).
 
 ## Reproduce
 
@@ -288,6 +310,10 @@ python -m venv .venv && .venv/bin/pip install -e ".[dev]" transformers
   consumer checks the sha256 recorded in the manifests under `results/`. A rebuild with other
   library versions may differ bit for bit, and then the check stops the run.
   A finished run refuses to overwrite its result; move the result file away to run it again.
+- **Demonstration program** (`python -m mint.cli explain`, section 3.6 of the competition paper):
+  it reads the pinned tactical population `results/cache/skirmish-mlp-6d7fca3aed.pt` (66 MB), which
+  is not in this repository yet, and stops with `FileNotFoundError` without it. A rebuild with other
+  library versions does not reproduce the file bit for bit, so the sha256 check would stop it.
 
 ## Data and models
 

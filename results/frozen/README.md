@@ -1,6 +1,6 @@
 # Frozen results
 
-> **Read [`ERRATA.md`](ERRATA.md) before citing anything in this directory.** For what currently stands, see [`../../docs/FINDINGS.md`](../../docs/FINDINGS.md).
+> **Read [`ERRATA.md`](ERRATA.md) before citing anything in this directory.** For what currently stands, see the repository [README](../../README.md); the protocols are in [`../../protocols/`](../../protocols/).
 
 Snapshot of the causal-transfer stage, kept immutable so later work cannot
 quietly restate it. Regenerate with the configs named below; do not overwrite.
