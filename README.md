@@ -310,10 +310,19 @@ python -m venv .venv && .venv/bin/pip install -e ".[dev]" transformers
   consumer checks the sha256 recorded in the manifests under `results/`. A rebuild with other
   library versions may differ bit for bit, and then the check stops the run.
   A finished run refuses to overwrite its result; move the result file away to run it again.
-- **Demonstration program** (`python -m mint.cli explain`, section 3.6 of the competition paper):
-  it reads the pinned tactical population `results/cache/skirmish-mlp-6d7fca3aed.pt` (66 MB), which
-  is not in this repository yet, and stops with `FileNotFoundError` without it. A rebuild with other
-  library versions does not reproduce the file bit for bit, so the sha256 check would stop it.
+- **Demonstration program** (`python -m mint.cli explain`, section 3.6 of the competition paper;
+  its output is in Russian). It reads the pinned tactical population
+  `results/cache/skirmish-mlp-6d7fca3aed.pt` (69 MB) and the demonstration's interpreter
+  `results/cache/demo-base-53d5312e49427535.pt` (2 MB), both on Hugging Face:
+  ```bash
+  pip install huggingface_hub
+  hf download la-Ilyaso/whybox results/cache/skirmish-mlp-6d7fca3aed.pt \
+      results/cache/demo-base-53d5312e49427535.pt --local-dir .
+  python -m mint.cli explain
+  ```
+  It runs in a few seconds. Without the interpreter file the first run trains it, about a minute
+  on a CPU, with the same output. The population cannot be rebuilt bit for bit with other library
+  versions, and its sha256 is checked, so it has to be downloaded.
 
 ## Data and models
 
